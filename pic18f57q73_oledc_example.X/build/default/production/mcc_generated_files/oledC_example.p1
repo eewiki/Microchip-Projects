@@ -1,0 +1,1223 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"70 mcc_generated_files/oledC.h
+[; ;mcc_generated_files/oledC.h: 70: void oledC_setColumnAddressBounds(uint8_t min, uint8_t max);
+[v _oledC_setColumnAddressBounds `(v ~T0 @X0 0 ef2`uc`uc ]
+"69
+[; ;mcc_generated_files/oledC.h: 69: void oledC_setRowAddressBounds(uint8_t min, uint8_t max);
+[v _oledC_setRowAddressBounds `(v ~T0 @X0 0 ef2`uc`uc ]
+"80
+[; ;mcc_generated_files/oledC.h: 80: void oledC_sendColorInt(uint16_t raw);
+[v _oledC_sendColorInt `(v ~T0 @X0 0 ef1`us ]
+"44 mcc_generated_files/oledC_shapes.h
+[; ;mcc_generated_files/oledC_shapes.h: 44:     {
+[s S3 `us 1 `uc 1 `uc 1 ]
+[n S3 . color x y ]
+"50
+[; ;mcc_generated_files/oledC_shapes.h: 50:     {
+[s S4 `us 1 `uc 1 `uc 1 `uc 1 ]
+[n S4 . color xc yc radius ]
+"57
+[; ;mcc_generated_files/oledC_shapes.h: 57:     {
+[s S5 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S5 . color x0 y0 radius width ]
+"65
+[; ;mcc_generated_files/oledC_shapes.h: 65:     {
+[s S6 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S6 . color xs ys xe ye ]
+"73
+[; ;mcc_generated_files/oledC_shapes.h: 73:     {
+[s S7 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S7 . color xs ys width xe ye ]
+"82
+[; ;mcc_generated_files/oledC_shapes.h: 82:     {
+[s S8 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S8 . color x y scale_x scale_y character ]
+"91
+[; ;mcc_generated_files/oledC_shapes.h: 91:     {
+[s S9 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `*uc 1 ]
+[n S9 . color x y scale_x scale_y string ]
+"100
+[; ;mcc_generated_files/oledC_shapes.h: 100:     {
+[s S10 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `*ul 1 `uc 1 ]
+[n S10 . color x y sx sy bit_array array_length ]
+"42
+[; ;mcc_generated_files/oledC_shapes.h: 42: {
+[u S2 `S3 1 `S4 1 `S5 1 `S6 1 `S7 1 `S8 1 `S9 1 `S10 1 ]
+[n S2 shape_params_t point circle ring rectangle line character string bitmap ]
+"93 mcc_generated_files/oledC_example.c
+[; ;mcc_generated_files/oledC_example.c: 93:     oledC_addShape(0,OLED_SHAPE_BITMAP, &params);
+[c E242 0 1 2 3 4 5 6 7 .. ]
+[n E242 OLEDC_SHAPE OLED_SHAPE_CIRCLE OLED_SHAPE_RING OLED_SHAPE_RECTANGLE OLED_SHAPE_LINE OLED_SHAPE_POINT OLED_SHAPE_CHARACTER OLED_SHAPE_STRING OLED_SHAPE_BITMAP  ]
+"34 mcc_generated_files/oledC_shapeHandler.h
+[; ;mcc_generated_files/oledC_shapeHandler.h: 34: void oledC_addShape(uint8_t drawIndex, enum OLEDC_SHAPE shape_type, shape_params_t *params);
+[v _oledC_addShape `(v ~T0 @X0 0 ef3`uc`E242`*S2 ]
+"29
+[; ;mcc_generated_files/oledC_shapeHandler.h: 29: void oledC_redrawAll(void);
+[v _oledC_redrawAll `(v ~T0 @X0 0 ef ]
+[v F314 `(v ~T0 @X0 0 tf1`*S11 ]
+"112 mcc_generated_files/oledC_shapes.h
+[; ;mcc_generated_files/oledC_shapes.h: 112: {
+[s S11 `uc 1 `*F314 1 `S2 1 `a 1 ]
+[n S11 shape _type draw params active ]
+"38 mcc_generated_files/oledC_shapeHandler.h
+[; ;mcc_generated_files/oledC_shapeHandler.h: 38: shape_t* oledC_getShape(uint8_t index);
+[v _oledC_getShape `(*S11 ~T0 @X0 0 ef1`uc ]
+"36
+[; ;mcc_generated_files/oledC_shapeHandler.h: 36: void oledC_eraseShape(uint8_t indShape, uint16_t eraseColor);
+[v _oledC_eraseShape `(v ~T0 @X0 0 ef2`uc`us ]
+"33
+[; ;mcc_generated_files/oledC_shapeHandler.h: 33: void oledC_redrawIndex(uint8_t indShape);
+[v _oledC_redrawIndex `(v ~T0 @X0 0 ef1`uc ]
+"28 mcc_generated_files/oledC_colors.h
+[; ;mcc_generated_files/oledC_colors.h: 28: const uint16_t OLEDC_COLOR_ALICEBLUE = 0xf7df;
+[v _OLEDC_COLOR_ALICEBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_ALICEBLUE
+-> -> 63455 `ui `us
+]
+"29
+[; ;mcc_generated_files/oledC_colors.h: 29: const uint16_t OLEDC_COLOR_ANTIQUEWHITE = 0xff5a;
+[v _OLEDC_COLOR_ANTIQUEWHITE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_ANTIQUEWHITE
+-> -> 65370 `ui `us
+]
+"30
+[; ;mcc_generated_files/oledC_colors.h: 30: const uint16_t OLEDC_COLOR_AQUA = 0x7ff;
+[v _OLEDC_COLOR_AQUA `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_AQUA
+-> -> 2047 `i `us
+]
+"31
+[; ;mcc_generated_files/oledC_colors.h: 31: const uint16_t OLEDC_COLOR_AQUAMARINE = 0x7ffa;
+[v _OLEDC_COLOR_AQUAMARINE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_AQUAMARINE
+-> -> 32762 `i `us
+]
+"32
+[; ;mcc_generated_files/oledC_colors.h: 32: const uint16_t OLEDC_COLOR_AZURE = 0xf7ff;
+[v _OLEDC_COLOR_AZURE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_AZURE
+-> -> 63487 `ui `us
+]
+"33
+[; ;mcc_generated_files/oledC_colors.h: 33: const uint16_t OLEDC_COLOR_BEIGE = 0xf7bb;
+[v _OLEDC_COLOR_BEIGE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BEIGE
+-> -> 63419 `ui `us
+]
+"34
+[; ;mcc_generated_files/oledC_colors.h: 34: const uint16_t OLEDC_COLOR_BISQUE = 0xff38;
+[v _OLEDC_COLOR_BISQUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BISQUE
+-> -> 65336 `ui `us
+]
+"35
+[; ;mcc_generated_files/oledC_colors.h: 35: const uint16_t OLEDC_COLOR_BLACK = 0x0;
+[v _OLEDC_COLOR_BLACK `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BLACK
+-> -> 0 `i `us
+]
+"36
+[; ;mcc_generated_files/oledC_colors.h: 36: const uint16_t OLEDC_COLOR_BLANCHEDALMOND = 0xff59;
+[v _OLEDC_COLOR_BLANCHEDALMOND `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BLANCHEDALMOND
+-> -> 65369 `ui `us
+]
+"37
+[; ;mcc_generated_files/oledC_colors.h: 37: const uint16_t OLEDC_COLOR_BLUE = 0x1f;
+[v _OLEDC_COLOR_BLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BLUE
+-> -> 31 `i `us
+]
+"38
+[; ;mcc_generated_files/oledC_colors.h: 38: const uint16_t OLEDC_COLOR_BLUEVIOLET = 0x895c;
+[v _OLEDC_COLOR_BLUEVIOLET `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BLUEVIOLET
+-> -> 35164 `ui `us
+]
+"39
+[; ;mcc_generated_files/oledC_colors.h: 39: const uint16_t OLEDC_COLOR_BROWN = 0xa145;
+[v _OLEDC_COLOR_BROWN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BROWN
+-> -> 41285 `ui `us
+]
+"40
+[; ;mcc_generated_files/oledC_colors.h: 40: const uint16_t OLEDC_COLOR_BURLYWOOD = 0xddd0;
+[v _OLEDC_COLOR_BURLYWOOD `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_BURLYWOOD
+-> -> 56784 `ui `us
+]
+"41
+[; ;mcc_generated_files/oledC_colors.h: 41: const uint16_t OLEDC_COLOR_CADETBLUE = 0x5cf4;
+[v _OLEDC_COLOR_CADETBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CADETBLUE
+-> -> 23796 `i `us
+]
+"42
+[; ;mcc_generated_files/oledC_colors.h: 42: const uint16_t OLEDC_COLOR_CHARTREUSE = 0x7fe0;
+[v _OLEDC_COLOR_CHARTREUSE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CHARTREUSE
+-> -> 32736 `i `us
+]
+"43
+[; ;mcc_generated_files/oledC_colors.h: 43: const uint16_t OLEDC_COLOR_CHOCOLATE = 0xd343;
+[v _OLEDC_COLOR_CHOCOLATE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CHOCOLATE
+-> -> 54083 `ui `us
+]
+"44
+[; ;mcc_generated_files/oledC_colors.h: 44: const uint16_t OLEDC_COLOR_CORAL = 0xfbea;
+[v _OLEDC_COLOR_CORAL `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CORAL
+-> -> 64490 `ui `us
+]
+"45
+[; ;mcc_generated_files/oledC_colors.h: 45: const uint16_t OLEDC_COLOR_CORNFLOWERBLUE = 0x64bd;
+[v _OLEDC_COLOR_CORNFLOWERBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CORNFLOWERBLUE
+-> -> 25789 `i `us
+]
+"46
+[; ;mcc_generated_files/oledC_colors.h: 46: const uint16_t OLEDC_COLOR_CORNSILK = 0xffdb;
+[v _OLEDC_COLOR_CORNSILK `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CORNSILK
+-> -> 65499 `ui `us
+]
+"47
+[; ;mcc_generated_files/oledC_colors.h: 47: const uint16_t OLEDC_COLOR_CRIMSON = 0xd8a7;
+[v _OLEDC_COLOR_CRIMSON `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CRIMSON
+-> -> 55463 `ui `us
+]
+"48
+[; ;mcc_generated_files/oledC_colors.h: 48: const uint16_t OLEDC_COLOR_CYAN = 0x7ff;
+[v _OLEDC_COLOR_CYAN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_CYAN
+-> -> 2047 `i `us
+]
+"49
+[; ;mcc_generated_files/oledC_colors.h: 49: const uint16_t OLEDC_COLOR_DARKBLUE = 0x11;
+[v _OLEDC_COLOR_DARKBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKBLUE
+-> -> 17 `i `us
+]
+"50
+[; ;mcc_generated_files/oledC_colors.h: 50: const uint16_t OLEDC_COLOR_DARKCYAN = 0x451;
+[v _OLEDC_COLOR_DARKCYAN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKCYAN
+-> -> 1105 `i `us
+]
+"51
+[; ;mcc_generated_files/oledC_colors.h: 51: const uint16_t OLEDC_COLOR_DARKGOLDENROD = 0xbc21;
+[v _OLEDC_COLOR_DARKGOLDENROD `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKGOLDENROD
+-> -> 48161 `ui `us
+]
+"52
+[; ;mcc_generated_files/oledC_colors.h: 52: const uint16_t OLEDC_COLOR_DARKGRAY = 0xad55;
+[v _OLEDC_COLOR_DARKGRAY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKGRAY
+-> -> 44373 `ui `us
+]
+"53
+[; ;mcc_generated_files/oledC_colors.h: 53: const uint16_t OLEDC_COLOR_DARKGREEN = 0x320;
+[v _OLEDC_COLOR_DARKGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKGREEN
+-> -> 800 `i `us
+]
+"54
+[; ;mcc_generated_files/oledC_colors.h: 54: const uint16_t OLEDC_COLOR_DARKGREY = 0xad55;
+[v _OLEDC_COLOR_DARKGREY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKGREY
+-> -> 44373 `ui `us
+]
+"55
+[; ;mcc_generated_files/oledC_colors.h: 55: const uint16_t OLEDC_COLOR_DARKKHAKI = 0xbdad;
+[v _OLEDC_COLOR_DARKKHAKI `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKKHAKI
+-> -> 48557 `ui `us
+]
+"56
+[; ;mcc_generated_files/oledC_colors.h: 56: const uint16_t OLEDC_COLOR_DARKMAGENTA = 0x8811;
+[v _OLEDC_COLOR_DARKMAGENTA `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKMAGENTA
+-> -> 34833 `ui `us
+]
+"57
+[; ;mcc_generated_files/oledC_colors.h: 57: const uint16_t OLEDC_COLOR_DARKOLIVEGREEN = 0x5345;
+[v _OLEDC_COLOR_DARKOLIVEGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKOLIVEGREEN
+-> -> 21317 `i `us
+]
+"58
+[; ;mcc_generated_files/oledC_colors.h: 58: const uint16_t OLEDC_COLOR_DARKORANGE = 0xfc60;
+[v _OLEDC_COLOR_DARKORANGE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKORANGE
+-> -> 64608 `ui `us
+]
+"59
+[; ;mcc_generated_files/oledC_colors.h: 59: const uint16_t OLEDC_COLOR_DARKORCHID = 0x9999;
+[v _OLEDC_COLOR_DARKORCHID `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKORCHID
+-> -> 39321 `ui `us
+]
+"60
+[; ;mcc_generated_files/oledC_colors.h: 60: const uint16_t OLEDC_COLOR_DARKRED = 0x8800;
+[v _OLEDC_COLOR_DARKRED `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKRED
+-> -> 34816 `ui `us
+]
+"61
+[; ;mcc_generated_files/oledC_colors.h: 61: const uint16_t OLEDC_COLOR_DARKSALMON = 0xecaf;
+[v _OLEDC_COLOR_DARKSALMON `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKSALMON
+-> -> 60591 `ui `us
+]
+"62
+[; ;mcc_generated_files/oledC_colors.h: 62: const uint16_t OLEDC_COLOR_DARKSEAGREEN = 0x8df1;
+[v _OLEDC_COLOR_DARKSEAGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKSEAGREEN
+-> -> 36337 `ui `us
+]
+"63
+[; ;mcc_generated_files/oledC_colors.h: 63: const uint16_t OLEDC_COLOR_DARKSLATEBLUE = 0x49f1;
+[v _OLEDC_COLOR_DARKSLATEBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKSLATEBLUE
+-> -> 18929 `i `us
+]
+"64
+[; ;mcc_generated_files/oledC_colors.h: 64: const uint16_t OLEDC_COLOR_DARKSLATEGRAY = 0x2a69;
+[v _OLEDC_COLOR_DARKSLATEGRAY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKSLATEGRAY
+-> -> 10857 `i `us
+]
+"65
+[; ;mcc_generated_files/oledC_colors.h: 65: const uint16_t OLEDC_COLOR_DARKSLATEGREY = 0x2a69;
+[v _OLEDC_COLOR_DARKSLATEGREY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKSLATEGREY
+-> -> 10857 `i `us
+]
+"66
+[; ;mcc_generated_files/oledC_colors.h: 66: const uint16_t OLEDC_COLOR_DARKTURQUOISE = 0x67a;
+[v _OLEDC_COLOR_DARKTURQUOISE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKTURQUOISE
+-> -> 1658 `i `us
+]
+"67
+[; ;mcc_generated_files/oledC_colors.h: 67: const uint16_t OLEDC_COLOR_DARKVIOLET = 0x901a;
+[v _OLEDC_COLOR_DARKVIOLET `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DARKVIOLET
+-> -> 36890 `ui `us
+]
+"68
+[; ;mcc_generated_files/oledC_colors.h: 68: const uint16_t OLEDC_COLOR_DEEPPINK = 0xf8b2;
+[v _OLEDC_COLOR_DEEPPINK `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DEEPPINK
+-> -> 63666 `ui `us
+]
+"69
+[; ;mcc_generated_files/oledC_colors.h: 69: const uint16_t OLEDC_COLOR_DEEPSKYBLUE = 0x5ff;
+[v _OLEDC_COLOR_DEEPSKYBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DEEPSKYBLUE
+-> -> 1535 `i `us
+]
+"70
+[; ;mcc_generated_files/oledC_colors.h: 70: const uint16_t OLEDC_COLOR_DIMGRAY = 0x6b4d;
+[v _OLEDC_COLOR_DIMGRAY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DIMGRAY
+-> -> 27469 `i `us
+]
+"71
+[; ;mcc_generated_files/oledC_colors.h: 71: const uint16_t OLEDC_COLOR_DIMGREY = 0x6b4d;
+[v _OLEDC_COLOR_DIMGREY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DIMGREY
+-> -> 27469 `i `us
+]
+"72
+[; ;mcc_generated_files/oledC_colors.h: 72: const uint16_t OLEDC_COLOR_DODGERBLUE = 0x1c9f;
+[v _OLEDC_COLOR_DODGERBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_DODGERBLUE
+-> -> 7327 `i `us
+]
+"73
+[; ;mcc_generated_files/oledC_colors.h: 73: const uint16_t OLEDC_COLOR_FIREBRICK = 0xb104;
+[v _OLEDC_COLOR_FIREBRICK `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_FIREBRICK
+-> -> 45316 `ui `us
+]
+"74
+[; ;mcc_generated_files/oledC_colors.h: 74: const uint16_t OLEDC_COLOR_FLORALWHITE = 0xffde;
+[v _OLEDC_COLOR_FLORALWHITE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_FLORALWHITE
+-> -> 65502 `ui `us
+]
+"75
+[; ;mcc_generated_files/oledC_colors.h: 75: const uint16_t OLEDC_COLOR_FORESTGREEN = 0x2444;
+[v _OLEDC_COLOR_FORESTGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_FORESTGREEN
+-> -> 9284 `i `us
+]
+"76
+[; ;mcc_generated_files/oledC_colors.h: 76: const uint16_t OLEDC_COLOR_FUCHSIA = 0xf81f;
+[v _OLEDC_COLOR_FUCHSIA `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_FUCHSIA
+-> -> 63519 `ui `us
+]
+"77
+[; ;mcc_generated_files/oledC_colors.h: 77: const uint16_t OLEDC_COLOR_GAINSBORO = 0xdefb;
+[v _OLEDC_COLOR_GAINSBORO `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GAINSBORO
+-> -> 57083 `ui `us
+]
+"78
+[; ;mcc_generated_files/oledC_colors.h: 78: const uint16_t OLEDC_COLOR_GHOSTWHITE = 0xffdf;
+[v _OLEDC_COLOR_GHOSTWHITE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GHOSTWHITE
+-> -> 65503 `ui `us
+]
+"79
+[; ;mcc_generated_files/oledC_colors.h: 79: const uint16_t OLEDC_COLOR_GOLD = 0xfea0;
+[v _OLEDC_COLOR_GOLD `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GOLD
+-> -> 65184 `ui `us
+]
+"80
+[; ;mcc_generated_files/oledC_colors.h: 80: const uint16_t OLEDC_COLOR_GOLDENROD = 0xdd24;
+[v _OLEDC_COLOR_GOLDENROD `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GOLDENROD
+-> -> 56612 `ui `us
+]
+"81
+[; ;mcc_generated_files/oledC_colors.h: 81: const uint16_t OLEDC_COLOR_GRAY = 0x8410;
+[v _OLEDC_COLOR_GRAY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GRAY
+-> -> 33808 `ui `us
+]
+"82
+[; ;mcc_generated_files/oledC_colors.h: 82: const uint16_t OLEDC_COLOR_GREEN = 0x400;
+[v _OLEDC_COLOR_GREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GREEN
+-> -> 1024 `i `us
+]
+"83
+[; ;mcc_generated_files/oledC_colors.h: 83: const uint16_t OLEDC_COLOR_GREENYELLOW = 0xafe5;
+[v _OLEDC_COLOR_GREENYELLOW `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GREENYELLOW
+-> -> 45029 `ui `us
+]
+"84
+[; ;mcc_generated_files/oledC_colors.h: 84: const uint16_t OLEDC_COLOR_GREY = 0x8410;
+[v _OLEDC_COLOR_GREY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_GREY
+-> -> 33808 `ui `us
+]
+"85
+[; ;mcc_generated_files/oledC_colors.h: 85: const uint16_t OLEDC_COLOR_HONEYDEW = 0xf7fe;
+[v _OLEDC_COLOR_HONEYDEW `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_HONEYDEW
+-> -> 63486 `ui `us
+]
+"86
+[; ;mcc_generated_files/oledC_colors.h: 86: const uint16_t OLEDC_COLOR_HOTPINK = 0xfb56;
+[v _OLEDC_COLOR_HOTPINK `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_HOTPINK
+-> -> 64342 `ui `us
+]
+"87
+[; ;mcc_generated_files/oledC_colors.h: 87: const uint16_t OLEDC_COLOR_INDIANRED = 0xcaeb;
+[v _OLEDC_COLOR_INDIANRED `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_INDIANRED
+-> -> 51947 `ui `us
+]
+"88
+[; ;mcc_generated_files/oledC_colors.h: 88: const uint16_t OLEDC_COLOR_INDIGO = 0x4810;
+[v _OLEDC_COLOR_INDIGO `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_INDIGO
+-> -> 18448 `i `us
+]
+"89
+[; ;mcc_generated_files/oledC_colors.h: 89: const uint16_t OLEDC_COLOR_IVORY = 0xfffe;
+[v _OLEDC_COLOR_IVORY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_IVORY
+-> -> 65534 `ui `us
+]
+"90
+[; ;mcc_generated_files/oledC_colors.h: 90: const uint16_t OLEDC_COLOR_KHAKI = 0xf731;
+[v _OLEDC_COLOR_KHAKI `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_KHAKI
+-> -> 63281 `ui `us
+]
+"91
+[; ;mcc_generated_files/oledC_colors.h: 91: const uint16_t OLEDC_COLOR_LAVENDER = 0xe73f;
+[v _OLEDC_COLOR_LAVENDER `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LAVENDER
+-> -> 59199 `ui `us
+]
+"92
+[; ;mcc_generated_files/oledC_colors.h: 92: const uint16_t OLEDC_COLOR_LAVENDERBLUSH = 0xff9e;
+[v _OLEDC_COLOR_LAVENDERBLUSH `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LAVENDERBLUSH
+-> -> 65438 `ui `us
+]
+"93
+[; ;mcc_generated_files/oledC_colors.h: 93: const uint16_t OLEDC_COLOR_LAWNGREEN = 0x7fe0;
+[v _OLEDC_COLOR_LAWNGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LAWNGREEN
+-> -> 32736 `i `us
+]
+"94
+[; ;mcc_generated_files/oledC_colors.h: 94: const uint16_t OLEDC_COLOR_LEMONCHIFFON = 0xffd9;
+[v _OLEDC_COLOR_LEMONCHIFFON `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LEMONCHIFFON
+-> -> 65497 `ui `us
+]
+"95
+[; ;mcc_generated_files/oledC_colors.h: 95: const uint16_t OLEDC_COLOR_LIGHTBLUE = 0xaedc;
+[v _OLEDC_COLOR_LIGHTBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTBLUE
+-> -> 44764 `ui `us
+]
+"96
+[; ;mcc_generated_files/oledC_colors.h: 96: const uint16_t OLEDC_COLOR_LIGHTCORAL = 0xf410;
+[v _OLEDC_COLOR_LIGHTCORAL `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTCORAL
+-> -> 62480 `ui `us
+]
+"97
+[; ;mcc_generated_files/oledC_colors.h: 97: const uint16_t OLEDC_COLOR_LIGHTCYAN = 0xe7ff;
+[v _OLEDC_COLOR_LIGHTCYAN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTCYAN
+-> -> 59391 `ui `us
+]
+"98
+[; ;mcc_generated_files/oledC_colors.h: 98: const uint16_t OLEDC_COLOR_LIGHTGOLDENRODYELLOW = 0xffda;
+[v _OLEDC_COLOR_LIGHTGOLDENRODYELLOW `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTGOLDENRODYELLOW
+-> -> 65498 `ui `us
+]
+"99
+[; ;mcc_generated_files/oledC_colors.h: 99: const uint16_t OLEDC_COLOR_LIGHTGRAY = 0xd69a;
+[v _OLEDC_COLOR_LIGHTGRAY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTGRAY
+-> -> 54938 `ui `us
+]
+"100
+[; ;mcc_generated_files/oledC_colors.h: 100: const uint16_t OLEDC_COLOR_LIGHTGREEN = 0x9772;
+[v _OLEDC_COLOR_LIGHTGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTGREEN
+-> -> 38770 `ui `us
+]
+"101
+[; ;mcc_generated_files/oledC_colors.h: 101: const uint16_t OLEDC_COLOR_LIGHTGREY = 0xd69a;
+[v _OLEDC_COLOR_LIGHTGREY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTGREY
+-> -> 54938 `ui `us
+]
+"102
+[; ;mcc_generated_files/oledC_colors.h: 102: const uint16_t OLEDC_COLOR_LIGHTPINK = 0xfdb8;
+[v _OLEDC_COLOR_LIGHTPINK `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTPINK
+-> -> 64952 `ui `us
+]
+"103
+[; ;mcc_generated_files/oledC_colors.h: 103: const uint16_t OLEDC_COLOR_LIGHTSALMON = 0xfd0f;
+[v _OLEDC_COLOR_LIGHTSALMON `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTSALMON
+-> -> 64783 `ui `us
+]
+"104
+[; ;mcc_generated_files/oledC_colors.h: 104: const uint16_t OLEDC_COLOR_LIGHTSEAGREEN = 0x2595;
+[v _OLEDC_COLOR_LIGHTSEAGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTSEAGREEN
+-> -> 9621 `i `us
+]
+"105
+[; ;mcc_generated_files/oledC_colors.h: 105: const uint16_t OLEDC_COLOR_LIGHTSKYBLUE = 0x867f;
+[v _OLEDC_COLOR_LIGHTSKYBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTSKYBLUE
+-> -> 34431 `ui `us
+]
+"106
+[; ;mcc_generated_files/oledC_colors.h: 106: const uint16_t OLEDC_COLOR_LIGHTSLATEGRAY = 0x7453;
+[v _OLEDC_COLOR_LIGHTSLATEGRAY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTSLATEGRAY
+-> -> 29779 `i `us
+]
+"107
+[; ;mcc_generated_files/oledC_colors.h: 107: const uint16_t OLEDC_COLOR_LIGHTSLATEGREY = 0x7453;
+[v _OLEDC_COLOR_LIGHTSLATEGREY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTSLATEGREY
+-> -> 29779 `i `us
+]
+"108
+[; ;mcc_generated_files/oledC_colors.h: 108: const uint16_t OLEDC_COLOR_LIGHTSTEELBLUE = 0xb63b;
+[v _OLEDC_COLOR_LIGHTSTEELBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTSTEELBLUE
+-> -> 46651 `ui `us
+]
+"109
+[; ;mcc_generated_files/oledC_colors.h: 109: const uint16_t OLEDC_COLOR_LIGHTYELLOW = 0xfffc;
+[v _OLEDC_COLOR_LIGHTYELLOW `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIGHTYELLOW
+-> -> 65532 `ui `us
+]
+"110
+[; ;mcc_generated_files/oledC_colors.h: 110: const uint16_t OLEDC_COLOR_LIME = 0x7e0;
+[v _OLEDC_COLOR_LIME `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIME
+-> -> 2016 `i `us
+]
+"111
+[; ;mcc_generated_files/oledC_colors.h: 111: const uint16_t OLEDC_COLOR_LIMEGREEN = 0x3666;
+[v _OLEDC_COLOR_LIMEGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LIMEGREEN
+-> -> 13926 `i `us
+]
+"112
+[; ;mcc_generated_files/oledC_colors.h: 112: const uint16_t OLEDC_COLOR_LINEN = 0xff9c;
+[v _OLEDC_COLOR_LINEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_LINEN
+-> -> 65436 `ui `us
+]
+"113
+[; ;mcc_generated_files/oledC_colors.h: 113: const uint16_t OLEDC_COLOR_MAGENTA = 0xf81f;
+[v _OLEDC_COLOR_MAGENTA `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MAGENTA
+-> -> 63519 `ui `us
+]
+"114
+[; ;mcc_generated_files/oledC_colors.h: 114: const uint16_t OLEDC_COLOR_MAROON = 0x8000;
+[v _OLEDC_COLOR_MAROON `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MAROON
+-> -> 32768 `ui `us
+]
+"115
+[; ;mcc_generated_files/oledC_colors.h: 115: const uint16_t OLEDC_COLOR_MEDIUMAQUAMARINE = 0x6675;
+[v _OLEDC_COLOR_MEDIUMAQUAMARINE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMAQUAMARINE
+-> -> 26229 `i `us
+]
+"116
+[; ;mcc_generated_files/oledC_colors.h: 116: const uint16_t OLEDC_COLOR_MEDIUMBLUE = 0x19;
+[v _OLEDC_COLOR_MEDIUMBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMBLUE
+-> -> 25 `i `us
+]
+"117
+[; ;mcc_generated_files/oledC_colors.h: 117: const uint16_t OLEDC_COLOR_MEDIUMORCHID = 0xbaba;
+[v _OLEDC_COLOR_MEDIUMORCHID `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMORCHID
+-> -> 47802 `ui `us
+]
+"118
+[; ;mcc_generated_files/oledC_colors.h: 118: const uint16_t OLEDC_COLOR_MEDIUMPURPLE = 0x939b;
+[v _OLEDC_COLOR_MEDIUMPURPLE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMPURPLE
+-> -> 37787 `ui `us
+]
+"119
+[; ;mcc_generated_files/oledC_colors.h: 119: const uint16_t OLEDC_COLOR_MEDIUMSEAGREEN = 0x3d8e;
+[v _OLEDC_COLOR_MEDIUMSEAGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMSEAGREEN
+-> -> 15758 `i `us
+]
+"120
+[; ;mcc_generated_files/oledC_colors.h: 120: const uint16_t OLEDC_COLOR_MEDIUMSLATEBLUE = 0x7b5d;
+[v _OLEDC_COLOR_MEDIUMSLATEBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMSLATEBLUE
+-> -> 31581 `i `us
+]
+"121
+[; ;mcc_generated_files/oledC_colors.h: 121: const uint16_t OLEDC_COLOR_MEDIUMSPRINGGREEN = 0x7d3;
+[v _OLEDC_COLOR_MEDIUMSPRINGGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMSPRINGGREEN
+-> -> 2003 `i `us
+]
+"122
+[; ;mcc_generated_files/oledC_colors.h: 122: const uint16_t OLEDC_COLOR_MEDIUMTURQUOISE = 0x4e99;
+[v _OLEDC_COLOR_MEDIUMTURQUOISE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMTURQUOISE
+-> -> 20121 `i `us
+]
+"123
+[; ;mcc_generated_files/oledC_colors.h: 123: const uint16_t OLEDC_COLOR_MEDIUMVIOLETRED = 0xc0b0;
+[v _OLEDC_COLOR_MEDIUMVIOLETRED `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MEDIUMVIOLETRED
+-> -> 49328 `ui `us
+]
+"124
+[; ;mcc_generated_files/oledC_colors.h: 124: const uint16_t OLEDC_COLOR_MIDNIGHTBLUE = 0x18ce;
+[v _OLEDC_COLOR_MIDNIGHTBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MIDNIGHTBLUE
+-> -> 6350 `i `us
+]
+"125
+[; ;mcc_generated_files/oledC_colors.h: 125: const uint16_t OLEDC_COLOR_MINTCREAM = 0xf7ff;
+[v _OLEDC_COLOR_MINTCREAM `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MINTCREAM
+-> -> 63487 `ui `us
+]
+"126
+[; ;mcc_generated_files/oledC_colors.h: 126: const uint16_t OLEDC_COLOR_MISTYROSE = 0xff3c;
+[v _OLEDC_COLOR_MISTYROSE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MISTYROSE
+-> -> 65340 `ui `us
+]
+"127
+[; ;mcc_generated_files/oledC_colors.h: 127: const uint16_t OLEDC_COLOR_MOCCASIN = 0xff36;
+[v _OLEDC_COLOR_MOCCASIN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_MOCCASIN
+-> -> 65334 `ui `us
+]
+"128
+[; ;mcc_generated_files/oledC_colors.h: 128: const uint16_t OLEDC_COLOR_NAVAJOWHITE = 0xfef5;
+[v _OLEDC_COLOR_NAVAJOWHITE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_NAVAJOWHITE
+-> -> 65269 `ui `us
+]
+"129
+[; ;mcc_generated_files/oledC_colors.h: 129: const uint16_t OLEDC_COLOR_NAVY = 0x10;
+[v _OLEDC_COLOR_NAVY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_NAVY
+-> -> 16 `i `us
+]
+"130
+[; ;mcc_generated_files/oledC_colors.h: 130: const uint16_t OLEDC_COLOR_OLDLACE = 0xffbc;
+[v _OLEDC_COLOR_OLDLACE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_OLDLACE
+-> -> 65468 `ui `us
+]
+"131
+[; ;mcc_generated_files/oledC_colors.h: 131: const uint16_t OLEDC_COLOR_OLIVE = 0x8400;
+[v _OLEDC_COLOR_OLIVE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_OLIVE
+-> -> 33792 `ui `us
+]
+"132
+[; ;mcc_generated_files/oledC_colors.h: 132: const uint16_t OLEDC_COLOR_OLIVEDRAB = 0x6c64;
+[v _OLEDC_COLOR_OLIVEDRAB `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_OLIVEDRAB
+-> -> 27748 `i `us
+]
+"133
+[; ;mcc_generated_files/oledC_colors.h: 133: const uint16_t OLEDC_COLOR_ORANGE = 0xfd20;
+[v _OLEDC_COLOR_ORANGE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_ORANGE
+-> -> 64800 `ui `us
+]
+"134
+[; ;mcc_generated_files/oledC_colors.h: 134: const uint16_t OLEDC_COLOR_ORANGERED = 0xfa20;
+[v _OLEDC_COLOR_ORANGERED `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_ORANGERED
+-> -> 64032 `ui `us
+]
+"135
+[; ;mcc_generated_files/oledC_colors.h: 135: const uint16_t OLEDC_COLOR_ORCHID = 0xdb9a;
+[v _OLEDC_COLOR_ORCHID `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_ORCHID
+-> -> 56218 `ui `us
+]
+"136
+[; ;mcc_generated_files/oledC_colors.h: 136: const uint16_t OLEDC_COLOR_PALEGOLDENROD = 0xef55;
+[v _OLEDC_COLOR_PALEGOLDENROD `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PALEGOLDENROD
+-> -> 61269 `ui `us
+]
+"137
+[; ;mcc_generated_files/oledC_colors.h: 137: const uint16_t OLEDC_COLOR_PALEGREEN = 0x9fd3;
+[v _OLEDC_COLOR_PALEGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PALEGREEN
+-> -> 40915 `ui `us
+]
+"138
+[; ;mcc_generated_files/oledC_colors.h: 138: const uint16_t OLEDC_COLOR_PALETURQUOISE = 0xaf7d;
+[v _OLEDC_COLOR_PALETURQUOISE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PALETURQUOISE
+-> -> 44925 `ui `us
+]
+"139
+[; ;mcc_generated_files/oledC_colors.h: 139: const uint16_t OLEDC_COLOR_PALEVIOLETRED = 0xdb92;
+[v _OLEDC_COLOR_PALEVIOLETRED `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PALEVIOLETRED
+-> -> 56210 `ui `us
+]
+"140
+[; ;mcc_generated_files/oledC_colors.h: 140: const uint16_t OLEDC_COLOR_PAPAYAWHIP = 0xff7a;
+[v _OLEDC_COLOR_PAPAYAWHIP `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PAPAYAWHIP
+-> -> 65402 `ui `us
+]
+"141
+[; ;mcc_generated_files/oledC_colors.h: 141: const uint16_t OLEDC_COLOR_PEACHPUFF = 0xfed7;
+[v _OLEDC_COLOR_PEACHPUFF `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PEACHPUFF
+-> -> 65239 `ui `us
+]
+"142
+[; ;mcc_generated_files/oledC_colors.h: 142: const uint16_t OLEDC_COLOR_PERU = 0xcc27;
+[v _OLEDC_COLOR_PERU `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PERU
+-> -> 52263 `ui `us
+]
+"143
+[; ;mcc_generated_files/oledC_colors.h: 143: const uint16_t OLEDC_COLOR_PINK = 0xfe19;
+[v _OLEDC_COLOR_PINK `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PINK
+-> -> 65049 `ui `us
+]
+"144
+[; ;mcc_generated_files/oledC_colors.h: 144: const uint16_t OLEDC_COLOR_PLUM = 0xdd1b;
+[v _OLEDC_COLOR_PLUM `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PLUM
+-> -> 56603 `ui `us
+]
+"145
+[; ;mcc_generated_files/oledC_colors.h: 145: const uint16_t OLEDC_COLOR_POWDERBLUE = 0xb71c;
+[v _OLEDC_COLOR_POWDERBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_POWDERBLUE
+-> -> 46876 `ui `us
+]
+"146
+[; ;mcc_generated_files/oledC_colors.h: 146: const uint16_t OLEDC_COLOR_PURPLE = 0x8010;
+[v _OLEDC_COLOR_PURPLE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_PURPLE
+-> -> 32784 `ui `us
+]
+"147
+[; ;mcc_generated_files/oledC_colors.h: 147: const uint16_t OLEDC_COLOR_RED = 0xf800;
+[v _OLEDC_COLOR_RED `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_RED
+-> -> 63488 `ui `us
+]
+"148
+[; ;mcc_generated_files/oledC_colors.h: 148: const uint16_t OLEDC_COLOR_ROSYBROWN = 0xbc71;
+[v _OLEDC_COLOR_ROSYBROWN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_ROSYBROWN
+-> -> 48241 `ui `us
+]
+"149
+[; ;mcc_generated_files/oledC_colors.h: 149: const uint16_t OLEDC_COLOR_ROYALBLUE = 0x435c;
+[v _OLEDC_COLOR_ROYALBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_ROYALBLUE
+-> -> 17244 `i `us
+]
+"150
+[; ;mcc_generated_files/oledC_colors.h: 150: const uint16_t OLEDC_COLOR_SADDLEBROWN = 0x8a22;
+[v _OLEDC_COLOR_SADDLEBROWN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SADDLEBROWN
+-> -> 35362 `ui `us
+]
+"151
+[; ;mcc_generated_files/oledC_colors.h: 151: const uint16_t OLEDC_COLOR_SALMON = 0xfc0e;
+[v _OLEDC_COLOR_SALMON `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SALMON
+-> -> 64526 `ui `us
+]
+"152
+[; ;mcc_generated_files/oledC_colors.h: 152: const uint16_t OLEDC_COLOR_SANDYBROWN = 0xf52c;
+[v _OLEDC_COLOR_SANDYBROWN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SANDYBROWN
+-> -> 62764 `ui `us
+]
+"153
+[; ;mcc_generated_files/oledC_colors.h: 153: const uint16_t OLEDC_COLOR_SEAGREEN = 0x2c4a;
+[v _OLEDC_COLOR_SEAGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SEAGREEN
+-> -> 11338 `i `us
+]
+"154
+[; ;mcc_generated_files/oledC_colors.h: 154: const uint16_t OLEDC_COLOR_SEASHELL = 0xffbd;
+[v _OLEDC_COLOR_SEASHELL `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SEASHELL
+-> -> 65469 `ui `us
+]
+"155
+[; ;mcc_generated_files/oledC_colors.h: 155: const uint16_t OLEDC_COLOR_SIENNA = 0xa285;
+[v _OLEDC_COLOR_SIENNA `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SIENNA
+-> -> 41605 `ui `us
+]
+"156
+[; ;mcc_generated_files/oledC_colors.h: 156: const uint16_t OLEDC_COLOR_SILVER = 0xc618;
+[v _OLEDC_COLOR_SILVER `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SILVER
+-> -> 50712 `ui `us
+]
+"157
+[; ;mcc_generated_files/oledC_colors.h: 157: const uint16_t OLEDC_COLOR_SKYBLUE = 0x867d;
+[v _OLEDC_COLOR_SKYBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SKYBLUE
+-> -> 34429 `ui `us
+]
+"158
+[; ;mcc_generated_files/oledC_colors.h: 158: const uint16_t OLEDC_COLOR_SLATEBLUE = 0x6ad9;
+[v _OLEDC_COLOR_SLATEBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SLATEBLUE
+-> -> 27353 `i `us
+]
+"159
+[; ;mcc_generated_files/oledC_colors.h: 159: const uint16_t OLEDC_COLOR_SLATEGRAY = 0x7412;
+[v _OLEDC_COLOR_SLATEGRAY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SLATEGRAY
+-> -> 29714 `i `us
+]
+"160
+[; ;mcc_generated_files/oledC_colors.h: 160: const uint16_t OLEDC_COLOR_SLATEGREY = 0x7412;
+[v _OLEDC_COLOR_SLATEGREY `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SLATEGREY
+-> -> 29714 `i `us
+]
+"161
+[; ;mcc_generated_files/oledC_colors.h: 161: const uint16_t OLEDC_COLOR_SNOW = 0xffdf;
+[v _OLEDC_COLOR_SNOW `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SNOW
+-> -> 65503 `ui `us
+]
+"162
+[; ;mcc_generated_files/oledC_colors.h: 162: const uint16_t OLEDC_COLOR_SPRINGGREEN = 0x7ef;
+[v _OLEDC_COLOR_SPRINGGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_SPRINGGREEN
+-> -> 2031 `i `us
+]
+"163
+[; ;mcc_generated_files/oledC_colors.h: 163: const uint16_t OLEDC_COLOR_STEELBLUE = 0x4416;
+[v _OLEDC_COLOR_STEELBLUE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_STEELBLUE
+-> -> 17430 `i `us
+]
+"164
+[; ;mcc_generated_files/oledC_colors.h: 164: const uint16_t OLEDC_COLOR_TAN = 0xd5b1;
+[v _OLEDC_COLOR_TAN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_TAN
+-> -> 54705 `ui `us
+]
+"165
+[; ;mcc_generated_files/oledC_colors.h: 165: const uint16_t OLEDC_COLOR_TEAL = 0x410;
+[v _OLEDC_COLOR_TEAL `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_TEAL
+-> -> 1040 `i `us
+]
+"166
+[; ;mcc_generated_files/oledC_colors.h: 166: const uint16_t OLEDC_COLOR_THISTLE = 0xddfb;
+[v _OLEDC_COLOR_THISTLE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_THISTLE
+-> -> 56827 `ui `us
+]
+"167
+[; ;mcc_generated_files/oledC_colors.h: 167: const uint16_t OLEDC_COLOR_TOMATO = 0xfb08;
+[v _OLEDC_COLOR_TOMATO `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_TOMATO
+-> -> 64264 `ui `us
+]
+"168
+[; ;mcc_generated_files/oledC_colors.h: 168: const uint16_t OLEDC_COLOR_TURQUOISE = 0x471a;
+[v _OLEDC_COLOR_TURQUOISE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_TURQUOISE
+-> -> 18202 `i `us
+]
+"169
+[; ;mcc_generated_files/oledC_colors.h: 169: const uint16_t OLEDC_COLOR_VIOLET = 0xec1d;
+[v _OLEDC_COLOR_VIOLET `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_VIOLET
+-> -> 60445 `ui `us
+]
+"170
+[; ;mcc_generated_files/oledC_colors.h: 170: const uint16_t OLEDC_COLOR_WHEAT = 0xf6f6;
+[v _OLEDC_COLOR_WHEAT `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_WHEAT
+-> -> 63222 `ui `us
+]
+"171
+[; ;mcc_generated_files/oledC_colors.h: 171: const uint16_t OLEDC_COLOR_WHITE = 0xffff;
+[v _OLEDC_COLOR_WHITE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_WHITE
+-> -> 65535 `ui `us
+]
+"172
+[; ;mcc_generated_files/oledC_colors.h: 172: const uint16_t OLEDC_COLOR_WHITESMOKE = 0xf7be;
+[v _OLEDC_COLOR_WHITESMOKE `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_WHITESMOKE
+-> -> 63422 `ui `us
+]
+"173
+[; ;mcc_generated_files/oledC_colors.h: 173: const uint16_t OLEDC_COLOR_YELLOW = 0xffe0;
+[v _OLEDC_COLOR_YELLOW `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_YELLOW
+-> -> 65504 `ui `us
+]
+"174
+[; ;mcc_generated_files/oledC_colors.h: 174: const uint16_t OLEDC_COLOR_YELLOWGREEN = 0x9e66;
+[v _OLEDC_COLOR_YELLOWGREEN `Cus ~T0 @X0 1 e ]
+[i _OLEDC_COLOR_YELLOWGREEN
+-> -> 40550 `ui `us
+]
+"30 mcc_generated_files/oledC_example.c
+[; ;mcc_generated_files/oledC_example.c: 30: static _Bool exampleInitialized;
+[v _exampleInitialized `a ~T0 @X0 1 s ]
+"31
+[; ;mcc_generated_files/oledC_example.c: 31: static uint16_t background_color;
+[v _background_color `us ~T0 @X0 1 s ]
+"33
+[; ;mcc_generated_files/oledC_example.c: 33: static const uint32_t logo[] =
+[v _logo `Cul ~T0 @X0 -> 23 `i s ]
+[i _logo
+:U ..
+-> 4292872191 `ul
+-> 4286579711 `ul
+-> 4278190591 `ul
+-> 4261413375 `ul
+-> 4227858687 `ul
+-> 4161276159 `ul
+-> 4162328703 `ul
+-> 4030479423 `ul
+-> 4030611007 `ul
+-> 4028505631 `ul
+-> 4028571407 `ul
+-> 4044296079 `ul
+-> 4052717455 `ul
+-> 4089956303 `ul
+-> 4156801999 `ul
+-> 4286825471 `ul
+-> 4286693887 `ul
+-> 4278288639 `ul
+-> 4261413119 `ul
+-> 4261412991 `ul
+-> 4261412991 `ul
+-> 4286579199 `ul
+-> 4292872191 `ul
+..
+]
+"60
+[; ;mcc_generated_files/oledC_example.c: 60: static void oledC_clearScreen(void)
+[v _oledC_clearScreen `(v ~T0 @X0 1 sf ]
+"61
+[; ;mcc_generated_files/oledC_example.c: 61: {
+{
+[e :U _oledC_clearScreen ]
+[f ]
+"62
+[; ;mcc_generated_files/oledC_example.c: 62:     uint8_t x;
+[v _x `uc ~T0 @X0 1 a ]
+"63
+[; ;mcc_generated_files/oledC_example.c: 63:     uint8_t y;
+[v _y `uc ~T0 @X0 1 a ]
+"64
+[; ;mcc_generated_files/oledC_example.c: 64:     oledC_setColumnAddressBounds(0,96);
+[e ( _oledC_setColumnAddressBounds (2 , -> -> 0 `i `uc -> -> 96 `i `uc ]
+"65
+[; ;mcc_generated_files/oledC_example.c: 65:     oledC_setRowAddressBounds(0,96);
+[e ( _oledC_setRowAddressBounds (2 , -> -> 0 `i `uc -> -> 96 `i `uc ]
+"66
+[; ;mcc_generated_files/oledC_example.c: 66:     for(x = 0; x < 96; x++)
+{
+[e = _x -> -> 0 `i `uc ]
+[e $ < -> _x `i -> 96 `i 13  ]
+[e $U 14  ]
+[e :U 13 ]
+"67
+[; ;mcc_generated_files/oledC_example.c: 67:     {
+{
+"68
+[; ;mcc_generated_files/oledC_example.c: 68:         for(y = 0; y < 96; y++)
+{
+[e = _y -> -> 0 `i `uc ]
+[e $ < -> _y `i -> 96 `i 16  ]
+[e $U 17  ]
+[e :U 16 ]
+"69
+[; ;mcc_generated_files/oledC_example.c: 69:         {
+{
+"70
+[; ;mcc_generated_files/oledC_example.c: 70:             oledC_sendColorInt(background_color);
+[e ( _oledC_sendColorInt (1 _background_color ]
+"71
+[; ;mcc_generated_files/oledC_example.c: 71:         }
+}
+[e ++ _y -> -> 1 `i `uc ]
+[e $ < -> _y `i -> 96 `i 16  ]
+[e :U 17 ]
+}
+"72
+[; ;mcc_generated_files/oledC_example.c: 72:     }
+}
+[e ++ _x -> -> 1 `i `uc ]
+[e $ < -> _x `i -> 96 `i 13  ]
+[e :U 14 ]
+}
+"73
+[; ;mcc_generated_files/oledC_example.c: 73: }
+[e :UE 12 ]
+}
+"75
+[; ;mcc_generated_files/oledC_example.c: 75: static void oledC_setBackground(uint16_t color)
+[v _oledC_setBackground `(v ~T0 @X0 1 sf1`us ]
+"76
+[; ;mcc_generated_files/oledC_example.c: 76: {
+{
+[e :U _oledC_setBackground ]
+"75
+[; ;mcc_generated_files/oledC_example.c: 75: static void oledC_setBackground(uint16_t color)
+[v _color `us ~T0 @X0 1 r1 ]
+"76
+[; ;mcc_generated_files/oledC_example.c: 76: {
+[f ]
+"77
+[; ;mcc_generated_files/oledC_example.c: 77:     background_color = color;
+[e = _background_color _color ]
+"78
+[; ;mcc_generated_files/oledC_example.c: 78:     oledC_clearScreen();
+[e ( _oledC_clearScreen ..  ]
+"79
+[; ;mcc_generated_files/oledC_example.c: 79: }
+[e :UE 19 ]
+}
+"81
+[; ;mcc_generated_files/oledC_example.c: 81: static void oledC_example_setup(void)
+[v _oledC_example_setup `(v ~T0 @X0 1 sf ]
+"82
+[; ;mcc_generated_files/oledC_example.c: 82: {
+{
+[e :U _oledC_example_setup ]
+[f ]
+"83
+[; ;mcc_generated_files/oledC_example.c: 83:     oledC_setBackground(OLEDC_COLOR_WHITE);
+[e ( _oledC_setBackground (1 _OLEDC_COLOR_WHITE ]
+"84
+[; ;mcc_generated_files/oledC_example.c: 84:     shape_params_t params;
+[v _params `S2 ~T0 @X0 1 a ]
+"86
+[; ;mcc_generated_files/oledC_example.c: 86:     params.bitmap.color = OLEDC_COLOR_RED;
+[e = . . _params 7 0 _OLEDC_COLOR_RED ]
+"87
+[; ;mcc_generated_files/oledC_example.c: 87:     params.bitmap.x = 14;
+[e = . . _params 7 1 -> -> 14 `i `uc ]
+"88
+[; ;mcc_generated_files/oledC_example.c: 88:     params.bitmap.y = 25;
+[e = . . _params 7 2 -> -> 25 `i `uc ]
+"89
+[; ;mcc_generated_files/oledC_example.c: 89:     params.bitmap.sx = 2;
+[e = . . _params 7 3 -> -> 2 `i `uc ]
+"90
+[; ;mcc_generated_files/oledC_example.c: 90:     params.bitmap.sy = 2;
+[e = . . _params 7 4 -> -> 2 `i `uc ]
+"91
+[; ;mcc_generated_files/oledC_example.c: 91:     params.bitmap.bit_array = (uint32_t *)&logo[0];
+[e = . . _params 7 5 -> &U *U + &U _logo * -> -> -> 0 `i `ui `ux -> -> # *U &U _logo `ui `ux `*ul ]
+"92
+[; ;mcc_generated_files/oledC_example.c: 92:     params.bitmap.array_length = 23;
+[e = . . _params 7 6 -> -> 23 `i `uc ]
+"93
+[; ;mcc_generated_files/oledC_example.c: 93:     oledC_addShape(0,OLED_SHAPE_BITMAP, &params);
+[e ( _oledC_addShape (3 , , -> -> 0 `i `uc . `E242 7 &U _params ]
+"95
+[; ;mcc_generated_files/oledC_example.c: 95:     params.circle.radius = 10;
+[e = . . _params 1 3 -> -> 10 `i `uc ]
+"96
+[; ;mcc_generated_files/oledC_example.c: 96:     params.circle.xc = 10;
+[e = . . _params 1 1 -> -> 10 `i `uc ]
+"97
+[; ;mcc_generated_files/oledC_example.c: 97:     params.circle.yc = 10;
+[e = . . _params 1 2 -> -> 10 `i `uc ]
+"98
+[; ;mcc_generated_files/oledC_example.c: 98:     oledC_addShape(1,OLED_SHAPE_CIRCLE, &params);
+[e ( _oledC_addShape (3 , , -> -> 1 `i `uc . `E242 0 &U _params ]
+"100
+[; ;mcc_generated_files/oledC_example.c: 100:     params.circle.color = OLEDC_COLOR_BLUE;
+[e = . . _params 1 0 _OLEDC_COLOR_BLUE ]
+"101
+[; ;mcc_generated_files/oledC_example.c: 101:     params.circle.yc = 85;
+[e = . . _params 1 2 -> -> 85 `i `uc ]
+"102
+[; ;mcc_generated_files/oledC_example.c: 102:     oledC_addShape(2,OLED_SHAPE_CIRCLE, &params);
+[e ( _oledC_addShape (3 , , -> -> 2 `i `uc . `E242 0 &U _params ]
+"104
+[; ;mcc_generated_files/oledC_example.c: 104:     params.circle.color = OLEDC_COLOR_YELLOW;
+[e = . . _params 1 0 _OLEDC_COLOR_YELLOW ]
+"105
+[; ;mcc_generated_files/oledC_example.c: 105:     params.circle.xc = 85;
+[e = . . _params 1 1 -> -> 85 `i `uc ]
+"106
+[; ;mcc_generated_files/oledC_example.c: 106:     oledC_addShape(3,OLED_SHAPE_CIRCLE, &params);
+[e ( _oledC_addShape (3 , , -> -> 3 `i `uc . `E242 0 &U _params ]
+"108
+[; ;mcc_generated_files/oledC_example.c: 108:     params.circle.color = OLEDC_COLOR_GREEN;
+[e = . . _params 1 0 _OLEDC_COLOR_GREEN ]
+"109
+[; ;mcc_generated_files/oledC_example.c: 109:     params.circle.yc = 10;
+[e = . . _params 1 2 -> -> 10 `i `uc ]
+"110
+[; ;mcc_generated_files/oledC_example.c: 110:     oledC_addShape(4,OLED_SHAPE_CIRCLE, &params);
+[e ( _oledC_addShape (3 , , -> -> 4 `i `uc . `E242 0 &U _params ]
+"113
+[; ;mcc_generated_files/oledC_example.c: 113:     oledC_redrawAll();
+[e ( _oledC_redrawAll ..  ]
+"114
+[; ;mcc_generated_files/oledC_example.c: 114:     exampleInitialized = 1;
+[e = _exampleInitialized -> -> 1 `i `a ]
+"115
+[; ;mcc_generated_files/oledC_example.c: 115: }
+[e :UE 20 ]
+}
+"117
+[; ;mcc_generated_files/oledC_example.c: 117: void oledC_example(void)
+[v _oledC_example `(v ~T0 @X0 1 ef ]
+"118
+[; ;mcc_generated_files/oledC_example.c: 118: {
+{
+[e :U _oledC_example ]
+[f ]
+"119
+[; ;mcc_generated_files/oledC_example.c: 119:     static int8_t shift = -24;
+[v F412 `c ~T0 @X0 1 s shift ]
+[i F412
+-> -U -> 24 `i `c
+]
+"120
+[; ;mcc_generated_files/oledC_example.c: 120:     const uint8_t shift_from = 15;
+[v _shift_from `Cuc ~T0 @X0 1 a ]
+[e = _shift_from -> -> 15 `i `uc ]
+"121
+[; ;mcc_generated_files/oledC_example.c: 121:     if(!exampleInitialized)
+[e $ ! ! != -> _exampleInitialized `i -> 0 `i 22  ]
+"122
+[; ;mcc_generated_files/oledC_example.c: 122:     {
+{
+"123
+[; ;mcc_generated_files/oledC_example.c: 123:         oledC_example_setup();
+[e ( _oledC_example_setup ..  ]
+"124
+[; ;mcc_generated_files/oledC_example.c: 124:     }
+}
+[e :U 22 ]
+"125
+[; ;mcc_generated_files/oledC_example.c: 125:     shape_t *moveIt = oledC_getShape(0);
+[v _moveIt `*S11 ~T0 @X0 1 a ]
+[e = _moveIt ( _oledC_getShape (1 -> -> 0 `i `uc ]
+"127
+[; ;mcc_generated_files/oledC_example.c: 127:     oledC_eraseShape(0, background_color);
+[e ( _oledC_eraseShape (2 , -> -> 0 `i `uc _background_color ]
+"128
+[; ;mcc_generated_files/oledC_example.c: 128:     moveIt->params.bitmap.x = shift_from + shift;
+[e = . . . *U _moveIt 2 7 1 -> + -> _shift_from `i -> F412 `i `uc ]
+"129
+[; ;mcc_generated_files/oledC_example.c: 129:     shift += 4;
+[e =+ F412 -> -> 4 `i `c ]
+"130
+[; ;mcc_generated_files/oledC_example.c: 130:     if(shift > 24)
+[e $ ! > -> F412 `i -> 24 `i 23  ]
+"131
+[; ;mcc_generated_files/oledC_example.c: 131:     {
+{
+"132
+[; ;mcc_generated_files/oledC_example.c: 132:         shift = -24;
+[e = F412 -> -U -> 24 `i `c ]
+"133
+[; ;mcc_generated_files/oledC_example.c: 133:     }
+}
+[e :U 23 ]
+"134
+[; ;mcc_generated_files/oledC_example.c: 134:     oledC_redrawIndex(0);
+[e ( _oledC_redrawIndex (1 -> -> 0 `i `uc ]
+"135
+[; ;mcc_generated_files/oledC_example.c: 135: }
+[e :UE 21 ]
+}

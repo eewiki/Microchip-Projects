@@ -1,0 +1,445 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F108 `(v ~T0 @X0 0 tf1`*S10 ]
+"44 mcc_generated_files/oledC_shapes.h
+[; ;mcc_generated_files/oledC_shapes.h: 44:     {
+[s S2 `us 1 `uc 1 `uc 1 ]
+[n S2 . color x y ]
+"50
+[; ;mcc_generated_files/oledC_shapes.h: 50:     {
+[s S3 `us 1 `uc 1 `uc 1 `uc 1 ]
+[n S3 . color xc yc radius ]
+"57
+[; ;mcc_generated_files/oledC_shapes.h: 57:     {
+[s S4 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S4 . color x0 y0 radius width ]
+"65
+[; ;mcc_generated_files/oledC_shapes.h: 65:     {
+[s S5 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S5 . color xs ys xe ye ]
+"73
+[; ;mcc_generated_files/oledC_shapes.h: 73:     {
+[s S6 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S6 . color xs ys width xe ye ]
+"82
+[; ;mcc_generated_files/oledC_shapes.h: 82:     {
+[s S7 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S7 . color x y scale_x scale_y character ]
+"91
+[; ;mcc_generated_files/oledC_shapes.h: 91:     {
+[s S8 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `*uc 1 ]
+[n S8 . color x y scale_x scale_y string ]
+"100
+[; ;mcc_generated_files/oledC_shapes.h: 100:     {
+[s S9 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `*ul 1 `uc 1 ]
+[n S9 . color x y sx sy bit_array array_length ]
+"42
+[; ;mcc_generated_files/oledC_shapes.h: 42: {
+[u S1 `S2 1 `S3 1 `S4 1 `S5 1 `S6 1 `S7 1 `S8 1 `S9 1 ]
+[n S1 shape_params_t point circle ring rectangle line character string bitmap ]
+"112
+[; ;mcc_generated_files/oledC_shapes.h: 112: {
+[s S10 `uc 1 `*F108 1 `S1 1 `a 1 ]
+[n S10 shape _type draw params active ]
+"62 mcc_generated_files/oledC_shapeHandler.c
+[; ;mcc_generated_files/oledC_shapeHandler.c: 62: void oledC_addShape(uint8_t drawIndex, enum OLEDC_SHAPE shape_type, shape_params_t *params)
+[c E36 0 1 2 3 4 5 6 7 .. ]
+[n E36 OLEDC_SHAPE OLED_SHAPE_CIRCLE OLED_SHAPE_RING OLED_SHAPE_RECTANGLE OLED_SHAPE_LINE OLED_SHAPE_POINT OLED_SHAPE_CHARACTER OLED_SHAPE_STRING OLED_SHAPE_BITMAP  ]
+"119 mcc_generated_files/oledC_shapes.h
+[; ;mcc_generated_files/oledC_shapes.h: 119: void oledC_createShape(enum OLEDC_SHAPE shape_type, shape_params_t *params, shape_t *newShape);
+[v _oledC_createShape `(v ~T0 @X0 0 ef3`E36`*S1`*S10 ]
+"31 mcc_generated_files/oledC_shapeHandler.h
+[; ;mcc_generated_files/oledC_shapeHandler.h: 31: void oledC_redrawSome(uint8_t startInd, uint8_t endInd);
+[v _oledC_redrawSome `(v ~T0 @X0 0 ef2`uc`uc ]
+"30 mcc_generated_files/oledC_shapeHandler.c
+[; ;mcc_generated_files/oledC_shapeHandler.c: 30: static void dummyshape(shape_t *shape)
+[v _dummyshape `(v ~T0 @X0 1 sf1`*S10 ]
+"31
+[; ;mcc_generated_files/oledC_shapeHandler.c: 31: {
+{
+[e :U _dummyshape ]
+"30
+[; ;mcc_generated_files/oledC_shapeHandler.c: 30: static void dummyshape(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"31
+[; ;mcc_generated_files/oledC_shapeHandler.c: 31: {
+[f ]
+"32
+[; ;mcc_generated_files/oledC_shapeHandler.c: 32: }
+[e :UE 11 ]
+}
+"34
+[; ;mcc_generated_files/oledC_shapeHandler.c: 34: static shape_t allParsedShapes[32];
+[v _allParsedShapes `S10 ~T0 @X0 -> 32 `i s ]
+"36
+[; ;mcc_generated_files/oledC_shapeHandler.c: 36: void initShapesMem(void)
+[v _initShapesMem `(v ~T0 @X0 1 ef ]
+"37
+[; ;mcc_generated_files/oledC_shapeHandler.c: 37: {
+{
+[e :U _initShapesMem ]
+[f ]
+"38
+[; ;mcc_generated_files/oledC_shapeHandler.c: 38:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"39
+[; ;mcc_generated_files/oledC_shapeHandler.c: 39:     for(i = 0; i < 32; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 32 `i 13  ]
+[e $U 14  ]
+[e :U 13 ]
+"40
+[; ;mcc_generated_files/oledC_shapeHandler.c: 40:     {
+{
+"41
+[; ;mcc_generated_files/oledC_shapeHandler.c: 41:         allParsedShapes[i].active = 0;
+[e = . *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux 3 -> -> 0 `i `a ]
+"42
+[; ;mcc_generated_files/oledC_shapeHandler.c: 42:         allParsedShapes[i].draw = dummyshape;
+[e = . *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux 1 &U _dummyshape ]
+"43
+[; ;mcc_generated_files/oledC_shapeHandler.c: 43:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 32 `i 13  ]
+[e :U 14 ]
+}
+"44
+[; ;mcc_generated_files/oledC_shapeHandler.c: 44: }
+[e :UE 12 ]
+}
+"46
+[; ;mcc_generated_files/oledC_shapeHandler.c: 46: void oledC_removeShape(uint8_t drawIndex)
+[v _oledC_removeShape `(v ~T0 @X0 1 ef1`uc ]
+"47
+[; ;mcc_generated_files/oledC_shapeHandler.c: 47: {
+{
+[e :U _oledC_removeShape ]
+"46
+[; ;mcc_generated_files/oledC_shapeHandler.c: 46: void oledC_removeShape(uint8_t drawIndex)
+[v _drawIndex `uc ~T0 @X0 1 r1 ]
+"47
+[; ;mcc_generated_files/oledC_shapeHandler.c: 47: {
+[f ]
+"48
+[; ;mcc_generated_files/oledC_shapeHandler.c: 48:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"49
+[; ;mcc_generated_files/oledC_shapeHandler.c: 49:     for(i = drawIndex; i < (32 - 1); i++)
+{
+[e = _i _drawIndex ]
+[e $ < -> _i `i - -> 32 `i -> 1 `i 17  ]
+[e $U 18  ]
+[e :U 17 ]
+"50
+[; ;mcc_generated_files/oledC_shapeHandler.c: 50:     {
+{
+"51
+[; ;mcc_generated_files/oledC_shapeHandler.c: 51:         allParsedShapes[i] = allParsedShapes[i+1];
+[e = *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux *U + &U _allParsedShapes * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U _allParsedShapes `ui `ux ]
+"52
+[; ;mcc_generated_files/oledC_shapeHandler.c: 52:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i - -> 32 `i -> 1 `i 17  ]
+[e :U 18 ]
+}
+"53
+[; ;mcc_generated_files/oledC_shapeHandler.c: 53:     allParsedShapes[32 -1].active = 0;
+[e = . *U + &U _allParsedShapes * -> -> - -> 32 `i -> 1 `i `ui `ux -> -> # *U &U _allParsedShapes `ui `ux 3 -> -> 0 `i `a ]
+"54
+[; ;mcc_generated_files/oledC_shapeHandler.c: 54: }
+[e :UE 16 ]
+}
+"56
+[; ;mcc_generated_files/oledC_shapeHandler.c: 56: shape_t* oledC_getShape(uint8_t index)
+[v _oledC_getShape `(*S10 ~T0 @X0 1 ef1`uc ]
+"57
+[; ;mcc_generated_files/oledC_shapeHandler.c: 57: {
+{
+[e :U _oledC_getShape ]
+"56
+[; ;mcc_generated_files/oledC_shapeHandler.c: 56: shape_t* oledC_getShape(uint8_t index)
+[v _index `uc ~T0 @X0 1 r1 ]
+"57
+[; ;mcc_generated_files/oledC_shapeHandler.c: 57: {
+[f ]
+"58
+[; ;mcc_generated_files/oledC_shapeHandler.c: 58:     index = index > 32 ? 32 : index;
+[e = _index -> ? > -> _index `i -> 32 `i : -> 32 `i -> _index `i `uc ]
+"59
+[; ;mcc_generated_files/oledC_shapeHandler.c: 59:     return &allParsedShapes[index];
+[e ) &U *U + &U _allParsedShapes * -> _index `ux -> -> # *U &U _allParsedShapes `ui `ux ]
+[e $UE 20  ]
+"60
+[; ;mcc_generated_files/oledC_shapeHandler.c: 60: }
+[e :UE 20 ]
+}
+"62
+[; ;mcc_generated_files/oledC_shapeHandler.c: 62: void oledC_addShape(uint8_t drawIndex, enum OLEDC_SHAPE shape_type, shape_params_t *params)
+[v _oledC_addShape `(v ~T0 @X0 1 ef3`uc`E36`*S1 ]
+"63
+[; ;mcc_generated_files/oledC_shapeHandler.c: 63: {
+{
+[e :U _oledC_addShape ]
+"62
+[; ;mcc_generated_files/oledC_shapeHandler.c: 62: void oledC_addShape(uint8_t drawIndex, enum OLEDC_SHAPE shape_type, shape_params_t *params)
+[v _drawIndex `uc ~T0 @X0 1 r1 ]
+[v _shape_type `E36 ~T0 @X0 1 r2 ]
+[v _params `*S1 ~T0 @X0 1 r3 ]
+"63
+[; ;mcc_generated_files/oledC_shapeHandler.c: 63: {
+[f ]
+"64
+[; ;mcc_generated_files/oledC_shapeHandler.c: 64:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"65
+[; ;mcc_generated_files/oledC_shapeHandler.c: 65:     shape_t *newShape;
+[v _newShape `*S10 ~T0 @X0 1 a ]
+"66
+[; ;mcc_generated_files/oledC_shapeHandler.c: 66:     drawIndex = drawIndex >= 32 ? (32 -1) : drawIndex;
+[e = _drawIndex -> ? >= -> _drawIndex `i -> 32 `i : - -> 32 `i -> 1 `i -> _drawIndex `i `uc ]
+"67
+[; ;mcc_generated_files/oledC_shapeHandler.c: 67:     for(i = (32 -1); i > drawIndex && i > 0; i--)
+{
+[e = _i -> - -> 32 `i -> 1 `i `uc ]
+[e $U 25  ]
+[e :U 22 ]
+"68
+[; ;mcc_generated_files/oledC_shapeHandler.c: 68:     {
+{
+"69
+[; ;mcc_generated_files/oledC_shapeHandler.c: 69:         allParsedShapes[i] = allParsedShapes[i-1];
+[e = *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux *U + &U _allParsedShapes * -> -> - -> _i `i -> 1 `i `ui `ux -> -> # *U &U _allParsedShapes `ui `ux ]
+"70
+[; ;mcc_generated_files/oledC_shapeHandler.c: 70:     }
+}
+[e -- _i -> -> 1 `i `uc ]
+[e :U 25 ]
+[e $ && > -> _i `i -> _drawIndex `i > -> _i `i -> 0 `i 22  ]
+[e :U 23 ]
+}
+"72
+[; ;mcc_generated_files/oledC_shapeHandler.c: 72:     newShape = &allParsedShapes[drawIndex];
+[e = _newShape &U *U + &U _allParsedShapes * -> _drawIndex `ux -> -> # *U &U _allParsedShapes `ui `ux ]
+"73
+[; ;mcc_generated_files/oledC_shapeHandler.c: 73:     oledC_createShape(shape_type, params, newShape);
+[e ( _oledC_createShape (3 , , _shape_type _params _newShape ]
+"74
+[; ;mcc_generated_files/oledC_shapeHandler.c: 74: }
+[e :UE 21 ]
+}
+"76
+[; ;mcc_generated_files/oledC_shapeHandler.c: 76: void oledC_redrawIndex(uint8_t indShape)
+[v _oledC_redrawIndex `(v ~T0 @X0 1 ef1`uc ]
+"77
+[; ;mcc_generated_files/oledC_shapeHandler.c: 77: {
+{
+[e :U _oledC_redrawIndex ]
+"76
+[; ;mcc_generated_files/oledC_shapeHandler.c: 76: void oledC_redrawIndex(uint8_t indShape)
+[v _indShape `uc ~T0 @X0 1 r1 ]
+"77
+[; ;mcc_generated_files/oledC_shapeHandler.c: 77: {
+[f ]
+"78
+[; ;mcc_generated_files/oledC_shapeHandler.c: 78:     allParsedShapes[indShape].draw(&allParsedShapes[indShape]);
+[e ( *U . *U + &U _allParsedShapes * -> _indShape `ux -> -> # *U &U _allParsedShapes `ui `ux 1 (1 &U *U + &U _allParsedShapes * -> _indShape `ux -> -> # *U &U _allParsedShapes `ui `ux ]
+"79
+[; ;mcc_generated_files/oledC_shapeHandler.c: 79: }
+[e :UE 26 ]
+}
+"81
+[; ;mcc_generated_files/oledC_shapeHandler.c: 81: void oledC_redrawTo(uint8_t endInd)
+[v _oledC_redrawTo `(v ~T0 @X0 1 ef1`uc ]
+"82
+[; ;mcc_generated_files/oledC_shapeHandler.c: 82: {
+{
+[e :U _oledC_redrawTo ]
+"81
+[; ;mcc_generated_files/oledC_shapeHandler.c: 81: void oledC_redrawTo(uint8_t endInd)
+[v _endInd `uc ~T0 @X0 1 r1 ]
+"82
+[; ;mcc_generated_files/oledC_shapeHandler.c: 82: {
+[f ]
+"83
+[; ;mcc_generated_files/oledC_shapeHandler.c: 83:     oledC_redrawSome(0,endInd);
+[e ( _oledC_redrawSome (2 , -> -> 0 `i `uc _endInd ]
+"84
+[; ;mcc_generated_files/oledC_shapeHandler.c: 84: }
+[e :UE 27 ]
+}
+"86
+[; ;mcc_generated_files/oledC_shapeHandler.c: 86: void oledC_redrawFrom(uint8_t startInd)
+[v _oledC_redrawFrom `(v ~T0 @X0 1 ef1`uc ]
+"87
+[; ;mcc_generated_files/oledC_shapeHandler.c: 87: {
+{
+[e :U _oledC_redrawFrom ]
+"86
+[; ;mcc_generated_files/oledC_shapeHandler.c: 86: void oledC_redrawFrom(uint8_t startInd)
+[v _startInd `uc ~T0 @X0 1 r1 ]
+"87
+[; ;mcc_generated_files/oledC_shapeHandler.c: 87: {
+[f ]
+"88
+[; ;mcc_generated_files/oledC_shapeHandler.c: 88:     oledC_redrawSome(startInd, 32);
+[e ( _oledC_redrawSome (2 , _startInd -> -> 32 `i `uc ]
+"89
+[; ;mcc_generated_files/oledC_shapeHandler.c: 89: }
+[e :UE 28 ]
+}
+"91
+[; ;mcc_generated_files/oledC_shapeHandler.c: 91: void oledC_redrawSome(uint8_t startInd, uint8_t endInd)
+[v _oledC_redrawSome `(v ~T0 @X0 1 ef2`uc`uc ]
+"92
+[; ;mcc_generated_files/oledC_shapeHandler.c: 92: {
+{
+[e :U _oledC_redrawSome ]
+"91
+[; ;mcc_generated_files/oledC_shapeHandler.c: 91: void oledC_redrawSome(uint8_t startInd, uint8_t endInd)
+[v _startInd `uc ~T0 @X0 1 r1 ]
+[v _endInd `uc ~T0 @X0 1 r2 ]
+"92
+[; ;mcc_generated_files/oledC_shapeHandler.c: 92: {
+[f ]
+"93
+[; ;mcc_generated_files/oledC_shapeHandler.c: 93:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"94
+[; ;mcc_generated_files/oledC_shapeHandler.c: 94:     endInd = endInd > 32 ? 32 : endInd;
+[e = _endInd -> ? > -> _endInd `i -> 32 `i : -> 32 `i -> _endInd `i `uc ]
+"95
+[; ;mcc_generated_files/oledC_shapeHandler.c: 95:     for(i = startInd; i < endInd; i++)
+{
+[e = _i _startInd ]
+[e $U 33  ]
+[e :U 30 ]
+"96
+[; ;mcc_generated_files/oledC_shapeHandler.c: 96:     {
+{
+"97
+[; ;mcc_generated_files/oledC_shapeHandler.c: 97:         if(allParsedShapes[i].active)
+[e $ ! != -> . *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux 3 `i -> 0 `i 34  ]
+"98
+[; ;mcc_generated_files/oledC_shapeHandler.c: 98:         {
+{
+"99
+[; ;mcc_generated_files/oledC_shapeHandler.c: 99:             allParsedShapes[i].draw(&allParsedShapes[i]);
+[e ( *U . *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux 1 (1 &U *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux ]
+"100
+[; ;mcc_generated_files/oledC_shapeHandler.c: 100:         }
+}
+[e :U 34 ]
+"101
+[; ;mcc_generated_files/oledC_shapeHandler.c: 101:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 33 ]
+[e $ < -> _i `i -> _endInd `i 30  ]
+[e :U 31 ]
+}
+"102
+[; ;mcc_generated_files/oledC_shapeHandler.c: 102: }
+[e :UE 29 ]
+}
+"104
+[; ;mcc_generated_files/oledC_shapeHandler.c: 104: void oledC_eraseShape(uint8_t indShape,uint16_t eraseColor)
+[v _oledC_eraseShape `(v ~T0 @X0 1 ef2`uc`us ]
+"105
+[; ;mcc_generated_files/oledC_shapeHandler.c: 105: {
+{
+[e :U _oledC_eraseShape ]
+"104
+[; ;mcc_generated_files/oledC_shapeHandler.c: 104: void oledC_eraseShape(uint8_t indShape,uint16_t eraseColor)
+[v _indShape `uc ~T0 @X0 1 r1 ]
+[v _eraseColor `us ~T0 @X0 1 r2 ]
+"105
+[; ;mcc_generated_files/oledC_shapeHandler.c: 105: {
+[f ]
+"106
+[; ;mcc_generated_files/oledC_shapeHandler.c: 106:     shape_t* ourShape = oledC_getShape(indShape);
+[v _ourShape `*S10 ~T0 @X0 1 a ]
+[e = _ourShape ( _oledC_getShape (1 _indShape ]
+"107
+[; ;mcc_generated_files/oledC_shapeHandler.c: 107:     uint16_t saveColor = ourShape->params.point.color;
+[v _saveColor `us ~T0 @X0 1 a ]
+[e = _saveColor . . . *U _ourShape 2 0 0 ]
+"108
+[; ;mcc_generated_files/oledC_shapeHandler.c: 108:     ourShape->params.point.color = eraseColor;
+[e = . . . *U _ourShape 2 0 0 _eraseColor ]
+"109
+[; ;mcc_generated_files/oledC_shapeHandler.c: 109:     ourShape->draw(ourShape);
+[e ( *U . *U _ourShape 1 (1 _ourShape ]
+"110
+[; ;mcc_generated_files/oledC_shapeHandler.c: 110:     ourShape->params.point.color = saveColor;
+[e = . . . *U _ourShape 2 0 0 _saveColor ]
+"111
+[; ;mcc_generated_files/oledC_shapeHandler.c: 111: }
+[e :UE 35 ]
+}
+"113
+[; ;mcc_generated_files/oledC_shapeHandler.c: 113: void oledC_eraseAll(uint16_t eraseColor)
+[v _oledC_eraseAll `(v ~T0 @X0 1 ef1`us ]
+"114
+[; ;mcc_generated_files/oledC_shapeHandler.c: 114: {
+{
+[e :U _oledC_eraseAll ]
+"113
+[; ;mcc_generated_files/oledC_shapeHandler.c: 113: void oledC_eraseAll(uint16_t eraseColor)
+[v _eraseColor `us ~T0 @X0 1 r1 ]
+"114
+[; ;mcc_generated_files/oledC_shapeHandler.c: 114: {
+[f ]
+"115
+[; ;mcc_generated_files/oledC_shapeHandler.c: 115:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"116
+[; ;mcc_generated_files/oledC_shapeHandler.c: 116:     for(i = 0; i < 32; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 32 `i 37  ]
+[e $U 38  ]
+[e :U 37 ]
+"117
+[; ;mcc_generated_files/oledC_shapeHandler.c: 117:     {
+{
+"118
+[; ;mcc_generated_files/oledC_shapeHandler.c: 118:         if(allParsedShapes[i].active)
+[e $ ! != -> . *U + &U _allParsedShapes * -> _i `ux -> -> # *U &U _allParsedShapes `ui `ux 3 `i -> 0 `i 40  ]
+"119
+[; ;mcc_generated_files/oledC_shapeHandler.c: 119:         {
+{
+"120
+[; ;mcc_generated_files/oledC_shapeHandler.c: 120:             oledC_eraseShape(i,eraseColor);
+[e ( _oledC_eraseShape (2 , _i _eraseColor ]
+"121
+[; ;mcc_generated_files/oledC_shapeHandler.c: 121:         }
+}
+[e :U 40 ]
+"122
+[; ;mcc_generated_files/oledC_shapeHandler.c: 122:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 32 `i 37  ]
+[e :U 38 ]
+}
+"123
+[; ;mcc_generated_files/oledC_shapeHandler.c: 123: }
+[e :UE 36 ]
+}
+"125
+[; ;mcc_generated_files/oledC_shapeHandler.c: 125: void oledC_redrawAll(void)
+[v _oledC_redrawAll `(v ~T0 @X0 1 ef ]
+"126
+[; ;mcc_generated_files/oledC_shapeHandler.c: 126: {
+{
+[e :U _oledC_redrawAll ]
+[f ]
+"127
+[; ;mcc_generated_files/oledC_shapeHandler.c: 127:     oledC_redrawSome(0,32);
+[e ( _oledC_redrawSome (2 , -> -> 0 `i `uc -> -> 32 `i `uc ]
+"128
+[; ;mcc_generated_files/oledC_shapeHandler.c: 128: }
+[e :UE 41 ]
+}

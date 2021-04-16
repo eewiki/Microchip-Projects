@@ -1,0 +1,1774 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"44 mcc_generated_files/oledC_shapes.c
+[; ;mcc_generated_files/oledC_shapes.c: 44: void oledC_createShape(enum OLEDC_SHAPE shape_type, shape_params_t *params, shape_t *newShape)
+[c E36 0 1 2 3 4 5 6 7 .. ]
+[n E36 OLEDC_SHAPE OLED_SHAPE_CIRCLE OLED_SHAPE_RING OLED_SHAPE_RECTANGLE OLED_SHAPE_LINE OLED_SHAPE_POINT OLED_SHAPE_CHARACTER OLED_SHAPE_STRING OLED_SHAPE_BITMAP  ]
+"44 mcc_generated_files/oledC_shapes.h
+[; ;mcc_generated_files/oledC_shapes.h: 44:     {
+[s S2 `us 1 `uc 1 `uc 1 ]
+[n S2 . color x y ]
+"50
+[; ;mcc_generated_files/oledC_shapes.h: 50:     {
+[s S3 `us 1 `uc 1 `uc 1 `uc 1 ]
+[n S3 . color xc yc radius ]
+"57
+[; ;mcc_generated_files/oledC_shapes.h: 57:     {
+[s S4 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S4 . color x0 y0 radius width ]
+"65
+[; ;mcc_generated_files/oledC_shapes.h: 65:     {
+[s S5 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S5 . color xs ys xe ye ]
+"73
+[; ;mcc_generated_files/oledC_shapes.h: 73:     {
+[s S6 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S6 . color xs ys width xe ye ]
+"82
+[; ;mcc_generated_files/oledC_shapes.h: 82:     {
+[s S7 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S7 . color x y scale_x scale_y character ]
+"91
+[; ;mcc_generated_files/oledC_shapes.h: 91:     {
+[s S8 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `*uc 1 ]
+[n S8 . color x y scale_x scale_y string ]
+"100
+[; ;mcc_generated_files/oledC_shapes.h: 100:     {
+[s S9 `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `*ul 1 `uc 1 ]
+[n S9 . color x y sx sy bit_array array_length ]
+"42
+[; ;mcc_generated_files/oledC_shapes.h: 42: {
+[u S1 `S2 1 `S3 1 `S4 1 `S5 1 `S6 1 `S7 1 `S8 1 `S9 1 ]
+[n S1 shape_params_t point circle ring rectangle line character string bitmap ]
+[v F108 `(v ~T0 @X0 0 tf1`*S10 ]
+"112
+[; ;mcc_generated_files/oledC_shapes.h: 112: {
+[s S10 `uc 1 `*F108 1 `S1 1 `a 1 ]
+[n S10 shape _type draw params active ]
+"34 mcc_generated_files/oledC_shapes.c
+[; ;mcc_generated_files/oledC_shapes.c: 34: static void drawCircle(shape_t *shape);
+[v _drawCircle `(v ~T0 @X0 0 sf1`*S10 ]
+"35
+[; ;mcc_generated_files/oledC_shapes.c: 35: static void drawRing(shape_t *shape);
+[v _drawRing `(v ~T0 @X0 0 sf1`*S10 ]
+"36
+[; ;mcc_generated_files/oledC_shapes.c: 36: static void drawRectangle(shape_t *shape);
+[v _drawRectangle `(v ~T0 @X0 0 sf1`*S10 ]
+"37
+[; ;mcc_generated_files/oledC_shapes.c: 37: static void drawLine(shape_t *shape);
+[v _drawLine `(v ~T0 @X0 0 sf1`*S10 ]
+"38
+[; ;mcc_generated_files/oledC_shapes.c: 38: static void drawCharacter(shape_t *shape);
+[v _drawCharacter `(v ~T0 @X0 0 sf1`*S10 ]
+"40
+[; ;mcc_generated_files/oledC_shapes.c: 40: static void drawString(shape_t *shape);
+[v _drawString `(v ~T0 @X0 0 sf1`*S10 ]
+"41
+[; ;mcc_generated_files/oledC_shapes.c: 41: static void drawBitmap(shape_t *shape);
+[v _drawBitmap `(v ~T0 @X0 0 sf1`*S10 ]
+"33
+[; ;mcc_generated_files/oledC_shapes.c: 33: static void drawPoint(shape_t *shape);
+[v _drawPoint `(v ~T0 @X0 0 sf1`*S10 ]
+"70 mcc_generated_files/oledC.h
+[; ;mcc_generated_files/oledC.h: 70: void oledC_setColumnAddressBounds(uint8_t min, uint8_t max);
+[v _oledC_setColumnAddressBounds `(v ~T0 @X0 0 ef2`uc`uc ]
+"69
+[; ;mcc_generated_files/oledC.h: 69: void oledC_setRowAddressBounds(uint8_t min, uint8_t max);
+[v _oledC_setRowAddressBounds `(v ~T0 @X0 0 ef2`uc`uc ]
+"80
+[; ;mcc_generated_files/oledC.h: 80: void oledC_sendColorInt(uint16_t raw);
+[v _oledC_sendColorInt `(v ~T0 @X0 0 ef1`us ]
+"28 mcc_generated_files/oledC_shapes.c
+[; ;mcc_generated_files/oledC_shapes.c: 28: static const uint8_t OLED_DIM_WIDTH = 0x5F;
+[v _OLED_DIM_WIDTH `Cuc ~T0 @X0 1 s ]
+[i _OLED_DIM_WIDTH
+-> -> 95 `i `uc
+]
+"29
+[; ;mcc_generated_files/oledC_shapes.c: 29: static const uint8_t OLED_DIM_HEIGHT = 0x5F;
+[v _OLED_DIM_HEIGHT `Cuc ~T0 @X0 1 s ]
+[i _OLED_DIM_HEIGHT
+-> -> 95 `i `uc
+]
+"30
+[; ;mcc_generated_files/oledC_shapes.c: 30: static const uint8_t OLED_FONT_WIDTH = 0x5;
+[v _OLED_FONT_WIDTH `Cuc ~T0 @X0 1 s ]
+[i _OLED_FONT_WIDTH
+-> -> 5 `i `uc
+]
+"31
+[; ;mcc_generated_files/oledC_shapes.c: 31: static const uint8_t OLED_FONT_HEIGHT = 0x8;
+[v _OLED_FONT_HEIGHT `Cuc ~T0 @X0 1 s ]
+[i _OLED_FONT_HEIGHT
+-> -> 8 `i `uc
+]
+"44
+[; ;mcc_generated_files/oledC_shapes.c: 44: void oledC_createShape(enum OLEDC_SHAPE shape_type, shape_params_t *params, shape_t *newShape)
+[v _oledC_createShape `(v ~T0 @X0 1 ef3`E36`*S1`*S10 ]
+"45
+[; ;mcc_generated_files/oledC_shapes.c: 45: {
+{
+[e :U _oledC_createShape ]
+"44
+[; ;mcc_generated_files/oledC_shapes.c: 44: void oledC_createShape(enum OLEDC_SHAPE shape_type, shape_params_t *params, shape_t *newShape)
+[v _shape_type `E36 ~T0 @X0 1 r1 ]
+[v _params `*S1 ~T0 @X0 1 r2 ]
+[v _newShape `*S10 ~T0 @X0 1 r3 ]
+"45
+[; ;mcc_generated_files/oledC_shapes.c: 45: {
+[f ]
+"46
+[; ;mcc_generated_files/oledC_shapes.c: 46:     newShape->_type = shape_type;
+[e = . *U _newShape 0 -> _shape_type `uc ]
+"47
+[; ;mcc_generated_files/oledC_shapes.c: 47:     newShape->active = 1;
+[e = . *U _newShape 3 -> -> 1 `i `a ]
+"49
+[; ;mcc_generated_files/oledC_shapes.c: 49:     newShape->params.point = params->point;
+[e = . . *U _newShape 2 0 . *U _params 0 ]
+"50
+[; ;mcc_generated_files/oledC_shapes.c: 50:     switch(shape_type)
+[e $U 14  ]
+"51
+[; ;mcc_generated_files/oledC_shapes.c: 51:     {
+{
+"52
+[; ;mcc_generated_files/oledC_shapes.c: 52:         case OLED_SHAPE_CIRCLE:
+[e :U 15 ]
+"53
+[; ;mcc_generated_files/oledC_shapes.c: 53:             newShape->params.circle = params->circle;
+[e = . . *U _newShape 2 1 . *U _params 1 ]
+"54
+[; ;mcc_generated_files/oledC_shapes.c: 54:             newShape->draw = drawCircle;
+[e = . *U _newShape 1 &U _drawCircle ]
+"55
+[; ;mcc_generated_files/oledC_shapes.c: 55:             break;
+[e $U 13  ]
+"56
+[; ;mcc_generated_files/oledC_shapes.c: 56:         case OLED_SHAPE_RING:
+[e :U 16 ]
+"57
+[; ;mcc_generated_files/oledC_shapes.c: 57:             newShape->params.ring = params->ring;
+[e = . . *U _newShape 2 2 . *U _params 2 ]
+"58
+[; ;mcc_generated_files/oledC_shapes.c: 58:             newShape->draw = drawRing;
+[e = . *U _newShape 1 &U _drawRing ]
+"59
+[; ;mcc_generated_files/oledC_shapes.c: 59:             break;
+[e $U 13  ]
+"60
+[; ;mcc_generated_files/oledC_shapes.c: 60:         case OLED_SHAPE_RECTANGLE:
+[e :U 17 ]
+"61
+[; ;mcc_generated_files/oledC_shapes.c: 61:             newShape->params.rectangle = params->rectangle;
+[e = . . *U _newShape 2 3 . *U _params 3 ]
+"62
+[; ;mcc_generated_files/oledC_shapes.c: 62:             newShape->draw = drawRectangle;
+[e = . *U _newShape 1 &U _drawRectangle ]
+"63
+[; ;mcc_generated_files/oledC_shapes.c: 63:             break;
+[e $U 13  ]
+"64
+[; ;mcc_generated_files/oledC_shapes.c: 64:         case OLED_SHAPE_LINE:
+[e :U 18 ]
+"65
+[; ;mcc_generated_files/oledC_shapes.c: 65:             newShape->params.line = params->line;
+[e = . . *U _newShape 2 4 . *U _params 4 ]
+"66
+[; ;mcc_generated_files/oledC_shapes.c: 66:             newShape->draw = drawLine;
+[e = . *U _newShape 1 &U _drawLine ]
+"67
+[; ;mcc_generated_files/oledC_shapes.c: 67:             break;
+[e $U 13  ]
+"68
+[; ;mcc_generated_files/oledC_shapes.c: 68:         case OLED_SHAPE_CHARACTER:
+[e :U 19 ]
+"69
+[; ;mcc_generated_files/oledC_shapes.c: 69:             newShape->params.character = params->character;
+[e = . . *U _newShape 2 5 . *U _params 5 ]
+"70
+[; ;mcc_generated_files/oledC_shapes.c: 70:             newShape->draw = drawCharacter;
+[e = . *U _newShape 1 &U _drawCharacter ]
+"71
+[; ;mcc_generated_files/oledC_shapes.c: 71:             break;
+[e $U 13  ]
+"72
+[; ;mcc_generated_files/oledC_shapes.c: 72:         case OLED_SHAPE_STRING:
+[e :U 20 ]
+"73
+[; ;mcc_generated_files/oledC_shapes.c: 73:             newShape->params.string = params->string;
+[e = . . *U _newShape 2 6 . *U _params 6 ]
+"74
+[; ;mcc_generated_files/oledC_shapes.c: 74:             newShape->draw = drawString;
+[e = . *U _newShape 1 &U _drawString ]
+"75
+[; ;mcc_generated_files/oledC_shapes.c: 75:             break;
+[e $U 13  ]
+"76
+[; ;mcc_generated_files/oledC_shapes.c: 76:         case OLED_SHAPE_BITMAP:
+[e :U 21 ]
+"77
+[; ;mcc_generated_files/oledC_shapes.c: 77:             newShape->params.bitmap = params->bitmap;
+[e = . . *U _newShape 2 7 . *U _params 7 ]
+"78
+[; ;mcc_generated_files/oledC_shapes.c: 78:             newShape->draw = drawBitmap;
+[e = . *U _newShape 1 &U _drawBitmap ]
+"79
+[; ;mcc_generated_files/oledC_shapes.c: 79:             break;
+[e $U 13  ]
+"80
+[; ;mcc_generated_files/oledC_shapes.c: 80:         default:
+[e :U 22 ]
+"81
+[; ;mcc_generated_files/oledC_shapes.c: 81:             newShape->draw = drawPoint;
+[e = . *U _newShape 1 &U _drawPoint ]
+"82
+[; ;mcc_generated_files/oledC_shapes.c: 82:             break;
+[e $U 13  ]
+"83
+[; ;mcc_generated_files/oledC_shapes.c: 83:     }
+}
+[e $U 13  ]
+[e :U 14 ]
+[e [\ -> _shape_type `ui , $ -> . `E36 0 `ui 15
+ , $ -> . `E36 1 `ui 16
+ , $ -> . `E36 2 `ui 17
+ , $ -> . `E36 3 `ui 18
+ , $ -> . `E36 5 `ui 19
+ , $ -> . `E36 6 `ui 20
+ , $ -> . `E36 7 `ui 21
+ 22 ]
+[e :U 13 ]
+"84
+[; ;mcc_generated_files/oledC_shapes.c: 84: }
+[e :UE 12 ]
+}
+"86
+[; ;mcc_generated_files/oledC_shapes.c: 86: static const uint8_t font[] =
+[v _font `Cuc ~T0 @X0 -> 475 `i s ]
+[i _font
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 250 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 224 `i `uc
+-> -> 0 `i `uc
+-> -> 224 `i `uc
+-> -> 0 `i `uc
+-> -> 40 `i `uc
+-> -> 254 `i `uc
+-> -> 40 `i `uc
+-> -> 254 `i `uc
+-> -> 40 `i `uc
+-> -> 36 `i `uc
+-> -> 84 `i `uc
+-> -> 254 `i `uc
+-> -> 84 `i `uc
+-> -> 72 `i `uc
+-> -> 196 `i `uc
+-> -> 200 `i `uc
+-> -> 16 `i `uc
+-> -> 38 `i `uc
+-> -> 70 `i `uc
+-> -> 108 `i `uc
+-> -> 146 `i `uc
+-> -> 106 `i `uc
+-> -> 4 `i `uc
+-> -> 10 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 224 `i `uc
+-> -> 192 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 56 `i `uc
+-> -> 68 `i `uc
+-> -> 130 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 130 `i `uc
+-> -> 68 `i `uc
+-> -> 56 `i `uc
+-> -> 0 `i `uc
+-> -> 84 `i `uc
+-> -> 56 `i `uc
+-> -> 254 `i `uc
+-> -> 56 `i `uc
+-> -> 84 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 124 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 14 `i `uc
+-> -> 12 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 6 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 8 `i `uc
+-> -> 16 `i `uc
+-> -> 32 `i `uc
+-> -> 64 `i `uc
+-> -> 124 `i `uc
+-> -> 138 `i `uc
+-> -> 146 `i `uc
+-> -> 162 `i `uc
+-> -> 124 `i `uc
+-> -> 0 `i `uc
+-> -> 66 `i `uc
+-> -> 254 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 78 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 98 `i `uc
+-> -> 132 `i `uc
+-> -> 130 `i `uc
+-> -> 146 `i `uc
+-> -> 178 `i `uc
+-> -> 204 `i `uc
+-> -> 24 `i `uc
+-> -> 40 `i `uc
+-> -> 72 `i `uc
+-> -> 254 `i `uc
+-> -> 8 `i `uc
+-> -> 228 `i `uc
+-> -> 162 `i `uc
+-> -> 162 `i `uc
+-> -> 162 `i `uc
+-> -> 156 `i `uc
+-> -> 60 `i `uc
+-> -> 82 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 140 `i `uc
+-> -> 130 `i `uc
+-> -> 132 `i `uc
+-> -> 136 `i `uc
+-> -> 144 `i `uc
+-> -> 224 `i `uc
+-> -> 108 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 108 `i `uc
+-> -> 98 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 148 `i `uc
+-> -> 120 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 40 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 40 `i `uc
+-> -> 68 `i `uc
+-> -> 130 `i `uc
+-> -> 40 `i `uc
+-> -> 40 `i `uc
+-> -> 40 `i `uc
+-> -> 40 `i `uc
+-> -> 40 `i `uc
+-> -> 0 `i `uc
+-> -> 130 `i `uc
+-> -> 68 `i `uc
+-> -> 40 `i `uc
+-> -> 16 `i `uc
+-> -> 64 `i `uc
+-> -> 128 `i `uc
+-> -> 154 `i `uc
+-> -> 144 `i `uc
+-> -> 96 `i `uc
+-> -> 124 `i `uc
+-> -> 130 `i `uc
+-> -> 186 `i `uc
+-> -> 154 `i `uc
+-> -> 114 `i `uc
+-> -> 62 `i `uc
+-> -> 72 `i `uc
+-> -> 136 `i `uc
+-> -> 72 `i `uc
+-> -> 62 `i `uc
+-> -> 254 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 108 `i `uc
+-> -> 124 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 68 `i `uc
+-> -> 254 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 124 `i `uc
+-> -> 254 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 130 `i `uc
+-> -> 254 `i `uc
+-> -> 144 `i `uc
+-> -> 144 `i `uc
+-> -> 144 `i `uc
+-> -> 128 `i `uc
+-> -> 124 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 138 `i `uc
+-> -> 206 `i `uc
+-> -> 254 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 16 `i `uc
+-> -> 254 `i `uc
+-> -> 0 `i `uc
+-> -> 130 `i `uc
+-> -> 254 `i `uc
+-> -> 130 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 130 `i `uc
+-> -> 252 `i `uc
+-> -> 128 `i `uc
+-> -> 254 `i `uc
+-> -> 16 `i `uc
+-> -> 40 `i `uc
+-> -> 68 `i `uc
+-> -> 130 `i `uc
+-> -> 254 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 254 `i `uc
+-> -> 64 `i `uc
+-> -> 56 `i `uc
+-> -> 64 `i `uc
+-> -> 254 `i `uc
+-> -> 254 `i `uc
+-> -> 32 `i `uc
+-> -> 16 `i `uc
+-> -> 8 `i `uc
+-> -> 254 `i `uc
+-> -> 124 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 124 `i `uc
+-> -> 254 `i `uc
+-> -> 144 `i `uc
+-> -> 144 `i `uc
+-> -> 144 `i `uc
+-> -> 96 `i `uc
+-> -> 124 `i `uc
+-> -> 130 `i `uc
+-> -> 138 `i `uc
+-> -> 132 `i `uc
+-> -> 122 `i `uc
+-> -> 254 `i `uc
+-> -> 144 `i `uc
+-> -> 152 `i `uc
+-> -> 148 `i `uc
+-> -> 98 `i `uc
+-> -> 100 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 146 `i `uc
+-> -> 76 `i `uc
+-> -> 192 `i `uc
+-> -> 128 `i `uc
+-> -> 254 `i `uc
+-> -> 128 `i `uc
+-> -> 192 `i `uc
+-> -> 252 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 252 `i `uc
+-> -> 248 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 248 `i `uc
+-> -> 252 `i `uc
+-> -> 2 `i `uc
+-> -> 28 `i `uc
+-> -> 2 `i `uc
+-> -> 252 `i `uc
+-> -> 198 `i `uc
+-> -> 40 `i `uc
+-> -> 16 `i `uc
+-> -> 40 `i `uc
+-> -> 198 `i `uc
+-> -> 192 `i `uc
+-> -> 32 `i `uc
+-> -> 30 `i `uc
+-> -> 32 `i `uc
+-> -> 192 `i `uc
+-> -> 134 `i `uc
+-> -> 154 `i `uc
+-> -> 146 `i `uc
+-> -> 178 `i `uc
+-> -> 194 `i `uc
+-> -> 0 `i `uc
+-> -> 254 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 64 `i `uc
+-> -> 32 `i `uc
+-> -> 16 `i `uc
+-> -> 8 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 130 `i `uc
+-> -> 254 `i `uc
+-> -> 32 `i `uc
+-> -> 64 `i `uc
+-> -> 128 `i `uc
+-> -> 64 `i `uc
+-> -> 32 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 192 `i `uc
+-> -> 224 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 42 `i `uc
+-> -> 42 `i `uc
+-> -> 28 `i `uc
+-> -> 2 `i `uc
+-> -> 254 `i `uc
+-> -> 20 `i `uc
+-> -> 34 `i `uc
+-> -> 34 `i `uc
+-> -> 28 `i `uc
+-> -> 28 `i `uc
+-> -> 34 `i `uc
+-> -> 34 `i `uc
+-> -> 34 `i `uc
+-> -> 20 `i `uc
+-> -> 28 `i `uc
+-> -> 34 `i `uc
+-> -> 34 `i `uc
+-> -> 20 `i `uc
+-> -> 254 `i `uc
+-> -> 28 `i `uc
+-> -> 42 `i `uc
+-> -> 42 `i `uc
+-> -> 42 `i `uc
+-> -> 24 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 126 `i `uc
+-> -> 144 `i `uc
+-> -> 64 `i `uc
+-> -> 48 `i `uc
+-> -> 74 `i `uc
+-> -> 74 `i `uc
+-> -> 82 `i `uc
+-> -> 60 `i `uc
+-> -> 254 `i `uc
+-> -> 16 `i `uc
+-> -> 32 `i `uc
+-> -> 32 `i `uc
+-> -> 30 `i `uc
+-> -> 0 `i `uc
+-> -> 34 `i `uc
+-> -> 190 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 188 `i `uc
+-> -> 0 `i `uc
+-> -> 254 `i `uc
+-> -> 8 `i `uc
+-> -> 20 `i `uc
+-> -> 34 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 130 `i `uc
+-> -> 254 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 62 `i `uc
+-> -> 32 `i `uc
+-> -> 30 `i `uc
+-> -> 32 `i `uc
+-> -> 30 `i `uc
+-> -> 62 `i `uc
+-> -> 16 `i `uc
+-> -> 32 `i `uc
+-> -> 32 `i `uc
+-> -> 30 `i `uc
+-> -> 28 `i `uc
+-> -> 34 `i `uc
+-> -> 34 `i `uc
+-> -> 34 `i `uc
+-> -> 28 `i `uc
+-> -> 62 `i `uc
+-> -> 24 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 24 `i `uc
+-> -> 24 `i `uc
+-> -> 36 `i `uc
+-> -> 36 `i `uc
+-> -> 24 `i `uc
+-> -> 62 `i `uc
+-> -> 62 `i `uc
+-> -> 16 `i `uc
+-> -> 32 `i `uc
+-> -> 32 `i `uc
+-> -> 16 `i `uc
+-> -> 18 `i `uc
+-> -> 42 `i `uc
+-> -> 42 `i `uc
+-> -> 42 `i `uc
+-> -> 36 `i `uc
+-> -> 32 `i `uc
+-> -> 32 `i `uc
+-> -> 252 `i `uc
+-> -> 34 `i `uc
+-> -> 36 `i `uc
+-> -> 60 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 62 `i `uc
+-> -> 56 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 56 `i `uc
+-> -> 60 `i `uc
+-> -> 2 `i `uc
+-> -> 12 `i `uc
+-> -> 2 `i `uc
+-> -> 60 `i `uc
+-> -> 34 `i `uc
+-> -> 20 `i `uc
+-> -> 8 `i `uc
+-> -> 20 `i `uc
+-> -> 34 `i `uc
+-> -> 50 `i `uc
+-> -> 10 `i `uc
+-> -> 10 `i `uc
+-> -> 10 `i `uc
+-> -> 60 `i `uc
+-> -> 34 `i `uc
+-> -> 38 `i `uc
+-> -> 42 `i `uc
+-> -> 50 `i `uc
+-> -> 34 `i `uc
+-> -> 0 `i `uc
+-> -> 16 `i `uc
+-> -> 108 `i `uc
+-> -> 130 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 254 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 130 `i `uc
+-> -> 108 `i `uc
+-> -> 16 `i `uc
+-> -> 0 `i `uc
+-> -> 64 `i `uc
+-> -> 128 `i `uc
+-> -> 64 `i `uc
+-> -> 32 `i `uc
+-> -> 64 `i `uc
+..
+]
+"125
+[; ;mcc_generated_files/oledC_shapes.c: 125: static uint8_t coerceAddressAdditionWithinRange(uint8_t base_address, int8_t adder)
+[v _coerceAddressAdditionWithinRange `(uc ~T0 @X0 1 sf2`uc`c ]
+"126
+[; ;mcc_generated_files/oledC_shapes.c: 126: {
+{
+[e :U _coerceAddressAdditionWithinRange ]
+"125
+[; ;mcc_generated_files/oledC_shapes.c: 125: static uint8_t coerceAddressAdditionWithinRange(uint8_t base_address, int8_t adder)
+[v _base_address `uc ~T0 @X0 1 r1 ]
+[v _adder `c ~T0 @X0 1 r2 ]
+"126
+[; ;mcc_generated_files/oledC_shapes.c: 126: {
+[f ]
+"127
+[; ;mcc_generated_files/oledC_shapes.c: 127:     int16_t additionResult = base_address+adder;
+[v _additionResult `s ~T0 @X0 1 a ]
+[e = _additionResult -> + -> _base_address `i -> _adder `i `s ]
+"128
+[; ;mcc_generated_files/oledC_shapes.c: 128:     if(additionResult > (int16_t)OLED_DIM_WIDTH)
+[e $ ! > -> _additionResult `i -> -> _OLED_DIM_WIDTH `s `i 24  ]
+"129
+[; ;mcc_generated_files/oledC_shapes.c: 129:     {
+{
+"130
+[; ;mcc_generated_files/oledC_shapes.c: 130:         return OLED_DIM_WIDTH;
+[e ) _OLED_DIM_WIDTH ]
+[e $UE 23  ]
+"131
+[; ;mcc_generated_files/oledC_shapes.c: 131:     }
+}
+[e :U 24 ]
+"132
+[; ;mcc_generated_files/oledC_shapes.c: 132:     if(additionResult < (int16_t) 0x00)
+[e $ ! < -> _additionResult `i -> -> -> 0 `i `s `i 25  ]
+"133
+[; ;mcc_generated_files/oledC_shapes.c: 133:     {
+{
+"134
+[; ;mcc_generated_files/oledC_shapes.c: 134:         return 0x00;
+[e ) -> -> 0 `i `uc ]
+[e $UE 23  ]
+"135
+[; ;mcc_generated_files/oledC_shapes.c: 135:     }
+}
+[e :U 25 ]
+"136
+[; ;mcc_generated_files/oledC_shapes.c: 136:     return (uint8_t) (base_address+adder);
+[e ) -> + -> _base_address `i -> _adder `i `uc ]
+[e $UE 23  ]
+"137
+[; ;mcc_generated_files/oledC_shapes.c: 137: }
+[e :UE 23 ]
+}
+"139
+[; ;mcc_generated_files/oledC_shapes.c: 139: void oledC_DrawPoint(uint8_t x, uint8_t y, uint16_t color)
+[v _oledC_DrawPoint `(v ~T0 @X0 1 ef3`uc`uc`us ]
+"140
+[; ;mcc_generated_files/oledC_shapes.c: 140: {
+{
+[e :U _oledC_DrawPoint ]
+"139
+[; ;mcc_generated_files/oledC_shapes.c: 139: void oledC_DrawPoint(uint8_t x, uint8_t y, uint16_t color)
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[v _color `us ~T0 @X0 1 r3 ]
+"140
+[; ;mcc_generated_files/oledC_shapes.c: 140: {
+[f ]
+"141
+[; ;mcc_generated_files/oledC_shapes.c: 141:     if(x > OLED_DIM_WIDTH || y > OLED_DIM_HEIGHT)
+[e $ ! || > -> _x `i -> _OLED_DIM_WIDTH `i > -> _y `i -> _OLED_DIM_HEIGHT `i 27  ]
+"142
+[; ;mcc_generated_files/oledC_shapes.c: 142:     {
+{
+"143
+[; ;mcc_generated_files/oledC_shapes.c: 143:         return;
+[e $UE 26  ]
+"144
+[; ;mcc_generated_files/oledC_shapes.c: 144:     }
+}
+[e :U 27 ]
+"145
+[; ;mcc_generated_files/oledC_shapes.c: 145:     oledC_setColumnAddressBounds(x,95);
+[e ( _oledC_setColumnAddressBounds (2 , _x -> -> 95 `i `uc ]
+"146
+[; ;mcc_generated_files/oledC_shapes.c: 146:     oledC_setRowAddressBounds(y,95);
+[e ( _oledC_setRowAddressBounds (2 , _y -> -> 95 `i `uc ]
+"147
+[; ;mcc_generated_files/oledC_shapes.c: 147:     oledC_sendColorInt(color);
+[e ( _oledC_sendColorInt (1 _color ]
+"148
+[; ;mcc_generated_files/oledC_shapes.c: 148: }
+[e :UE 26 ]
+}
+"150
+[; ;mcc_generated_files/oledC_shapes.c: 150: void oledC_DrawThickPoint(uint8_t center_x, uint8_t center_y, uint8_t width, uint16_t color)
+[v _oledC_DrawThickPoint `(v ~T0 @X0 1 ef4`uc`uc`uc`us ]
+"151
+[; ;mcc_generated_files/oledC_shapes.c: 151: {
+{
+[e :U _oledC_DrawThickPoint ]
+"150
+[; ;mcc_generated_files/oledC_shapes.c: 150: void oledC_DrawThickPoint(uint8_t center_x, uint8_t center_y, uint8_t width, uint16_t color)
+[v _center_x `uc ~T0 @X0 1 r1 ]
+[v _center_y `uc ~T0 @X0 1 r2 ]
+[v _width `uc ~T0 @X0 1 r3 ]
+[v _color `us ~T0 @X0 1 r4 ]
+"151
+[; ;mcc_generated_files/oledC_shapes.c: 151: {
+[f ]
+"152
+[; ;mcc_generated_files/oledC_shapes.c: 152:     uint8_t max_x,min_x,max_y, min_y;
+[v _max_x `uc ~T0 @X0 1 a ]
+[v _min_x `uc ~T0 @X0 1 a ]
+[v _max_y `uc ~T0 @X0 1 a ]
+[v _min_y `uc ~T0 @X0 1 a ]
+"153
+[; ;mcc_generated_files/oledC_shapes.c: 153:     uint8_t x, y, dx, dy;
+[v _x `uc ~T0 @X0 1 a ]
+[v _y `uc ~T0 @X0 1 a ]
+[v _dx `uc ~T0 @X0 1 a ]
+[v _dy `uc ~T0 @X0 1 a ]
+"154
+[; ;mcc_generated_files/oledC_shapes.c: 154:     if((center_x-width) > OLED_DIM_WIDTH || (center_y-width) > OLED_DIM_HEIGHT)
+[e $ ! || > - -> _center_x `i -> _width `i -> _OLED_DIM_WIDTH `i > - -> _center_y `i -> _width `i -> _OLED_DIM_HEIGHT `i 29  ]
+"155
+[; ;mcc_generated_files/oledC_shapes.c: 155:     {
+{
+"156
+[; ;mcc_generated_files/oledC_shapes.c: 156:         return;
+[e $UE 28  ]
+"157
+[; ;mcc_generated_files/oledC_shapes.c: 157:     }
+}
+[e :U 29 ]
+"158
+[; ;mcc_generated_files/oledC_shapes.c: 158:     width = (width <= 1) ? 1 : width;
+[e = _width -> ? <= -> _width `i -> 1 `i : -> 1 `i -> _width `i `uc ]
+"159
+[; ;mcc_generated_files/oledC_shapes.c: 159:     max_x = coerceAddressAdditionWithinRange(center_x, width);
+[e = _max_x ( _coerceAddressAdditionWithinRange (2 , _center_x -> _width `c ]
+"160
+[; ;mcc_generated_files/oledC_shapes.c: 160:     min_x = coerceAddressAdditionWithinRange(center_x, -(width));
+[e = _min_x ( _coerceAddressAdditionWithinRange (2 , _center_x -> -U -> _width `i `c ]
+"161
+[; ;mcc_generated_files/oledC_shapes.c: 161:     max_y = coerceAddressAdditionWithinRange(center_y, width);
+[e = _max_y ( _coerceAddressAdditionWithinRange (2 , _center_y -> _width `c ]
+"162
+[; ;mcc_generated_files/oledC_shapes.c: 162:     min_y = coerceAddressAdditionWithinRange(center_y, -(width));
+[e = _min_y ( _coerceAddressAdditionWithinRange (2 , _center_y -> -U -> _width `i `c ]
+"164
+[; ;mcc_generated_files/oledC_shapes.c: 164:     for(x = min_x; x < max_x; x++)
+{
+[e = _x _min_x ]
+[e $U 33  ]
+[e :U 30 ]
+"165
+[; ;mcc_generated_files/oledC_shapes.c: 165:     {
+{
+"166
+[; ;mcc_generated_files/oledC_shapes.c: 166:         dx = (center_x >= x) ? (center_x-x) : (x - center_x);
+[e = _dx -> ? >= -> _center_x `i -> _x `i : - -> _center_x `i -> _x `i - -> _x `i -> _center_x `i `uc ]
+"167
+[; ;mcc_generated_files/oledC_shapes.c: 167:         for(y = min_y; y < max_y; y++)
+{
+[e = _y _min_y ]
+[e $U 37  ]
+[e :U 34 ]
+"168
+[; ;mcc_generated_files/oledC_shapes.c: 168:         {
+{
+"169
+[; ;mcc_generated_files/oledC_shapes.c: 169:             dy = (center_y >= y) ? (center_y-y) : (y - center_y);
+[e = _dy -> ? >= -> _center_y `i -> _y `i : - -> _center_y `i -> _y `i - -> _y `i -> _center_y `i `uc ]
+"170
+[; ;mcc_generated_files/oledC_shapes.c: 170:             if(((dy+dx) <= width)|| (dy*dy+dx*dx) <= (width*width))
+[e $ ! || <= + -> _dy `i -> _dx `i -> _width `i <= + * -> _dy `i -> _dy `i * -> _dx `i -> _dx `i * -> _width `i -> _width `i 38  ]
+"171
+[; ;mcc_generated_files/oledC_shapes.c: 171:             {
+{
+"172
+[; ;mcc_generated_files/oledC_shapes.c: 172:                 oledC_DrawPoint(x, y, color);
+[e ( _oledC_DrawPoint (3 , , _x _y _color ]
+"173
+[; ;mcc_generated_files/oledC_shapes.c: 173:             }
+}
+[e :U 38 ]
+"174
+[; ;mcc_generated_files/oledC_shapes.c: 174:         }
+}
+[e ++ _y -> -> 1 `i `uc ]
+[e :U 37 ]
+[e $ < -> _y `i -> _max_y `i 34  ]
+[e :U 35 ]
+}
+"175
+[; ;mcc_generated_files/oledC_shapes.c: 175:     }
+}
+[e ++ _x -> -> 1 `i `uc ]
+[e :U 33 ]
+[e $ < -> _x `i -> _max_x `i 30  ]
+[e :U 31 ]
+}
+"176
+[; ;mcc_generated_files/oledC_shapes.c: 176: }
+[e :UE 28 ]
+}
+"178
+[; ;mcc_generated_files/oledC_shapes.c: 178: void oledC_DrawCircle(uint8_t x0, uint8_t y0, uint8_t radius, uint16_t color)
+[v _oledC_DrawCircle `(v ~T0 @X0 1 ef4`uc`uc`uc`us ]
+"179
+[; ;mcc_generated_files/oledC_shapes.c: 179: {
+{
+[e :U _oledC_DrawCircle ]
+"178
+[; ;mcc_generated_files/oledC_shapes.c: 178: void oledC_DrawCircle(uint8_t x0, uint8_t y0, uint8_t radius, uint16_t color)
+[v _x0 `uc ~T0 @X0 1 r1 ]
+[v _y0 `uc ~T0 @X0 1 r2 ]
+[v _radius `uc ~T0 @X0 1 r3 ]
+[v _color `us ~T0 @X0 1 r4 ]
+"179
+[; ;mcc_generated_files/oledC_shapes.c: 179: {
+[f ]
+"180
+[; ;mcc_generated_files/oledC_shapes.c: 180:     int8_t xCurr, yMax = 0, y = 0, x=0;
+[v _xCurr `c ~T0 @X0 1 a ]
+[v _yMax `c ~T0 @X0 1 a ]
+[e = _yMax -> -> 0 `i `c ]
+[v _y `c ~T0 @X0 1 a ]
+[e = _y -> -> 0 `i `c ]
+[v _x `c ~T0 @X0 1 a ]
+[e = _x -> -> 0 `i `c ]
+"181
+[; ;mcc_generated_files/oledC_shapes.c: 181:     int16_t d = 0;
+[v _d `s ~T0 @X0 1 a ]
+[e = _d -> -> 0 `i `s ]
+"183
+[; ;mcc_generated_files/oledC_shapes.c: 183:     radius = radius <= 1 ? 1 : radius;
+[e = _radius -> ? <= -> _radius `i -> 1 `i : -> 1 `i -> _radius `i `uc ]
+"184
+[; ;mcc_generated_files/oledC_shapes.c: 184:     xCurr = radius+1;
+[e = _xCurr -> + -> _radius `i -> 1 `i `c ]
+"185
+[; ;mcc_generated_files/oledC_shapes.c: 185:     yMax = 0;
+[e = _yMax -> -> 0 `i `c ]
+"186
+[; ;mcc_generated_files/oledC_shapes.c: 186:     y = 0;
+[e = _y -> -> 0 `i `c ]
+"187
+[; ;mcc_generated_files/oledC_shapes.c: 187:     d = 0;
+[e = _d -> -> 0 `i `s ]
+"189
+[; ;mcc_generated_files/oledC_shapes.c: 189:     while (xCurr >= yMax)
+[e $U 40  ]
+[e :U 41 ]
+"190
+[; ;mcc_generated_files/oledC_shapes.c: 190:     {
+{
+"191
+[; ;mcc_generated_files/oledC_shapes.c: 191:         d += (2*yMax+1);
+[e =+ _d -> + * -> 2 `i -> _yMax `i -> 1 `i `s ]
+"192
+[; ;mcc_generated_files/oledC_shapes.c: 192:         yMax++;
+[e ++ _yMax -> -> 1 `i `c ]
+"193
+[; ;mcc_generated_files/oledC_shapes.c: 193:         if(d >= 0)
+[e $ ! >= -> _d `i -> 0 `i 43  ]
+"194
+[; ;mcc_generated_files/oledC_shapes.c: 194:         {
+{
+"195
+[; ;mcc_generated_files/oledC_shapes.c: 195:             for(y = y; y < yMax; y++)
+{
+[e = _y _y ]
+[e $U 47  ]
+[e :U 44 ]
+"196
+[; ;mcc_generated_files/oledC_shapes.c: 196:             {
+{
+"197
+[; ;mcc_generated_files/oledC_shapes.c: 197:                 for(x = y; x < xCurr; x++)
+{
+[e = _x _y ]
+[e $U 51  ]
+[e :U 48 ]
+"198
+[; ;mcc_generated_files/oledC_shapes.c: 198:                 {
+{
+"199
+[; ;mcc_generated_files/oledC_shapes.c: 199:                     oledC_DrawPoint(x0 + x,y0 + y, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _x `i `uc -> + -> _y0 `i -> _y `i `uc _color ]
+"200
+[; ;mcc_generated_files/oledC_shapes.c: 200:                     oledC_DrawPoint(x0 + x,y0 - y, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _x `i `uc -> - -> _y0 `i -> _y `i `uc _color ]
+"201
+[; ;mcc_generated_files/oledC_shapes.c: 201:                     oledC_DrawPoint(x0 - x,y0 + y, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _x `i `uc -> + -> _y0 `i -> _y `i `uc _color ]
+"202
+[; ;mcc_generated_files/oledC_shapes.c: 202:                     oledC_DrawPoint(x0 - x,y0 - y, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _x `i `uc -> - -> _y0 `i -> _y `i `uc _color ]
+"203
+[; ;mcc_generated_files/oledC_shapes.c: 203:                     oledC_DrawPoint(x0 + y,y0 + x, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _y `i `uc -> + -> _y0 `i -> _x `i `uc _color ]
+"204
+[; ;mcc_generated_files/oledC_shapes.c: 204:                     oledC_DrawPoint(x0 + y,y0 - x, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _y `i `uc -> - -> _y0 `i -> _x `i `uc _color ]
+"205
+[; ;mcc_generated_files/oledC_shapes.c: 205:                     oledC_DrawPoint(x0 - y,y0 + x, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _y `i `uc -> + -> _y0 `i -> _x `i `uc _color ]
+"206
+[; ;mcc_generated_files/oledC_shapes.c: 206:                     oledC_DrawPoint(x0 - y,y0 - x, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _y `i `uc -> - -> _y0 `i -> _x `i `uc _color ]
+"207
+[; ;mcc_generated_files/oledC_shapes.c: 207:                 }
+}
+[e ++ _x -> -> 1 `i `c ]
+[e :U 51 ]
+[e $ < -> _x `i -> _xCurr `i 48  ]
+[e :U 49 ]
+}
+"208
+[; ;mcc_generated_files/oledC_shapes.c: 208:             }
+}
+[e ++ _y -> -> 1 `i `c ]
+[e :U 47 ]
+[e $ < -> _y `i -> _yMax `i 44  ]
+[e :U 45 ]
+}
+"209
+[; ;mcc_generated_files/oledC_shapes.c: 209:             d += -2*xCurr + 1;
+[e =+ _d -> + * -U -> 2 `i -> _xCurr `i -> 1 `i `s ]
+"210
+[; ;mcc_generated_files/oledC_shapes.c: 210:             xCurr--;
+[e -- _xCurr -> -> 1 `i `c ]
+"211
+[; ;mcc_generated_files/oledC_shapes.c: 211:         }
+}
+[e :U 43 ]
+"212
+[; ;mcc_generated_files/oledC_shapes.c: 212:     }
+}
+[e :U 40 ]
+"189
+[; ;mcc_generated_files/oledC_shapes.c: 189:     while (xCurr >= yMax)
+[e $ >= -> _xCurr `i -> _yMax `i 41  ]
+[e :U 42 ]
+"213
+[; ;mcc_generated_files/oledC_shapes.c: 213: }
+[e :UE 39 ]
+}
+"215
+[; ;mcc_generated_files/oledC_shapes.c: 215: void oledC_DrawRing(uint8_t x0, uint8_t y0, uint8_t radius, uint8_t width, uint16_t color)
+[v _oledC_DrawRing `(v ~T0 @X0 1 ef5`uc`uc`uc`uc`us ]
+"216
+[; ;mcc_generated_files/oledC_shapes.c: 216: {
+{
+[e :U _oledC_DrawRing ]
+"215
+[; ;mcc_generated_files/oledC_shapes.c: 215: void oledC_DrawRing(uint8_t x0, uint8_t y0, uint8_t radius, uint8_t width, uint16_t color)
+[v _x0 `uc ~T0 @X0 1 r1 ]
+[v _y0 `uc ~T0 @X0 1 r2 ]
+[v _radius `uc ~T0 @X0 1 r3 ]
+[v _width `uc ~T0 @X0 1 r4 ]
+[v _color `us ~T0 @X0 1 r5 ]
+"216
+[; ;mcc_generated_files/oledC_shapes.c: 216: {
+[f ]
+"217
+[; ;mcc_generated_files/oledC_shapes.c: 217:     int8_t x, y;
+[v _x `c ~T0 @X0 1 a ]
+[v _y `c ~T0 @X0 1 a ]
+"218
+[; ;mcc_generated_files/oledC_shapes.c: 218:     int16_t d;
+[v _d `s ~T0 @X0 1 a ]
+"219
+[; ;mcc_generated_files/oledC_shapes.c: 219:     radius += width >> 1;
+[e =+ _radius -> >> -> _width `i -> 1 `i `uc ]
+"220
+[; ;mcc_generated_files/oledC_shapes.c: 220:     while(width-- > 0)
+[e $U 53  ]
+[e :U 54 ]
+"221
+[; ;mcc_generated_files/oledC_shapes.c: 221:     {
+{
+"222
+[; ;mcc_generated_files/oledC_shapes.c: 222:         x = radius;
+[e = _x -> _radius `c ]
+"223
+[; ;mcc_generated_files/oledC_shapes.c: 223:         y = 0;
+[e = _y -> -> 0 `i `c ]
+"224
+[; ;mcc_generated_files/oledC_shapes.c: 224:         d = 0;
+[e = _d -> -> 0 `i `s ]
+"226
+[; ;mcc_generated_files/oledC_shapes.c: 226:         while (x >= y)
+[e $U 56  ]
+[e :U 57 ]
+"227
+[; ;mcc_generated_files/oledC_shapes.c: 227:         {
+{
+"228
+[; ;mcc_generated_files/oledC_shapes.c: 228:             oledC_DrawPoint(x0 + x,y0 + y, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _x `i `uc -> + -> _y0 `i -> _y `i `uc _color ]
+"229
+[; ;mcc_generated_files/oledC_shapes.c: 229:             oledC_DrawPoint(x0 + x,y0 - y, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _x `i `uc -> - -> _y0 `i -> _y `i `uc _color ]
+"230
+[; ;mcc_generated_files/oledC_shapes.c: 230:             oledC_DrawPoint(x0 - x,y0 + y, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _x `i `uc -> + -> _y0 `i -> _y `i `uc _color ]
+"231
+[; ;mcc_generated_files/oledC_shapes.c: 231:             oledC_DrawPoint(x0 - x,y0 - y, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _x `i `uc -> - -> _y0 `i -> _y `i `uc _color ]
+"232
+[; ;mcc_generated_files/oledC_shapes.c: 232:             oledC_DrawPoint(x0 + y,y0 + x, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _y `i `uc -> + -> _y0 `i -> _x `i `uc _color ]
+"233
+[; ;mcc_generated_files/oledC_shapes.c: 233:             oledC_DrawPoint(x0 + y,y0 - x, color);
+[e ( _oledC_DrawPoint (3 , , -> + -> _x0 `i -> _y `i `uc -> - -> _y0 `i -> _x `i `uc _color ]
+"234
+[; ;mcc_generated_files/oledC_shapes.c: 234:             oledC_DrawPoint(x0 - y,y0 + x, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _y `i `uc -> + -> _y0 `i -> _x `i `uc _color ]
+"235
+[; ;mcc_generated_files/oledC_shapes.c: 235:             oledC_DrawPoint(x0 - y,y0 - x, color);
+[e ( _oledC_DrawPoint (3 , , -> - -> _x0 `i -> _y `i `uc -> - -> _y0 `i -> _x `i `uc _color ]
+"237
+[; ;mcc_generated_files/oledC_shapes.c: 237:             d += (2*y+1);
+[e =+ _d -> + * -> 2 `i -> _y `i -> 1 `i `s ]
+"238
+[; ;mcc_generated_files/oledC_shapes.c: 238:             y++;
+[e ++ _y -> -> 1 `i `c ]
+"239
+[; ;mcc_generated_files/oledC_shapes.c: 239:             if(d >= 0)
+[e $ ! >= -> _d `i -> 0 `i 59  ]
+"240
+[; ;mcc_generated_files/oledC_shapes.c: 240:             {
+{
+"241
+[; ;mcc_generated_files/oledC_shapes.c: 241:                 d += -2*x + 1;
+[e =+ _d -> + * -U -> 2 `i -> _x `i -> 1 `i `s ]
+"242
+[; ;mcc_generated_files/oledC_shapes.c: 242:                 x--;
+[e -- _x -> -> 1 `i `c ]
+"243
+[; ;mcc_generated_files/oledC_shapes.c: 243:             }
+}
+[e :U 59 ]
+"244
+[; ;mcc_generated_files/oledC_shapes.c: 244:         }
+}
+[e :U 56 ]
+"226
+[; ;mcc_generated_files/oledC_shapes.c: 226:         while (x >= y)
+[e $ >= -> _x `i -> _y `i 57  ]
+[e :U 58 ]
+"245
+[; ;mcc_generated_files/oledC_shapes.c: 245:         radius--;
+[e -- _radius -> -> 1 `i `uc ]
+"246
+[; ;mcc_generated_files/oledC_shapes.c: 246:     }
+}
+[e :U 53 ]
+"220
+[; ;mcc_generated_files/oledC_shapes.c: 220:     while(width-- > 0)
+[e $ > -> -- _width -> -> 1 `i `uc `i -> 0 `i 54  ]
+[e :U 55 ]
+"247
+[; ;mcc_generated_files/oledC_shapes.c: 247: }
+[e :UE 52 ]
+}
+"249
+[; ;mcc_generated_files/oledC_shapes.c: 249: void oledC_DrawLine(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t width, uint16_t color)
+[v _oledC_DrawLine `(v ~T0 @X0 1 ef6`uc`uc`uc`uc`uc`us ]
+"250
+[; ;mcc_generated_files/oledC_shapes.c: 250: {
+{
+[e :U _oledC_DrawLine ]
+"249
+[; ;mcc_generated_files/oledC_shapes.c: 249: void oledC_DrawLine(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t width, uint16_t color)
+[v _x0 `uc ~T0 @X0 1 r1 ]
+[v _y0 `uc ~T0 @X0 1 r2 ]
+[v _x1 `uc ~T0 @X0 1 r3 ]
+[v _y1 `uc ~T0 @X0 1 r4 ]
+[v _width `uc ~T0 @X0 1 r5 ]
+[v _color `us ~T0 @X0 1 r6 ]
+"250
+[; ;mcc_generated_files/oledC_shapes.c: 250: {
+[f ]
+"251
+[; ;mcc_generated_files/oledC_shapes.c: 251:     int8_t x, y;
+[v _x `c ~T0 @X0 1 a ]
+[v _y `c ~T0 @X0 1 a ]
+"252
+[; ;mcc_generated_files/oledC_shapes.c: 252:     int8_t dx, dy, D;
+[v _dx `c ~T0 @X0 1 a ]
+[v _dy `c ~T0 @X0 1 a ]
+[v _D `c ~T0 @X0 1 a ]
+"253
+[; ;mcc_generated_files/oledC_shapes.c: 253:     width = width <= 1 ? 1 : width;
+[e = _width -> ? <= -> _width `i -> 1 `i : -> 1 `i -> _width `i `uc ]
+"255
+[; ;mcc_generated_files/oledC_shapes.c: 255:     dx = x1 - x0;
+[e = _dx -> - -> _x1 `i -> _x0 `i `c ]
+"256
+[; ;mcc_generated_files/oledC_shapes.c: 256:     dy = y1 - y0;
+[e = _dy -> - -> _y1 `i -> _y0 `i `c ]
+"257
+[; ;mcc_generated_files/oledC_shapes.c: 257:     D = dy - dx;
+[e = _D -> - -> _dy `i -> _dx `i `c ]
+"258
+[; ;mcc_generated_files/oledC_shapes.c: 258:     y = y0;
+[e = _y -> _y0 `c ]
+"260
+[; ;mcc_generated_files/oledC_shapes.c: 260:     for(x = x0; x < x1; x++)
+{
+[e = _x -> _x0 `c ]
+[e $U 64  ]
+[e :U 61 ]
+"261
+[; ;mcc_generated_files/oledC_shapes.c: 261:     {
+{
+"262
+[; ;mcc_generated_files/oledC_shapes.c: 262:         if(x <= OLED_DIM_WIDTH && y <= OLED_DIM_HEIGHT)
+[e $ ! && <= -> _x `i -> _OLED_DIM_WIDTH `i <= -> _y `i -> _OLED_DIM_HEIGHT `i 65  ]
+"263
+[; ;mcc_generated_files/oledC_shapes.c: 263:         {
+{
+"264
+[; ;mcc_generated_files/oledC_shapes.c: 264:             if(width <= 1)
+[e $ ! <= -> _width `i -> 1 `i 66  ]
+"265
+[; ;mcc_generated_files/oledC_shapes.c: 265:             {
+{
+"266
+[; ;mcc_generated_files/oledC_shapes.c: 266:                 oledC_DrawPoint(x,y, color);
+[e ( _oledC_DrawPoint (3 , , -> _x `uc -> _y `uc _color ]
+"267
+[; ;mcc_generated_files/oledC_shapes.c: 267:             }
+}
+[e $U 67  ]
+"268
+[; ;mcc_generated_files/oledC_shapes.c: 268:             else
+[e :U 66 ]
+"269
+[; ;mcc_generated_files/oledC_shapes.c: 269:             {
+{
+"270
+[; ;mcc_generated_files/oledC_shapes.c: 270:                 oledC_DrawCircle(x, y, width/2, color);
+[e ( _oledC_DrawCircle (4 , , , -> _x `uc -> _y `uc -> / -> _width `i -> 2 `i `uc _color ]
+"271
+[; ;mcc_generated_files/oledC_shapes.c: 271:             }
+}
+[e :U 67 ]
+"272
+[; ;mcc_generated_files/oledC_shapes.c: 272:         }
+}
+[e :U 65 ]
+"273
+[; ;mcc_generated_files/oledC_shapes.c: 273:         if(D >= 0)
+[e $ ! >= -> _D `i -> 0 `i 68  ]
+"274
+[; ;mcc_generated_files/oledC_shapes.c: 274:         {
+{
+"275
+[; ;mcc_generated_files/oledC_shapes.c: 275:             y = y+1;
+[e = _y -> + -> _y `i -> 1 `i `c ]
+"276
+[; ;mcc_generated_files/oledC_shapes.c: 276:             D = D - dx;
+[e = _D -> - -> _D `i -> _dx `i `c ]
+"277
+[; ;mcc_generated_files/oledC_shapes.c: 277:         }
+}
+[e :U 68 ]
+"278
+[; ;mcc_generated_files/oledC_shapes.c: 278:         D = D + dy;
+[e = _D -> + -> _D `i -> _dy `i `c ]
+"279
+[; ;mcc_generated_files/oledC_shapes.c: 279:     }
+}
+[e ++ _x -> -> 1 `i `c ]
+[e :U 64 ]
+[e $ < -> _x `i -> _x1 `i 61  ]
+[e :U 62 ]
+}
+"280
+[; ;mcc_generated_files/oledC_shapes.c: 280: }
+[e :UE 60 ]
+}
+"282
+[; ;mcc_generated_files/oledC_shapes.c: 282: void oledC_DrawRectangle(uint8_t start_x, uint8_t start_y, uint8_t end_x, uint8_t end_y, uint16_t color)
+[v _oledC_DrawRectangle `(v ~T0 @X0 1 ef5`uc`uc`uc`uc`us ]
+"283
+[; ;mcc_generated_files/oledC_shapes.c: 283: {
+{
+[e :U _oledC_DrawRectangle ]
+"282
+[; ;mcc_generated_files/oledC_shapes.c: 282: void oledC_DrawRectangle(uint8_t start_x, uint8_t start_y, uint8_t end_x, uint8_t end_y, uint16_t color)
+[v _start_x `uc ~T0 @X0 1 r1 ]
+[v _start_y `uc ~T0 @X0 1 r2 ]
+[v _end_x `uc ~T0 @X0 1 r3 ]
+[v _end_y `uc ~T0 @X0 1 r4 ]
+[v _color `us ~T0 @X0 1 r5 ]
+"283
+[; ;mcc_generated_files/oledC_shapes.c: 283: {
+[f ]
+"284
+[; ;mcc_generated_files/oledC_shapes.c: 284:     uint8_t x;
+[v _x `uc ~T0 @X0 1 a ]
+"285
+[; ;mcc_generated_files/oledC_shapes.c: 285:     uint8_t y;
+[v _y `uc ~T0 @X0 1 a ]
+"286
+[; ;mcc_generated_files/oledC_shapes.c: 286:     oledC_setColumnAddressBounds(start_x,end_x);
+[e ( _oledC_setColumnAddressBounds (2 , _start_x _end_x ]
+"287
+[; ;mcc_generated_files/oledC_shapes.c: 287:     oledC_setRowAddressBounds(start_y,end_y);
+[e ( _oledC_setRowAddressBounds (2 , _start_y _end_y ]
+"288
+[; ;mcc_generated_files/oledC_shapes.c: 288:     for(x = start_x; x < end_x+1; x++)
+{
+[e = _x _start_x ]
+[e $U 73  ]
+[e :U 70 ]
+"289
+[; ;mcc_generated_files/oledC_shapes.c: 289:     {
+{
+"290
+[; ;mcc_generated_files/oledC_shapes.c: 290:         for(y = start_y; y < end_y+1; y++)
+{
+[e = _y _start_y ]
+[e $U 77  ]
+[e :U 74 ]
+"291
+[; ;mcc_generated_files/oledC_shapes.c: 291:         {
+{
+"292
+[; ;mcc_generated_files/oledC_shapes.c: 292:             oledC_sendColorInt(color);
+[e ( _oledC_sendColorInt (1 _color ]
+"293
+[; ;mcc_generated_files/oledC_shapes.c: 293:         }
+}
+[e ++ _y -> -> 1 `i `uc ]
+[e :U 77 ]
+[e $ < -> _y `i + -> _end_y `i -> 1 `i 74  ]
+[e :U 75 ]
+}
+"294
+[; ;mcc_generated_files/oledC_shapes.c: 294:     }
+}
+[e ++ _x -> -> 1 `i `uc ]
+[e :U 73 ]
+[e $ < -> _x `i + -> _end_x `i -> 1 `i 70  ]
+[e :U 71 ]
+}
+"295
+[; ;mcc_generated_files/oledC_shapes.c: 295: }
+[e :UE 69 ]
+}
+"297
+[; ;mcc_generated_files/oledC_shapes.c: 297: void oledC_DrawCharacter(uint8_t x, uint8_t y, uint8_t sx, uint8_t sy, uint8_t ch, uint16_t color)
+[v _oledC_DrawCharacter `(v ~T0 @X0 1 ef6`uc`uc`uc`uc`uc`us ]
+"298
+[; ;mcc_generated_files/oledC_shapes.c: 298: {
+{
+[e :U _oledC_DrawCharacter ]
+"297
+[; ;mcc_generated_files/oledC_shapes.c: 297: void oledC_DrawCharacter(uint8_t x, uint8_t y, uint8_t sx, uint8_t sy, uint8_t ch, uint16_t color)
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[v _sx `uc ~T0 @X0 1 r3 ]
+[v _sy `uc ~T0 @X0 1 r4 ]
+[v _ch `uc ~T0 @X0 1 r5 ]
+[v _color `us ~T0 @X0 1 r6 ]
+"298
+[; ;mcc_generated_files/oledC_shapes.c: 298: {
+[f ]
+"299
+[; ;mcc_generated_files/oledC_shapes.c: 299:     const uint8_t *f = &font[(ch-' ')*OLED_FONT_WIDTH];
+[v _f `*Cuc ~T0 @X0 1 a ]
+[e = _f &U *U + &U _font * -> * - -> _ch `ui -> 32 `ui -> _OLED_FONT_WIDTH `ui `ux -> -> # *U &U _font `ui `ux ]
+"300
+[; ;mcc_generated_files/oledC_shapes.c: 300:     uint16_t i_x;
+[v _i_x `us ~T0 @X0 1 a ]
+"301
+[; ;mcc_generated_files/oledC_shapes.c: 301:     uint16_t i_y;
+[v _i_y `us ~T0 @X0 1 a ]
+"303
+[; ;mcc_generated_files/oledC_shapes.c: 303:     for(i_x = 0; i_x < OLED_FONT_WIDTH * sx; i_x += sx)
+{
+[e = _i_x -> -> 0 `i `us ]
+[e $U 82  ]
+[e :U 79 ]
+"304
+[; ;mcc_generated_files/oledC_shapes.c: 304:     {
+{
+"305
+[; ;mcc_generated_files/oledC_shapes.c: 305:         uint8_t curr_char_byte = *f++;
+[v _curr_char_byte `uc ~T0 @X0 1 a ]
+[e = _curr_char_byte *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x ]
+"306
+[; ;mcc_generated_files/oledC_shapes.c: 306:         for(i_y = OLED_FONT_HEIGHT*sy; i_y > 0; i_y -= sy)
+{
+[e = _i_y -> * -> _OLED_FONT_HEIGHT `i -> _sy `i `us ]
+[e $ > -> _i_y `ui -> -> 0 `i `ui 83  ]
+[e $U 84  ]
+[e :U 83 ]
+"307
+[; ;mcc_generated_files/oledC_shapes.c: 307:         {
+{
+"308
+[; ;mcc_generated_files/oledC_shapes.c: 308:             if(curr_char_byte & 0x01)
+[e $ ! != & -> _curr_char_byte `i -> 1 `i -> 0 `i 86  ]
+"309
+[; ;mcc_generated_files/oledC_shapes.c: 309:             {
+{
+"310
+[; ;mcc_generated_files/oledC_shapes.c: 310:                 oledC_DrawRectangle(x+i_x, y+i_y, x+i_x+sx-1, y+i_y+sy-1, color);
+[e ( _oledC_DrawRectangle (4 , , , , -> + -> _x `ui -> _i_x `ui `uc -> + -> _y `ui -> _i_y `ui `uc -> - + + -> _x `ui -> _i_x `ui -> _sx `ui -> -> 1 `i `ui `uc -> - + + -> _y `ui -> _i_y `ui -> _sy `ui -> -> 1 `i `ui `uc _color ]
+"311
+[; ;mcc_generated_files/oledC_shapes.c: 311:             }
+}
+[e :U 86 ]
+"312
+[; ;mcc_generated_files/oledC_shapes.c: 312:             curr_char_byte >>= 1;
+[e =>> _curr_char_byte -> -> 1 `i `uc ]
+"313
+[; ;mcc_generated_files/oledC_shapes.c: 313:         }
+}
+[e =- _i_y -> _sy `us ]
+[e $ > -> _i_y `ui -> -> 0 `i `ui 83  ]
+[e :U 84 ]
+}
+"314
+[; ;mcc_generated_files/oledC_shapes.c: 314:     }
+}
+[e =+ _i_x -> _sx `us ]
+[e :U 82 ]
+[e $ < -> _i_x `ui -> * -> _OLED_FONT_WIDTH `i -> _sx `i `ui 79  ]
+[e :U 80 ]
+}
+"315
+[; ;mcc_generated_files/oledC_shapes.c: 315: }
+[e :UE 78 ]
+}
+"317
+[; ;mcc_generated_files/oledC_shapes.c: 317: void oledC_DrawString(uint8_t x, uint8_t y, uint8_t sx, uint8_t sy, uint8_t *string, uint16_t color)
+[v _oledC_DrawString `(v ~T0 @X0 1 ef6`uc`uc`uc`uc`*uc`us ]
+"318
+[; ;mcc_generated_files/oledC_shapes.c: 318: {
+{
+[e :U _oledC_DrawString ]
+"317
+[; ;mcc_generated_files/oledC_shapes.c: 317: void oledC_DrawString(uint8_t x, uint8_t y, uint8_t sx, uint8_t sy, uint8_t *string, uint16_t color)
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[v _sx `uc ~T0 @X0 1 r3 ]
+[v _sy `uc ~T0 @X0 1 r4 ]
+[v _string `*uc ~T0 @X0 1 r5 ]
+[v _color `us ~T0 @X0 1 r6 ]
+"318
+[; ;mcc_generated_files/oledC_shapes.c: 318: {
+[f ]
+"319
+[; ;mcc_generated_files/oledC_shapes.c: 319:     while(*string)
+[e $U 88  ]
+[e :U 89 ]
+"320
+[; ;mcc_generated_files/oledC_shapes.c: 320:     {
+{
+"321
+[; ;mcc_generated_files/oledC_shapes.c: 321:         oledC_DrawCharacter(x, y, sx, sy, *string++, color);
+[e ( _oledC_DrawCharacter (4 , , , , , _x _y _sx _sy *U ++ _string * -> -> 1 `i `x -> -> # *U _string `i `x _color ]
+"322
+[; ;mcc_generated_files/oledC_shapes.c: 322:         x += OLED_FONT_WIDTH * sx + 1;
+[e =+ _x -> + * -> _OLED_FONT_WIDTH `i -> _sx `i -> 1 `i `uc ]
+"323
+[; ;mcc_generated_files/oledC_shapes.c: 323:     }
+}
+[e :U 88 ]
+"319
+[; ;mcc_generated_files/oledC_shapes.c: 319:     while(*string)
+[e $ != -> *U _string `i -> 0 `i 89  ]
+[e :U 90 ]
+"324
+[; ;mcc_generated_files/oledC_shapes.c: 324: }
+[e :UE 87 ]
+}
+"326
+[; ;mcc_generated_files/oledC_shapes.c: 326: void oledC_DrawBitmap(uint8_t x, uint8_t y, uint16_t color, uint8_t sx, uint8_t sy, uint32_t *bitmap, uint8_t bitmap_length)
+[v _oledC_DrawBitmap `(v ~T0 @X0 1 ef7`uc`uc`us`uc`uc`*ul`uc ]
+"327
+[; ;mcc_generated_files/oledC_shapes.c: 327: {
+{
+[e :U _oledC_DrawBitmap ]
+"326
+[; ;mcc_generated_files/oledC_shapes.c: 326: void oledC_DrawBitmap(uint8_t x, uint8_t y, uint16_t color, uint8_t sx, uint8_t sy, uint32_t *bitmap, uint8_t bitmap_length)
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[v _color `us ~T0 @X0 1 r3 ]
+[v _sx `uc ~T0 @X0 1 r4 ]
+[v _sy `uc ~T0 @X0 1 r5 ]
+[v _bitmap `*ul ~T0 @X0 1 r6 ]
+[v _bitmap_length `uc ~T0 @X0 1 r7 ]
+"327
+[; ;mcc_generated_files/oledC_shapes.c: 327: {
+[f ]
+"328
+[; ;mcc_generated_files/oledC_shapes.c: 328:     const uint8_t bitmap_width = 32;
+[v _bitmap_width `Cuc ~T0 @X0 1 a ]
+[e = _bitmap_width -> -> 32 `i `uc ]
+"329
+[; ;mcc_generated_files/oledC_shapes.c: 329:     uint8_t rowNum;
+[v _rowNum `uc ~T0 @X0 1 a ]
+"330
+[; ;mcc_generated_files/oledC_shapes.c: 330:     uint8_t bitNum;
+[v _bitNum `uc ~T0 @X0 1 a ]
+"331
+[; ;mcc_generated_files/oledC_shapes.c: 331:     sx = sx == 0 ? 1 : sx;
+[e = _sx -> ? == -> _sx `i -> 0 `i : -> 1 `i -> _sx `i `uc ]
+"332
+[; ;mcc_generated_files/oledC_shapes.c: 332:     sy = sy == 0 ? 1 : sy;
+[e = _sy -> ? == -> _sy `i -> 0 `i : -> 1 `i -> _sy `i `uc ]
+"333
+[; ;mcc_generated_files/oledC_shapes.c: 333:     for(rowNum = 0; rowNum < bitmap_length; rowNum++)
+{
+[e = _rowNum -> -> 0 `i `uc ]
+[e $U 95  ]
+[e :U 92 ]
+"334
+[; ;mcc_generated_files/oledC_shapes.c: 334:     {
+{
+"335
+[; ;mcc_generated_files/oledC_shapes.c: 335:         uint32_t rowBits = *bitmap++;
+[v _rowBits `ul ~T0 @X0 1 a ]
+[e = _rowBits *U ++ _bitmap * -> -> 1 `i `x -> -> # *U _bitmap `i `x ]
+"336
+[; ;mcc_generated_files/oledC_shapes.c: 336:         uint8_t curr_y = y + rowNum*sy;
+[v _curr_y `uc ~T0 @X0 1 a ]
+[e = _curr_y -> + -> _y `i * -> _rowNum `i -> _sy `i `uc ]
+"337
+[; ;mcc_generated_files/oledC_shapes.c: 337:         for(bitNum = 0; bitNum < bitmap_width; bitNum++)
+{
+[e = _bitNum -> -> 0 `i `uc ]
+[e $ < -> _bitNum `i -> _bitmap_width `i 96  ]
+[e $U 97  ]
+[e :U 96 ]
+"338
+[; ;mcc_generated_files/oledC_shapes.c: 338:         {
+{
+"339
+[; ;mcc_generated_files/oledC_shapes.c: 339:             if(!(rowBits & 0x01))
+[e $ ! ! != & _rowBits -> -> -> 1 `i `l `ul -> -> -> 0 `i `l `ul 99  ]
+"340
+[; ;mcc_generated_files/oledC_shapes.c: 340:             {
+{
+"341
+[; ;mcc_generated_files/oledC_shapes.c: 341:                 uint8_t curr_x = x + (bitmap_width - bitNum)*sx;
+[v _curr_x `uc ~T0 @X0 1 a ]
+[e = _curr_x -> + -> _x `i * - -> _bitmap_width `i -> _bitNum `i -> _sx `i `uc ]
+"342
+[; ;mcc_generated_files/oledC_shapes.c: 342:                 oledC_DrawRectangle(curr_x, curr_y, curr_x+sx-1, curr_y+sy-1, color);
+[e ( _oledC_DrawRectangle (4 , , , , _curr_x _curr_y -> - + -> _curr_x `i -> _sx `i -> 1 `i `uc -> - + -> _curr_y `i -> _sy `i -> 1 `i `uc _color ]
+"343
+[; ;mcc_generated_files/oledC_shapes.c: 343:             }
+}
+[e :U 99 ]
+"344
+[; ;mcc_generated_files/oledC_shapes.c: 344:             rowBits >>= 0x000001;
+[e =>> _rowBits -> -> 1 `i `ul ]
+"345
+[; ;mcc_generated_files/oledC_shapes.c: 345:         }
+}
+[e ++ _bitNum -> -> 1 `i `uc ]
+[e $ < -> _bitNum `i -> _bitmap_width `i 96  ]
+[e :U 97 ]
+}
+"346
+[; ;mcc_generated_files/oledC_shapes.c: 346:     }
+}
+[e ++ _rowNum -> -> 1 `i `uc ]
+[e :U 95 ]
+[e $ < -> _rowNum `i -> _bitmap_length `i 92  ]
+[e :U 93 ]
+}
+"347
+[; ;mcc_generated_files/oledC_shapes.c: 347: }
+[e :UE 91 ]
+}
+"350
+[; ;mcc_generated_files/oledC_shapes.c: 350: static void drawPoint(shape_t *shape)
+[v _drawPoint `(v ~T0 @X0 1 sf1`*S10 ]
+"351
+[; ;mcc_generated_files/oledC_shapes.c: 351: {
+{
+[e :U _drawPoint ]
+"350
+[; ;mcc_generated_files/oledC_shapes.c: 350: static void drawPoint(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"351
+[; ;mcc_generated_files/oledC_shapes.c: 351: {
+[f ]
+"352
+[; ;mcc_generated_files/oledC_shapes.c: 352:     oledC_DrawPoint(
+[e ( _oledC_DrawPoint (3 , , . . . *U _shape 2 0 1 . . . *U _shape 2 0 2 . . . *U _shape 2 0 0 ]
+"357
+[; ;mcc_generated_files/oledC_shapes.c: 357: }
+[e :UE 100 ]
+}
+"359
+[; ;mcc_generated_files/oledC_shapes.c: 359: static void drawCircle(shape_t *shape)
+[v _drawCircle `(v ~T0 @X0 1 sf1`*S10 ]
+"360
+[; ;mcc_generated_files/oledC_shapes.c: 360: {
+{
+[e :U _drawCircle ]
+"359
+[; ;mcc_generated_files/oledC_shapes.c: 359: static void drawCircle(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"360
+[; ;mcc_generated_files/oledC_shapes.c: 360: {
+[f ]
+"361
+[; ;mcc_generated_files/oledC_shapes.c: 361:     oledC_DrawCircle(
+[e ( _oledC_DrawCircle (4 , , , . . . *U _shape 2 1 1 . . . *U _shape 2 1 2 . . . *U _shape 2 1 3 . . . *U _shape 2 1 0 ]
+"367
+[; ;mcc_generated_files/oledC_shapes.c: 367: }
+[e :UE 101 ]
+}
+"369
+[; ;mcc_generated_files/oledC_shapes.c: 369: static void drawRing(shape_t *shape)
+[v _drawRing `(v ~T0 @X0 1 sf1`*S10 ]
+"370
+[; ;mcc_generated_files/oledC_shapes.c: 370: {
+{
+[e :U _drawRing ]
+"369
+[; ;mcc_generated_files/oledC_shapes.c: 369: static void drawRing(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"370
+[; ;mcc_generated_files/oledC_shapes.c: 370: {
+[f ]
+"371
+[; ;mcc_generated_files/oledC_shapes.c: 371:     oledC_DrawRing(
+[e ( _oledC_DrawRing (4 , , , , . . . *U _shape 2 2 1 . . . *U _shape 2 2 2 . . . *U _shape 2 2 3 . . . *U _shape 2 2 4 . . . *U _shape 2 2 0 ]
+"378
+[; ;mcc_generated_files/oledC_shapes.c: 378: }
+[e :UE 102 ]
+}
+"380
+[; ;mcc_generated_files/oledC_shapes.c: 380: static void drawRectangle(shape_t *shape)
+[v _drawRectangle `(v ~T0 @X0 1 sf1`*S10 ]
+"381
+[; ;mcc_generated_files/oledC_shapes.c: 381: {
+{
+[e :U _drawRectangle ]
+"380
+[; ;mcc_generated_files/oledC_shapes.c: 380: static void drawRectangle(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"381
+[; ;mcc_generated_files/oledC_shapes.c: 381: {
+[f ]
+"382
+[; ;mcc_generated_files/oledC_shapes.c: 382:     oledC_DrawRectangle(
+[e ( _oledC_DrawRectangle (4 , , , , . . . *U _shape 2 3 1 . . . *U _shape 2 3 2 . . . *U _shape 2 3 3 . . . *U _shape 2 3 4 . . . *U _shape 2 3 0 ]
+"389
+[; ;mcc_generated_files/oledC_shapes.c: 389: }
+[e :UE 103 ]
+}
+"391
+[; ;mcc_generated_files/oledC_shapes.c: 391: static void drawLine(shape_t *shape)
+[v _drawLine `(v ~T0 @X0 1 sf1`*S10 ]
+"392
+[; ;mcc_generated_files/oledC_shapes.c: 392: {
+{
+[e :U _drawLine ]
+"391
+[; ;mcc_generated_files/oledC_shapes.c: 391: static void drawLine(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"392
+[; ;mcc_generated_files/oledC_shapes.c: 392: {
+[f ]
+"393
+[; ;mcc_generated_files/oledC_shapes.c: 393:     oledC_DrawLine(
+[e ( _oledC_DrawLine (4 , , , , , . . . *U _shape 2 4 1 . . . *U _shape 2 4 2 . . . *U _shape 2 4 4 . . . *U _shape 2 4 5 . . . *U _shape 2 4 3 . . . *U _shape 2 4 0 ]
+"401
+[; ;mcc_generated_files/oledC_shapes.c: 401: }
+[e :UE 104 ]
+}
+"403
+[; ;mcc_generated_files/oledC_shapes.c: 403: static void drawCharacter(shape_t *shape)
+[v _drawCharacter `(v ~T0 @X0 1 sf1`*S10 ]
+"404
+[; ;mcc_generated_files/oledC_shapes.c: 404: {
+{
+[e :U _drawCharacter ]
+"403
+[; ;mcc_generated_files/oledC_shapes.c: 403: static void drawCharacter(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"404
+[; ;mcc_generated_files/oledC_shapes.c: 404: {
+[f ]
+"405
+[; ;mcc_generated_files/oledC_shapes.c: 405:     oledC_DrawCharacter(
+[e ( _oledC_DrawCharacter (4 , , , , , . . . *U _shape 2 5 1 . . . *U _shape 2 5 2 . . . *U _shape 2 5 3 . . . *U _shape 2 5 4 . . . *U _shape 2 5 5 . . . *U _shape 2 5 0 ]
+"413
+[; ;mcc_generated_files/oledC_shapes.c: 413: }
+[e :UE 105 ]
+}
+"415
+[; ;mcc_generated_files/oledC_shapes.c: 415: static void drawString(shape_t *shape)
+[v _drawString `(v ~T0 @X0 1 sf1`*S10 ]
+"416
+[; ;mcc_generated_files/oledC_shapes.c: 416: {
+{
+[e :U _drawString ]
+"415
+[; ;mcc_generated_files/oledC_shapes.c: 415: static void drawString(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"416
+[; ;mcc_generated_files/oledC_shapes.c: 416: {
+[f ]
+"417
+[; ;mcc_generated_files/oledC_shapes.c: 417:     oledC_DrawString(
+[e ( _oledC_DrawString (4 , , , , , . . . *U _shape 2 6 1 . . . *U _shape 2 6 2 . . . *U _shape 2 6 3 . . . *U _shape 2 6 4 . . . *U _shape 2 6 5 . . . *U _shape 2 6 0 ]
+"425
+[; ;mcc_generated_files/oledC_shapes.c: 425: }
+[e :UE 106 ]
+}
+"427
+[; ;mcc_generated_files/oledC_shapes.c: 427: static void drawBitmap(shape_t *shape)
+[v _drawBitmap `(v ~T0 @X0 1 sf1`*S10 ]
+"428
+[; ;mcc_generated_files/oledC_shapes.c: 428: {
+{
+[e :U _drawBitmap ]
+"427
+[; ;mcc_generated_files/oledC_shapes.c: 427: static void drawBitmap(shape_t *shape)
+[v _shape `*S10 ~T0 @X0 1 r1 ]
+"428
+[; ;mcc_generated_files/oledC_shapes.c: 428: {
+[f ]
+"429
+[; ;mcc_generated_files/oledC_shapes.c: 429:     oledC_DrawBitmap(
+[e ( _oledC_DrawBitmap (4 , , , , , , . . . *U _shape 2 7 1 . . . *U _shape 2 7 2 . . . *U _shape 2 7 0 . . . *U _shape 2 7 3 . . . *U _shape 2 7 4 . . . *U _shape 2 7 5 . . . *U _shape 2 7 6 ]
+"438
+[; ;mcc_generated_files/oledC_shapes.c: 438: }
+[e :UE 107 ]
+}
