@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=pic18f57q73_oledc_example.X
+PROJECTNAME=pic18f57q43_oledc_example.X
 
 # Active Configuration
 DEFAULTCONF=default

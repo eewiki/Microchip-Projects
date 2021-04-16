@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Fri Apr 16 15:11:07 2021
+                                                                                               Fri Apr 16 15:12:55 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	18F57Q43
@@ -1645,7 +1645,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1631                           	callstack 0
   1632  000503                     oledC_createShape@newShape:
   1633                           	callstack 0
-  1634  000503                     _oledC_getShape$1889:
+  1634  000503                     _oledC_getShape$1880:
   1635                           	callstack 0
   1636  000503                     ___wmul@multiplicand:
   1637                           	callstack 0
@@ -1729,7 +1729,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1715                           	callstack 0
   1716  00050D                     _oledC_setColumnAddressBounds$1642:
   1717                           	callstack 0
-  1718  00050D                     _oledC_addShape$1896:
+  1718  00050D                     _oledC_addShape$1887:
   1719                           	callstack 0
   1720                           
   1721                           ; 2 bytes @ 0xC
@@ -1829,7 +1829,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1815                           ; 1 bytes @ 0x1B
   1816  00051C                     	ds	1
   1817  00051D                     ??_oledC_DrawRing:
-  1818  00051D                     _oledC_DrawCircle$300:
+  1818  00051D                     _oledC_DrawCircle$422:
   1819                           	callstack 0
   1820                           
   1821                           ; 2 bytes @ 0x1C
@@ -1961,19 +1961,19 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1947                           
   1948                           ; 2 bytes @ 0x2E
   1949  00052F                     	ds	1
-  1950  000530                     _oledC_DrawBitmap$363:
+  1950  000530                     _oledC_DrawBitmap$485:
   1951                           	callstack 0
   1952                           
   1953                           ; 2 bytes @ 0x2F
   1954  000530                     	ds	1
-  1955  000531                     _oledC_DrawLine$322:
+  1955  000531                     _oledC_DrawLine$444:
   1956                           	callstack 0
   1957  000531                     oledC_DrawCharacter@i_y:
   1958                           	callstack 0
   1959                           
   1960                           ; 2 bytes @ 0x30
   1961  000531                     	ds	1
-  1962  000532                     _oledC_DrawBitmap$364:
+  1962  000532                     _oledC_DrawBitmap$486:
   1963                           	callstack 0
   1964                           
   1965                           ; 2 bytes @ 0x31
@@ -2068,7 +2068,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2054                           
   2055                           ; 1 bytes @ 0x3D
   2056  00053E                     	ds	1
-  2057  00053F                     _oledC_redrawSome$1908:
+  2057  00053F                     _oledC_redrawSome$1899:
   2058                           	callstack 0
   2059  00053F                     oledC_eraseShape@saveColor:
   2060                           	callstack 0
@@ -2146,8 +2146,8 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2122  0118E2                     
   2123                           ;main.c: 52:     SYSTEM_Initialize();
   2124  0118E2  EC44  F08C         	call	_SYSTEM_Initialize	;wreg free
-  2125  0118E6                     l686:
-  2126  0118E6  EF73  F08C         	goto	l686
+  2125  0118E6                     l978:
+  2126  0118E6  EF73  F08C         	goto	l978
   2127  0118EA  EFFE  F0FF         	goto	start
   2128  0118EE                     __end_of_main:
   2129                           	callstack 0
@@ -2655,7 +2655,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2565  011558  EF9B  F08A         	goto	l3147
   2566  01155C                     u1840:
   2567  01155C  EFB1  F08A         	goto	l3153
-  2568  011560                     l540:
+  2568  011560                     l570:
   2569                           
   2570                           ;mcc_generated_files/delay.c: 57:     {;mcc_generated_files/delay.c: 58:         _delay(
       +                          (unsigned long)((1)*(8000000/4000000.0)));
@@ -2673,7 +2673,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2582  011570  EFBC  F08A         	goto	u1851
   2583  011574  EFBE  F08A         	goto	u1850
   2584  011578                     u1851:
-  2585  011578  EFB0  F08A         	goto	l540
+  2585  011578  EFB0  F08A         	goto	l570
   2586  01157C                     u1850:
   2587  01157C  0012               	return		;funcret
   2588  01157E                     __end_of_DELAY_microseconds:
@@ -3363,16 +3363,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3182  010E5C                     u1721:
   3183  010E5C  EF35  F087         	goto	l3027
   3184  010E60                     u1720:
-  3185  010E60  C53D  F53F         	movff	oledC_redrawSome@endInd,_oledC_redrawSome$1908
-  3186  010E64  6A40               	clrf	(_oledC_redrawSome$1908+1)^(0+1280),c
+  3185  010E60  C53D  F53F         	movff	oledC_redrawSome@endInd,_oledC_redrawSome$1899
+  3186  010E64  6A40               	clrf	(_oledC_redrawSome$1899+1)^(0+1280),c
   3187  010E66  EF39  F087         	goto	l3029
   3188  010E6A                     l3027:
   3189  010E6A  0E00               	movlw	0
-  3190  010E6C  6E40               	movwf	(_oledC_redrawSome$1908+1)^(0+1280),c
+  3190  010E6C  6E40               	movwf	(_oledC_redrawSome$1899+1)^(0+1280),c
   3191  010E6E  0E20               	movlw	32
-  3192  010E70  6E3F               	movwf	_oledC_redrawSome$1908^(0+1280),c
+  3192  010E70  6E3F               	movwf	_oledC_redrawSome$1899^(0+1280),c
   3193  010E72                     l3029:
-  3194  010E72  C53F  F53D         	movff	_oledC_redrawSome$1908,oledC_redrawSome@endInd
+  3194  010E72  C53F  F53D         	movff	_oledC_redrawSome$1899,oledC_redrawSome@endInd
   3195  010E76                     
   3196                           ;mcc_generated_files/oledC_shapeHandler.c: 95:     for(i = startInd; i < endInd; i++)
   3197  010E76  C53E  F541         	movff	oledC_redrawSome@startInd,oledC_redrawSome@i
@@ -3514,16 +3514,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3317  010DB6                     u1761:
   3318  010DB6  EFE2  F086         	goto	l3049
   3319  010DBA                     u1760:
-  3320  010DBA  C50F  F50D         	movff	oledC_addShape@drawIndex,_oledC_addShape$1896
-  3321  010DBE  6A0E               	clrf	(_oledC_addShape$1896+1)^(0+1280),c
+  3320  010DBA  C50F  F50D         	movff	oledC_addShape@drawIndex,_oledC_addShape$1887
+  3321  010DBE  6A0E               	clrf	(_oledC_addShape$1887+1)^(0+1280),c
   3322  010DC0  EFE6  F086         	goto	l3051
   3323  010DC4                     l3049:
   3324  010DC4  0E00               	movlw	0
-  3325  010DC6  6E0E               	movwf	(_oledC_addShape$1896+1)^(0+1280),c
+  3325  010DC6  6E0E               	movwf	(_oledC_addShape$1887+1)^(0+1280),c
   3326  010DC8  0E1F               	movlw	31
-  3327  010DCA  6E0D               	movwf	_oledC_addShape$1896^(0+1280),c
+  3327  010DCA  6E0D               	movwf	_oledC_addShape$1887^(0+1280),c
   3328  010DCC                     l3051:
-  3329  010DCC  C50D  F50F         	movff	_oledC_addShape$1896,oledC_addShape@drawIndex
+  3329  010DCC  C50D  F50F         	movff	_oledC_addShape$1887,oledC_addShape@drawIndex
   3330                           
   3331                           ;mcc_generated_files/oledC_shapeHandler.c: 67:     for(i = (32 -1); i > drawIndex && i >
       +                           0; i--)
@@ -3714,7 +3714,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3500  010088  6EDE               	movwf	postinc2,c
   3501                           
   3502                           ;mcc_generated_files/oledC_shapes.c: 55:             break;
-  3503  01008A  EF38  F081         	goto	l43
+  3503  01008A  EF38  F081         	goto	l73
   3504  01008E                     l2965:
   3505                           
   3506                           ;mcc_generated_files/oledC_shapes.c: 57:             newShape->params.ring = params->rin
@@ -3746,7 +3746,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3531  0100C6  6EDE               	movwf	postinc2,c
   3532                           
   3533                           ;mcc_generated_files/oledC_shapes.c: 59:             break;
-  3534  0100C8  EF38  F081         	goto	l43
+  3534  0100C8  EF38  F081         	goto	l73
   3535  0100CC                     l2969:
   3536                           
   3537                           ;mcc_generated_files/oledC_shapes.c: 61:             newShape->params.rectangle = params
@@ -3778,7 +3778,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3562  010104  6EDE               	movwf	postinc2,c
   3563                           
   3564                           ;mcc_generated_files/oledC_shapes.c: 63:             break;
-  3565  010106  EF38  F081         	goto	l43
+  3565  010106  EF38  F081         	goto	l73
   3566  01010A                     l2973:
   3567                           
   3568                           ;mcc_generated_files/oledC_shapes.c: 65:             newShape->params.line = params->lin
@@ -3810,7 +3810,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3593  010142  6EDE               	movwf	postinc2,c
   3594                           
   3595                           ;mcc_generated_files/oledC_shapes.c: 67:             break;
-  3596  010144  EF38  F081         	goto	l43
+  3596  010144  EF38  F081         	goto	l73
   3597  010148                     l2977:
   3598                           
   3599                           ;mcc_generated_files/oledC_shapes.c: 69:             newShape->params.character = params
@@ -3842,7 +3842,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3624  010180  6EDE               	movwf	postinc2,c
   3625                           
   3626                           ;mcc_generated_files/oledC_shapes.c: 71:             break;
-  3627  010182  EF38  F081         	goto	l43
+  3627  010182  EF38  F081         	goto	l73
   3628  010186                     l2981:
   3629                           
   3630                           ;mcc_generated_files/oledC_shapes.c: 73:             newShape->params.string = params->s
@@ -3874,7 +3874,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3655  0101BE  6EDE               	movwf	postinc2,c
   3656                           
   3657                           ;mcc_generated_files/oledC_shapes.c: 75:             break;
-  3658  0101C0  EF38  F081         	goto	l43
+  3658  0101C0  EF38  F081         	goto	l73
   3659  0101C4                     l2985:
   3660                           
   3661                           ;mcc_generated_files/oledC_shapes.c: 77:             newShape->params.bitmap = params->b
@@ -3906,7 +3906,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3686  0101FC  6EDE               	movwf	postinc2,c
   3687                           
   3688                           ;mcc_generated_files/oledC_shapes.c: 79:             break;
-  3689  0101FE  EF38  F081         	goto	l43
+  3689  0101FE  EF38  F081         	goto	l73
   3690  010202                     l2989:
   3691                           
   3692                           ;mcc_generated_files/oledC_shapes.c: 81:             newShape->draw = drawPoint;
@@ -3923,7 +3923,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3703  010218  6EDE               	movwf	postinc2,c
   3704                           
   3705                           ;mcc_generated_files/oledC_shapes.c: 82:             break;
-  3706  01021A  EF38  F081         	goto	l43
+  3706  01021A  EF38  F081         	goto	l73
   3707  01021E                     l2993:
   3708  01021E  5007               	movf	oledC_createShape@shape_type^(0+1280),w,c
   3709  010220  6E05               	movwf	??_oledC_createShape^(0+1280),c
@@ -3973,7 +3973,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3752  010266  B4D8               	btfsc	status,2,c
   3753  010268  EFE2  F080         	goto	l2985
   3754  01026C  EF01  F081         	goto	l2989
-  3755  010270                     l43:
+  3755  010270                     l73:
   3756  010270  0012               	return		;funcret
   3757  010272                     __end_of_oledC_createShape:
   3758                           	callstack 0
@@ -4166,16 +4166,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3918  0116D8                     u1801:
   3919  0116D8  EF73  F08B         	goto	l3071
   3920  0116DC                     u1800:
-  3921  0116DC  C505  F503         	movff	oledC_getShape@index,_oledC_getShape$1889
-  3922  0116E0  6A04               	clrf	(_oledC_getShape$1889+1)^(0+1280),c
+  3921  0116DC  C505  F503         	movff	oledC_getShape@index,_oledC_getShape$1880
+  3922  0116E0  6A04               	clrf	(_oledC_getShape$1880+1)^(0+1280),c
   3923  0116E2  EF77  F08B         	goto	l3073
   3924  0116E6                     l3071:
   3925  0116E6  0E00               	movlw	0
-  3926  0116E8  6E04               	movwf	(_oledC_getShape$1889+1)^(0+1280),c
+  3926  0116E8  6E04               	movwf	(_oledC_getShape$1880+1)^(0+1280),c
   3927  0116EA  0E20               	movlw	32
-  3928  0116EC  6E03               	movwf	_oledC_getShape$1889^(0+1280),c
+  3928  0116EC  6E03               	movwf	_oledC_getShape$1880^(0+1280),c
   3929  0116EE                     l3073:
-  3930  0116EE  C503  F505         	movff	_oledC_getShape$1889,oledC_getShape@index
+  3930  0116EE  C503  F505         	movff	_oledC_getShape$1880,oledC_getShape@index
   3931  0116F2                     
   3932                           ;mcc_generated_files/oledC_shapeHandler.c: 59:     return &allParsedShapes[index];
   3933  0116F2  5005               	movf	oledC_getShape@index^(0+1280),w,c
@@ -5174,7 +5174,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   4793                           
   4794                           ;mcc_generated_files/oledC_shapes.c: 220:     while(width-- > 0)
   4795  010438  EFBD  F082         	goto	l2849
-  4796  01043C                     l104:
+  4796  01043C                     l134:
   4797                           
   4798                           ;mcc_generated_files/oledC_shapes.c: 221:     {;mcc_generated_files/oledC_shapes.c: 222:
       +                                   x = radius;
@@ -5363,7 +5363,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   4972  010580  EFC4  F082         	goto	u1491
   4973  010584  EFC6  F082         	goto	u1490
   4974  010588                     u1491:
-  4975  010588  EF1E  F082         	goto	l104
+  4975  010588  EF1E  F082         	goto	l134
   4976  01058C                     u1490:
   4977  01058C  0012               	return		;funcret
   4978  01058E                     __end_of_oledC_DrawRing:
@@ -5443,16 +5443,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5038  0106C4                     u1501:
   5039  0106C4  EF69  F083         	goto	l2855
   5040  0106C8                     u1500:
-  5041  0106C8  C529  F531         	movff	oledC_DrawLine@width,_oledC_DrawLine$322
-  5042  0106CC  6A32               	clrf	(_oledC_DrawLine$322+1)^(0+1280),c
+  5041  0106C8  C529  F531         	movff	oledC_DrawLine@width,_oledC_DrawLine$444
+  5042  0106CC  6A32               	clrf	(_oledC_DrawLine$444+1)^(0+1280),c
   5043  0106CE  EF6D  F083         	goto	l2857
   5044  0106D2                     l2855:
   5045  0106D2  0E00               	movlw	0
-  5046  0106D4  6E32               	movwf	(_oledC_DrawLine$322+1)^(0+1280),c
+  5046  0106D4  6E32               	movwf	(_oledC_DrawLine$444+1)^(0+1280),c
   5047  0106D6  0E01               	movlw	1
-  5048  0106D8  6E31               	movwf	_oledC_DrawLine$322^(0+1280),c
+  5048  0106D8  6E31               	movwf	_oledC_DrawLine$444^(0+1280),c
   5049  0106DA                     l2857:
-  5050  0106DA  C531  F529         	movff	_oledC_DrawLine$322,oledC_DrawLine@width
+  5050  0106DA  C531  F529         	movff	_oledC_DrawLine$444,oledC_DrawLine@width
   5051  0106DE                     
   5052                           ;mcc_generated_files/oledC_shapes.c: 255:     dx = x1 - x0;
   5053  0106DE  5033               	movf	oledC_DrawLine@x0^(0+1280),w,c
@@ -5543,7 +5543,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5134  010774  EFBE  F083         	goto	u1541
   5135  010778  EFC0  F083         	goto	u1540
   5136  01077C                     u1541:
-  5137  01077C  EFC5  F083         	goto	l122
+  5137  01077C  EFC5  F083         	goto	l152
   5138  010780                     u1540:
   5139  010780                     
   5140                           ;mcc_generated_files/oledC_shapes.c: 274:         {;mcc_generated_files/oledC_shapes.c: 
@@ -5555,7 +5555,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5145  010784  5034               	movf	oledC_DrawLine@dx^(0+1280),w,c
   5146  010786  5C36               	subwf	oledC_DrawLine@D^(0+1280),w,c
   5147  010788  6E36               	movwf	oledC_DrawLine@D^(0+1280),c
-  5148  01078A                     l122:
+  5148  01078A                     l152:
   5149                           
   5150                           ;mcc_generated_files/oledC_shapes.c: 278:         D = D + dy;
   5151  01078A  5036               	movf	oledC_DrawLine@D^(0+1280),w,c
@@ -5814,16 +5814,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5384  010290                     u1331:
   5385  010290  EF4F  F081         	goto	l2723
   5386  010294                     u1330:
-  5387  010294  C519  F51D         	movff	oledC_DrawCircle@radius,_oledC_DrawCircle$300
-  5388  010298  6A1E               	clrf	(_oledC_DrawCircle$300+1)^(0+1280),c
+  5387  010294  C519  F51D         	movff	oledC_DrawCircle@radius,_oledC_DrawCircle$422
+  5388  010298  6A1E               	clrf	(_oledC_DrawCircle$422+1)^(0+1280),c
   5389  01029A  EF53  F081         	goto	l2725
   5390  01029E                     l2723:
   5391  01029E  0E00               	movlw	0
-  5392  0102A0  6E1E               	movwf	(_oledC_DrawCircle$300+1)^(0+1280),c
+  5392  0102A0  6E1E               	movwf	(_oledC_DrawCircle$422+1)^(0+1280),c
   5393  0102A2  0E01               	movlw	1
-  5394  0102A4  6E1D               	movwf	_oledC_DrawCircle$300^(0+1280),c
+  5394  0102A4  6E1D               	movwf	_oledC_DrawCircle$422^(0+1280),c
   5395  0102A6                     l2725:
-  5396  0102A6  C51D  F519         	movff	_oledC_DrawCircle$300,oledC_DrawCircle@radius
+  5396  0102A6  C51D  F519         	movff	_oledC_DrawCircle$422,oledC_DrawCircle@radius
   5397  0102AA                     
   5398                           ;mcc_generated_files/oledC_shapes.c: 184:     xCurr = radius+1;
   5399  0102AA  2819               	incf	oledC_DrawCircle@radius^(0+1280),w,c
@@ -5879,7 +5879,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5448  0102F4  EF0A  F082         	goto	l2757
   5449  0102F8                     u1340:
   5450  0102F8  EFE9  F081         	goto	l2751
-  5451  0102FC                     l94:
+  5451  0102FC                     l124:
   5452                           
   5453                           ;mcc_generated_files/oledC_shapes.c: 196:             {;mcc_generated_files/oledC_shapes
       +                          .c: 197:                 for(x = y; x < xCurr; x++)
@@ -6004,7 +6004,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5564  0103E0  EFF4  F081         	goto	u1361
   5565  0103E4  EFF6  F081         	goto	u1360
   5566  0103E8                     u1361:
-  5567  0103E8  EF7E  F081         	goto	l94
+  5567  0103E8  EF7E  F081         	goto	l124
   5568  0103EC                     u1360:
   5569  0103EC                     
   5570                           ;mcc_generated_files/oledC_shapes.c: 209:             d += -2*xCurr + 1;
@@ -6114,7 +6114,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5662  0115D0  EFEC  F08A         	goto	u1291
   5663  0115D4  EFEE  F08A         	goto	u1290
   5664  0115D8                     u1291:
-  5665  0115D8  EF08  F08B         	goto	l56
+  5665  0115D8  EF08  F08B         	goto	l86
   5666  0115DC                     u1290:
   5667  0115DC  0E5F               	movlw	95
   5668  0115DE  6414               	cpfsgt	oledC_DrawPoint@y^(0+1280),c
@@ -6123,7 +6123,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5671  0115E8                     u1301:
   5672  0115E8  EFF8  F08A         	goto	l2695
   5673  0115EC                     u1300:
-  5674  0115EC  EF08  F08B         	goto	l56
+  5674  0115EC  EF08  F08B         	goto	l86
   5675  0115F0                     l2695:
   5676                           
   5677                           ;mcc_generated_files/oledC_shapes.c: 145:     oledC_setColumnAddressBounds(x,95);
@@ -6142,7 +6142,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5690  011604  C515  F50C         	movff	oledC_DrawPoint@color,oledC_sendColorInt@raw
   5691  011608  C516  F50D         	movff	oledC_DrawPoint@color+1,oledC_sendColorInt@raw+1
   5692  01160C  EC9D  F08B         	call	_oledC_sendColorInt	;wreg free
-  5693  011610                     l56:
+  5693  011610                     l86:
   5694  011610  0012               	return		;funcret
   5695  011612                     __end_of_oledC_DrawPoint:
   5696                           	callstack 0
@@ -6333,10 +6333,10 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5854  010926  EF97  F084         	goto	u1381
   5855  01092A  EF99  F084         	goto	u1380
   5856  01092E                     u1381:
-  5857  01092E  EF9B  F084         	goto	l138
+  5857  01092E  EF9B  F084         	goto	l168
   5858  010932                     u1380:
   5859  010932  EFC1  F084         	goto	l2781
-  5860  010936                     l138:
+  5860  010936                     l168:
   5861                           
   5862                           ;mcc_generated_files/oledC_shapes.c: 307:         {;mcc_generated_files/oledC_shapes.c: 
       +                          308:             if(curr_char_byte & 0x01)
@@ -6486,16 +6486,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   5989  0105A0                     u1571:
   5990  0105A0  EFD7  F082         	goto	l2903
   5991  0105A4                     u1570:
-  5992  0105A4  C524  F530         	movff	oledC_DrawBitmap@sx,_oledC_DrawBitmap$363
-  5993  0105A8  6A31               	clrf	(_oledC_DrawBitmap$363+1)^(0+1280),c
+  5992  0105A4  C524  F530         	movff	oledC_DrawBitmap@sx,_oledC_DrawBitmap$485
+  5993  0105A8  6A31               	clrf	(_oledC_DrawBitmap$485+1)^(0+1280),c
   5994  0105AA  EFDB  F082         	goto	l2905
   5995  0105AE                     l2903:
   5996  0105AE  0E00               	movlw	0
-  5997  0105B0  6E31               	movwf	(_oledC_DrawBitmap$363+1)^(0+1280),c
+  5997  0105B0  6E31               	movwf	(_oledC_DrawBitmap$485+1)^(0+1280),c
   5998  0105B2  0E01               	movlw	1
-  5999  0105B4  6E30               	movwf	_oledC_DrawBitmap$363^(0+1280),c
+  5999  0105B4  6E30               	movwf	_oledC_DrawBitmap$485^(0+1280),c
   6000  0105B6                     l2905:
-  6001  0105B6  C530  F524         	movff	_oledC_DrawBitmap$363,oledC_DrawBitmap@sx
+  6001  0105B6  C530  F524         	movff	_oledC_DrawBitmap$485,oledC_DrawBitmap@sx
   6002                           
   6003                           ;mcc_generated_files/oledC_shapes.c: 332:     sy = sy == 0 ? 1 : sy;
   6004  0105BA  5025               	movf	oledC_DrawBitmap@sy^(0+1280),w,c
@@ -6505,16 +6505,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   6008  0105C6                     u1581:
   6009  0105C6  EFEA  F082         	goto	l2909
   6010  0105CA                     u1580:
-  6011  0105CA  C525  F532         	movff	oledC_DrawBitmap@sy,_oledC_DrawBitmap$364
-  6012  0105CE  6A33               	clrf	(_oledC_DrawBitmap$364+1)^(0+1280),c
+  6011  0105CA  C525  F532         	movff	oledC_DrawBitmap@sy,_oledC_DrawBitmap$486
+  6012  0105CE  6A33               	clrf	(_oledC_DrawBitmap$486+1)^(0+1280),c
   6013  0105D0  EFEE  F082         	goto	l2911
   6014  0105D4                     l2909:
   6015  0105D4  0E00               	movlw	0
-  6016  0105D6  6E33               	movwf	(_oledC_DrawBitmap$364+1)^(0+1280),c
+  6016  0105D6  6E33               	movwf	(_oledC_DrawBitmap$486+1)^(0+1280),c
   6017  0105D8  0E01               	movlw	1
-  6018  0105DA  6E32               	movwf	_oledC_DrawBitmap$364^(0+1280),c
+  6018  0105DA  6E32               	movwf	_oledC_DrawBitmap$486^(0+1280),c
   6019  0105DC                     l2911:
-  6020  0105DC  C532  F525         	movff	_oledC_DrawBitmap$364,oledC_DrawBitmap@sy
+  6020  0105DC  C532  F525         	movff	_oledC_DrawBitmap$486,oledC_DrawBitmap@sy
   6021                           
   6022                           ;mcc_generated_files/oledC_shapes.c: 333:     for(rowNum = 0; rowNum < bitmap_length; ro
       +                          wNum++)
@@ -6562,10 +6562,10 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   6062  010632  EF1D  F083         	goto	u1591
   6063  010636  EF1F  F083         	goto	u1590
   6064  01063A                     u1591:
-  6065  01063A  EF21  F083         	goto	l161
+  6065  01063A  EF21  F083         	goto	l191
   6066  01063E                     u1590:
   6067  01063E  EF50  F083         	goto	l2935
-  6068  010642                     l161:
+  6068  010642                     l191:
   6069                           
   6070                           ;mcc_generated_files/oledC_shapes.c: 338:         {;mcc_generated_files/oledC_shapes.c: 
       +                          339:             if(!(rowBits & 0x01))
@@ -6619,7 +6619,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   6116  010694  EF4E  F083         	goto	u1611
   6117  010698  EF50  F083         	goto	u1610
   6118  01069C                     u1611:
-  6119  01069C  EF21  F083         	goto	l161
+  6119  01069C  EF21  F083         	goto	l191
   6120  0106A0                     u1610:
   6121  0106A0                     l2935:
   6122                           
@@ -6715,7 +6715,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   6198                           ;mcc_generated_files/oledC_shapes.c: 288:     for(x = start_x; x < end_x+1; x++)
   6199  010F04  C520  F51E         	movff	oledC_DrawRectangle@start_x,oledC_DrawRectangle@x
   6200  010F08  EFAB  F087         	goto	l2709
-  6201  010F0C                     l128:
+  6201  010F0C                     l158:
   6202                           
   6203                           ;mcc_generated_files/oledC_shapes.c: 289:     {;mcc_generated_files/oledC_shapes.c: 290:
       +                                   for(y = start_y; y < end_y+1; y++)
@@ -6782,7 +6782,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   6263  010F7C  EFC2  F087         	goto	u1321
   6264  010F80  EFC4  F087         	goto	u1320
   6265  010F84                     u1321:
-  6266  010F84  EF86  F087         	goto	l128
+  6266  010F84  EF86  F087         	goto	l158
   6267  010F88                     u1320:
   6268  010F88  0012               	return		;funcret
   6269  010F8A                     __end_of_oledC_DrawRectangle:
@@ -8032,13 +8032,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   7378                           ; BSR set to: 0
   7379                           ;mcc_generated_files/spi1.c: 91:         return 1;
   7380  010A7E  0E01               	movlw	1
-  7381  010A80  EF43  F085         	goto	l945
+  7381  010A80  EF43  F085         	goto	l935
   7382  010A84                     l2569:
   7383                           
   7384                           ; BSR set to: 0
   7385                           ;mcc_generated_files/spi1.c: 93:     return 0;
   7386  010A84  0E00               	movlw	0
-  7387  010A86                     l945:
+  7387  010A86                     l935:
   7388                           
   7389                           ; BSR set to: 0
   7390  010A86  0012               	return		;funcret
@@ -8107,12 +8107,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   7442                           ; BSR set to: 0
   7443                           ;mcc_generated_files/spi1.c: 104:     SPI1TXB = data;
   7444  011852  0061  F404  F081   	movff	SPI1_ExchangeByte@data,129	;volatile
-  7445  011858                     l951:
+  7445  011858                     l941:
   7446  011858  A0B1               	btfss	177,0,c	;volatile
   7447  01185A  EF31  F08C         	goto	u1071
   7448  01185E  EF33  F08C         	goto	u1070
   7449  011862                     u1071:
-  7450  011862  EF2C  F08C         	goto	l951
+  7450  011862  EF2C  F08C         	goto	l941
   7451  011866                     u1070:
   7452  011866                     
   7453                           ;mcc_generated_files/spi1.c: 106:     return SPI1RXB;
@@ -8953,19 +8953,19 @@ Pointer List with Targets:
     allParsedShapes.params.string	PTR unsigned char  size(2) Largest target is 0
 		 -> logo(CODE[92]), 
 
-    S1319$3$0	PTR void  size(2) Largest target is 0
+    S35$3$0	PTR void  size(2) Largest target is 0
 
-    S1319$5$0	PTR void  size(2) Largest target is 0
+    S35$5$0	PTR void  size(2) Largest target is 0
 
     Absolute function$0	PTR FTN()void  size(3) Largest target is 0
 
     dummyshape@shape	PTR struct shape size(2) Largest target is 480
 		 -> allParsedShapes(BIGRAM[448]), 
 
-    S93$1$0	PTR struct shape size(2) Largest target is 480
+    S215$1$0	PTR struct shape size(2) Largest target is 480
 		 -> allParsedShapes(BIGRAM[448]), 
 
-    S1319$4$0	PTR void  size(2) Largest target is 2
+    S35$4$0	PTR void  size(2) Largest target is 2
 		 -> oledC_setDisplayOrientation@payload(COMRAM[1]), oledC_setColumnAddressBounds@payload(COMRAM[2]), oledC_setRowAddressBounds@payload(COMRAM[2]), NULL(NULL[0]), 
 
     SPI1_WriteBlock@block	PTR void  size(2) Largest target is 2
@@ -9013,66 +9013,6 @@ Pointer List with Targets:
 
     oledC_sendCommand@payload	PTR unsigned char  size(2) Largest target is 2
 		 -> oledC_setDisplayOrientation@payload(COMRAM[1]), oledC_setColumnAddressBounds@payload(COMRAM[2]), oledC_setRowAddressBounds@payload(COMRAM[2]), NULL(NULL[0]), 
-
-    S1319$spiISR	PTR FTN()void  size(3) Largest target is 1
-		 -> Absolute function(), 
-
-    spiMaster.spiISR	PTR FTN()void  size(3) Largest target is 1
-		 -> Absolute function(), 
-
-    S1319$setSpiISR	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
-		 -> Absolute function(), 
-
-    spiMaster.setSpiISR	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
-		 -> Absolute function(), 
-
-    S1319$readByte	PTR FTN()unsigned char  size(3) Largest target is 1
-		 -> SPI1_ReadByte(), 
-
-    spiMaster.readByte	PTR FTN()unsigned char  size(3) Largest target is 1
-		 -> SPI1_ReadByte(), 
-
-    S1319$writeByte	PTR FTN(unsigned char ,)void  size(3) Largest target is 1
-		 -> SPI1_WriteByte(), 
-
-    spiMaster.writeByte	PTR FTN(unsigned char ,)void  size(3) Largest target is 1
-		 -> SPI1_WriteByte(), 
-
-    S1319$readBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
-		 -> SPI1_ReadBlock(), 
-
-    spiMaster.readBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
-		 -> SPI1_ReadBlock(), 
-
-    S1319$writeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
-		 -> SPI1_WriteBlock(), 
-
-    spiMaster.writeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
-		 -> SPI1_WriteBlock(), 
-
-    S1319$exchangeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
-		 -> SPI1_ExchangeBlock(), 
-
-    spiMaster.exchangeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
-		 -> SPI1_ExchangeBlock(), 
-
-    S1319$exchangeByte	PTR FTN(unsigned char ,)unsigned char  size(3) Largest target is 1
-		 -> SPI1_ExchangeByte(), 
-
-    spiMaster.exchangeByte	PTR FTN(unsigned char ,)unsigned char  size(3) Largest target is 1
-		 -> SPI1_ExchangeByte(), 
-
-    S1319$spiOpen	PTR FTN()_Bool  size(3) Largest target is 1
-		 -> oledC_open(), 
-
-    spiMaster.spiOpen	PTR FTN()_Bool  size(3) Largest target is 1
-		 -> oledC_open(), 
-
-    S1319$spiClose	PTR FTN()void  size(3) Largest target is 1
-		 -> SPI1_Close(), 
-
-    spiMaster.spiClose	PTR FTN()void  size(3) Largest target is 1
-		 -> SPI1_Close(), 
 
     oledC_example@moveIt.params.bit_array	PTR unsigned long  size(2) Largest target is 92
 		 -> logo(CODE[92]), 
@@ -9245,19 +9185,19 @@ Pointer List with Targets:
     oledC_createShape@params	PTR struct shape_params_t size(2) Largest target is 10
 		 -> oledC_example_setup@params(COMRAM[9]), 
 
-    S75$bit_array	PTR unsigned long  size(2) Largest target is 92
+    S197$bit_array	PTR unsigned long  size(2) Largest target is 92
 		 -> logo(CODE[92]), 
 
     oledC_createShape@newShape.params.bitmap.bit_array	PTR unsigned long  size(2) Largest target is 92
 		 -> logo(CODE[92]), 
 
-    S68$string	PTR unsigned char  size(2) Largest target is 92
+    S190$string	PTR unsigned char  size(2) Largest target is 92
 		 -> logo(CODE[92]), 
 
     oledC_createShape@newShape.params.string.string	PTR unsigned char  size(2) Largest target is 92
 		 -> logo(CODE[92]), 
 
-    S93shape$draw	PTR FTN(PTR struct shape,)void  size(3) Largest target is 1
+    S215shape$draw	PTR FTN(PTR struct shape,)void  size(3) Largest target is 1
 		 -> dummyshape(), drawPoint(), drawBitmap(), drawString(), 
 		 -> drawCharacter(), drawLine(), drawRectangle(), drawRing(), 
 		 -> drawCircle(), 
@@ -9269,6 +9209,66 @@ Pointer List with Targets:
 
     oledC_createShape@newShape	PTR struct shape size(2) Largest target is 480
 		 -> allParsedShapes(BIGRAM[448]), 
+
+    S35$spiISR	PTR FTN()void  size(3) Largest target is 1
+		 -> Absolute function(), 
+
+    spiMaster.spiISR	PTR FTN()void  size(3) Largest target is 1
+		 -> Absolute function(), 
+
+    S35$setSpiISR	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+		 -> Absolute function(), 
+
+    spiMaster.setSpiISR	PTR FTN(PTR FTN()void ,)void  size(3) Largest target is 1
+		 -> Absolute function(), 
+
+    S35$readByte	PTR FTN()unsigned char  size(3) Largest target is 1
+		 -> SPI1_ReadByte(), 
+
+    spiMaster.readByte	PTR FTN()unsigned char  size(3) Largest target is 1
+		 -> SPI1_ReadByte(), 
+
+    S35$writeByte	PTR FTN(unsigned char ,)void  size(3) Largest target is 1
+		 -> SPI1_WriteByte(), 
+
+    spiMaster.writeByte	PTR FTN(unsigned char ,)void  size(3) Largest target is 1
+		 -> SPI1_WriteByte(), 
+
+    S35$readBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
+		 -> SPI1_ReadBlock(), 
+
+    spiMaster.readBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
+		 -> SPI1_ReadBlock(), 
+
+    S35$writeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
+		 -> SPI1_WriteBlock(), 
+
+    spiMaster.writeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
+		 -> SPI1_WriteBlock(), 
+
+    S35$exchangeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
+		 -> SPI1_ExchangeBlock(), 
+
+    spiMaster.exchangeBlock	PTR FTN(PTR void ,unsigned int ,)void  size(3) Largest target is 1
+		 -> SPI1_ExchangeBlock(), 
+
+    S35$exchangeByte	PTR FTN(unsigned char ,)unsigned char  size(3) Largest target is 1
+		 -> SPI1_ExchangeByte(), 
+
+    spiMaster.exchangeByte	PTR FTN(unsigned char ,)unsigned char  size(3) Largest target is 1
+		 -> SPI1_ExchangeByte(), 
+
+    S35$spiOpen	PTR FTN()_Bool  size(3) Largest target is 1
+		 -> oledC_open(), 
+
+    spiMaster.spiOpen	PTR FTN()_Bool  size(3) Largest target is 1
+		 -> oledC_open(), 
+
+    S35$spiClose	PTR FTN()void  size(3) Largest target is 1
+		 -> SPI1_Close(), 
+
+    spiMaster.spiClose	PTR FTN()void  size(3) Largest target is 1
+		 -> SPI1_Close(), 
 
 
 Critical Paths under _main in COMRAM
@@ -9905,46 +9905,46 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Fri Apr 16 15:11:07 2021
+Symbol Table                                                                                   Fri Apr 16 15:12:55 2021
 
                          _OLED_FONT_WIDTH FDC3                         _SPI1_ExchangeByte 184A  
                       _SPI1_ExchangeBlock 000000             __end_of_OLEDC_COLOR_FIREBRICK FD69  
-          __end_of_OLEDC_COLOR_BLUEVIOLET FDAF                                        l43 0270  
-                                      l56 1610                                        l94 02FC  
+          __end_of_OLEDC_COLOR_BLUEVIOLET FDAF                                        l23 1900  
+                                      l73 0270                                        l86 1610  
           __end_of_OLEDC_COLOR_AQUAMARINE FDBD                              ___awdiv@sign 0506  
                       ?_SPI1_ExchangeByte 0501                       ___wmul@multiplicand 0503  
            __end_of_OLEDC_COLOR_INDIANRED FD4D             __end_of_OLEDC_COLOR_GOLDENROD FD5B  
-            ?_oledC_setDisplayOrientation 0501                                       l100 042E  
-                                     l110 058C                                       l104 043C  
-                                     l122 078A                                       l124 07C0  
-                                     l133 0F88                                       l142 09A4  
-                                     l128 0F0C                                       l161 0642  
-                                     l138 0936                                       l171 15C8  
-                                     l148 12B8                                       l180 124E  
-                                     l165 06B4                                       l174 1494  
-                                     l183 11E2                                       l168 16C8  
-                                     l512 14E2                                       l177 1438  
-                                     l186 1108                                       l515 18E0  
-                                     l540 1560                                       l189 1094  
-                                     l525 131E                                       l533 17FA  
-                                     l614 0B66                                       l630 1380  
-                                     l518 0CEC                                       l542 157C  
-                                     l607 1530                                       l617 0804  
-                                     l641 1176                                       l618 08B8  
-                                     l802 1908                                       l651 17CC  
-                                     l565 1900                                       l821 1702  
-                                     l911 1886                                       l648 179E  
-                                     l665 18D2                                       l833 0E4C  
-                                     l914 1848                                       l676 176C  
-                                     l836 164E                                       l908 18A0  
-                                     l941 18BA                                       l853 0EEC  
-                                     l686 18E6                                       l951 1858  
-                                     l679 13DC                                       l687 18E6  
-                                     l792 0DA6                                       l856 1010  
-                                     l953 1866                                       l945 0A86  
-                                     l865 18F8                                       l954 186A  
-                                     l948 1906                                       l984 1824  
-                                     l969 168C                __end_of_DELAY_milliseconds 17FC  
+            ?_oledC_setDisplayOrientation 0501                                       l201 15C8  
+                                     l130 042E                                       l210 124E  
+                                     l124 02FC                                       l140 058C  
+                                     l204 1494                                       l213 11E2  
+                                     l134 043C                                       l207 1438  
+                                     l152 078A                                       l216 1108  
+                                     l154 07C0                                       l163 0F88  
+                                     l219 1094                                       l172 09A4  
+                                     l158 0F0C                                       l191 0642  
+                                     l168 0936                                       l178 12B8  
+                                     l195 06B4                                       l614 0B66  
+                                     l630 1380                                       l198 16C8  
+                                     l542 14E2                                       l607 1530  
+                                     l617 0804                                       l641 1176  
+                                     l545 18E0                                       l618 08B8  
+                                     l570 1560                                       l811 1702  
+                                     l555 131E                                       l563 17FA  
+                                     l651 17CC                                       l548 0CEC  
+                                     l572 157C                                       l901 1886  
+                                     l823 0E4C                                       l904 1848  
+                                     l648 179E                                       l665 18D2  
+                                     l826 164E                                       l931 18BA  
+                                     l843 0EEC                                       l676 176C  
+                                     l941 1858                                       l782 0DA6  
+                                     l846 1010                                       l943 1866  
+                                     l935 0A86                                       l855 18F8  
+                                     l679 13DC                                       l944 186A  
+                                     l792 1908                                       l938 1906  
+                                     l959 168C                                       l984 1824  
+                                     l898 18A0                                       l978 18E6  
+                                     l979 18E6                __end_of_DELAY_milliseconds 17FC  
            __end_of_OLEDC_COLOR_PEACHPUFF FCE1        __end_of_OLEDC_COLOR_LIGHTSLATEGRAY FD27  
               _OLEDC_COLOR_LIGHTSLATEGRAY FD25        __end_of_OLEDC_COLOR_LIGHTSLATEGREY FD25  
               _OLEDC_COLOR_LIGHTSLATEGREY FD23                             fp__oledC_open 0000  
@@ -9998,42 +9998,42 @@ Symbol Table                                                                    
                                     l3081 0C36                                      l3137 1614  
                                     l3153 1562                                      l3145 1532  
                                     l3161 178C                                      l3209 1898  
-                                    l2611 0846                                      l2603 07C4  
-                                    l3075 16F2                                      l3067 16CC  
-                                    l3059 0E16                                      l3091 0C4E  
-                                    l3083 0C3E                                      l3171 12CA  
-                                    l3147 1536                                      l3139 17CE  
-                                    l3163 17A0                                      l3155 1770  
-                                    l2621 08B2                                      l2613 0848  
-                                    l2701 0F14                                      l3069 16DC  
-                                    l3093 0C56                                      l3085 0C42  
-                                    l3181 1300                                      l3173 12CE  
-                                    l3149 153E                                      l3165 17A4  
-                                    l3157 1780                                      l2631 0B5A  
-                                    l2623 0A8A                                      l2615 0882  
-                                    l2607 0808                                      l2703 0F20  
-                                    l2711 17FC                                      l3343 0232  
-                                    l3095 0C5A                                      l3087 0C46  
-                                    l3079 0C2C                                      l3183 1314  
-                                    l3175 12DC                                      l3167 17B6  
-                                    l3159 1788                                      l3191 1394  
-                                    l2561 0A46                                      l2553 09A8  
-                                    l2625 0AC6                                      l2617 0884  
-                                    l2609 0836                                      l2641 110C  
-                                    l2705 0F22                                      l2713 181C  
-                                    l2721 0294                                      l2801 0BA8  
-                                    l3097 0C6C                                      l3089 0C4A  
-                                    l3185 1318                                      l3177 12EA  
-                                    l3169 12BA                                      l3193 13A2  
-                                    l2563 0A7C                                      l2555 09B8  
-                                    l2627 0ACE                                      l2619 0886  
-                                    l2635 18BC                                      l2651 1142  
-                                    l2643 111C                                      l2707 0F54  
-                                    l2731 02B2                                      l2723 029E  
-                                    l2811 0BDE                                      l2803 0BBA  
-                                    l3099 0C70                                      l3179 12FC  
-                                    l3195 13A4                                      l3187 1382  
-                                    l3283 18E2                                      l2573 184C  
+                                    l3321 18E2                                      l2611 0846  
+                                    l2603 07C4                                      l3075 16F2  
+                                    l3067 16CC                                      l3059 0E16  
+                                    l3091 0C4E                                      l3083 0C3E  
+                                    l3171 12CA                                      l3147 1536  
+                                    l3139 17CE                                      l3163 17A0  
+                                    l3155 1770                                      l2621 08B2  
+                                    l2613 0848                                      l2701 0F14  
+                                    l3069 16DC                                      l3093 0C56  
+                                    l3085 0C42                                      l3181 1300  
+                                    l3173 12CE                                      l3149 153E  
+                                    l3165 17A4                                      l3157 1780  
+                                    l2631 0B5A                                      l2623 0A8A  
+                                    l2615 0882                                      l2607 0808  
+                                    l2703 0F20                                      l2711 17FC  
+                                    l3343 0232                                      l3095 0C5A  
+                                    l3087 0C46                                      l3079 0C2C  
+                                    l3183 1314                                      l3175 12DC  
+                                    l3167 17B6                                      l3159 1788  
+                                    l3191 1394                                      l2561 0A46  
+                                    l2553 09A8                                      l2625 0AC6  
+                                    l2617 0884                                      l2609 0836  
+                                    l2641 110C                                      l2705 0F22  
+                                    l2713 181C                                      l2721 0294  
+                                    l2801 0BA8                                      l3097 0C6C  
+                                    l3089 0C4A                                      l3185 1318  
+                                    l3177 12EA                                      l3169 12BA  
+                                    l3193 13A2                                      l2563 0A7C  
+                                    l2555 09B8                                      l2627 0ACE  
+                                    l2619 0886                                      l2635 18BC  
+                                    l2651 1142                                      l2643 111C  
+                                    l2707 0F54                                      l2731 02B2  
+                                    l2723 029E                                      l2811 0BDE  
+                                    l2803 0BBA                                      l3099 0C70  
+                                    l3179 12FC                                      l3195 13A4  
+                                    l3187 1382                                      l2573 184C  
                                     l2565 0A7E                                      l2557 0A1E  
                                     l2629 0B2E                                      l2581 14E6  
                                     l2637 18CE                                      l2661 1164  
@@ -10266,7 +10266,7 @@ Symbol Table                                                                    
                        oledC_redrawSome@i 0541                  oledC_eraseShape@indShape 0541  
                                   ??_main 054D            __end_of_OLEDC_COLOR_WHITESMOKE FCA3  
                            __activetblptr 000003                 oledC_example_setup@params 0542  
-                     _oledC_addShape$1896 050D                   __end_of_oledC_DrawPoint 1612  
+                     _oledC_addShape$1887 050D                   __end_of_oledC_DrawPoint 1612  
       __size_of_oledC_setRowAddressBounds 0062                                    _ACTCON 0000AC  
                         ___awdiv@dividend 0501       oledC_setColumnAddressBounds@payload 0511  
                                   _ANSELA 000400                                    _ANSELB 000408  
@@ -10382,7 +10382,7 @@ Symbol Table                                                                    
                        ??_SPI1_WriteBlock 0506                         __end_of_drawPoint 16CA  
                                  ___awdiv 0B68                           __size_of___wmul 002A  
                _OLEDC_COLOR_LAVENDERBLUSH FD41                                _oledC_open 18FA  
-                      _oledC_DrawLine$322 0531                                   __pcinit 1704  
+                      _oledC_DrawLine$444 0531                                   __pcinit 1704  
                    _OLEDC_COLOR_STEELBLUE FCB3                                   __ramtop 2600  
                               _dummyshape 1908                        _OLEDC_COLOR_BISQUE FDB5  
                                  __ptext0 18E2                                   __ptext1 1888  
@@ -10433,7 +10433,7 @@ Symbol Table                                                                    
             __end_of_OLEDC_COLOR_LAVENDER FD45                  oledC_setBackground@color 0516  
             __end_of_OLEDC_COLOR_HONEYDEW FD51              __end_of_OLEDC_COLOR_MOCCASIN FCFD  
             __end_of_OLEDC_COLOR_SEAGREEN FCC9                           _SPI1_Initialize 18A2  
-            __end_of_OLEDC_COLOR_SEASHELL FCC7                     _oledC_redrawSome$1908 053F  
+            __end_of_OLEDC_COLOR_SEASHELL FCC7                     _oledC_redrawSome$1899 053F  
               ?_oledC_startWritingDisplay 0501                __end_of_oledC_sendColorInt 176E  
                           _oledC_DrawLine 06B6                            _oledC_DrawRing 0430  
     __end_of_oledC_setColumnAddressBounds 1178     __size_of_oledC_setColumnAddressBounds 006E  
@@ -10472,10 +10472,10 @@ Symbol Table                                                                    
                            ??_oledC_setup 0514                               __pbssBIGRAM 2440  
                       ??_oledC_DrawString 053A                    __end_of_oledC_addShape 0E4E  
                            _SPI1_ReadByte 000000                               __pbssCOMRAM 054D  
-                    _oledC_DrawCircle$300 051D          __end_of_OLEDC_COLOR_ANTIQUEWHITE FDC1  
+                    _oledC_DrawCircle$422 051D          __end_of_OLEDC_COLOR_ANTIQUEWHITE FDC1  
        __end_of_OLEDC_COLOR_DARKTURQUOISE FD77              __size_of_oledC_DrawRectangle 009C  
-                 __end_of_SPI1_Initialize 18BC                      _oledC_DrawBitmap$363 0530  
-                    _oledC_DrawBitmap$364 0532                  _OLEDC_COLOR_DARKSEAGREEN FD7D  
+                 __end_of_SPI1_Initialize 18BC                      _oledC_DrawBitmap$485 0530  
+                    _oledC_DrawBitmap$486 0532                  _OLEDC_COLOR_DARKSEAGREEN FD7D  
                          _SPI1_WriteBlock 1650                     ??_oledC_setBackground 0518  
                   __end_of_oledC_getShape 1704                         __size_of_drawLine 006C  
                  oledC_createShape@params 0501                         __size_of_drawRing 005C  
@@ -10592,7 +10592,7 @@ Symbol Table                                                                    
                     oledC_DrawCircle@yMax 0522                             _drawCharacter 1178  
                     ??_oledC_sendColorInt 050E                        _oledC_setSleepMode 176E  
                                 isa$xinst 000000                       _oledC_DrawRectangle 0EEE  
-              __size_of_oledC_clearScreen 004E                       _oledC_getShape$1889 0503  
+              __size_of_oledC_clearScreen 004E                       _oledC_getShape$1880 0503  
                 oledC_DrawRectangle@end_x 0515                  oledC_DrawRectangle@end_y 0516  
                 oledC_DrawRectangle@color 0517                               ??_drawPoint 053D  
                      ?_oledC_setSleepMode 0501                 _OLEDC_COLOR_DARKSLATEBLUE FD7B  

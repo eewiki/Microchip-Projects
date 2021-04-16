@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>pic18f57q73_oledc_example</name>
+            <name>pic18f57q43_oledc_example</name>
             <creation-uuid>1e364ea0-5ded-4cc5-910f-55c75bfc7b86</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

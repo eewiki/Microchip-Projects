@@ -3,11 +3,11 @@ Microchip MPLAB XC8 Compiler V2.32
 Linker command line:
 
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
-  -h+dist/default/production\pic18f57q73_oledc_example.X.production.sym \
-  --cmf=dist/default/production\pic18f57q73_oledc_example.X.production.cmf \
-  -z -Q18F57Q43 -oC:\Users\rober\AppData\Local\Temp\xcAsd1s.4 \
+  -h+dist/default/production\pic18f57q43_oledc_example.X.production.sym \
+  --cmf=dist/default/production\pic18f57q43_oledc_example.X.production.cmf \
+  -z -Q18F57Q43 -oC:\Users\rober\AppData\Local\Temp\xcAsc6c.4 \
   --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/production/pic18f57q73_oledc_example.X.production.map -E1 \
+  -Mdist/default/production/pic18f57q43_oledc_example.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0560h-0243Fh -pstack=STACK \
   -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh -ASMALLCONST=02600h-026FFhx474 \
   -AMEDIUMCONST=02600h-0FFFFh,012600h-01FFFFh -ACOMRAM=0501h-055Fh \
@@ -32,8 +32,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\rober\AppData\Local\Temp\xcAsd1s.o \
-  dist/default/production\pic18f57q73_oledc_example.X.production.o 
+  C:\Users\rober\AppData\Local\Temp\xcAsc6c.o \
+  dist/default/production\pic18f57q43_oledc_example.X.production.o 
 
 Object code version is 3.11
 
@@ -42,12 +42,12 @@ Machine type is 18F57Q43
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\rober\AppData\Local\Temp\xcAsd1s.o
+C:\Users\rober\AppData\Local\Temp\xcAsc6c.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 init                              1FFFC    1FFFC        4     FFFE       0
                 reset_vec                             0        0        4        0       0
-dist/default/production\pic18f57q73_oledc_example.X.production.o
+dist/default/production\pic18f57q43_oledc_example.X.production.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 mediumconst                        FC74     FC74      38C     7E3A       0
@@ -1222,31 +1222,31 @@ _font                                     mediumconst  00FDC6
 _logo                                     mediumconst  00FFA1
 _main                                     text0        0118E2
 _oledC_DrawBitmap                         text35       01058E
-_oledC_DrawBitmap$363                     cstackCOMRAM 000530
-_oledC_DrawBitmap$364                     cstackCOMRAM 000532
+_oledC_DrawBitmap$485                     cstackCOMRAM 000530
+_oledC_DrawBitmap$486                     cstackCOMRAM 000532
 _oledC_DrawCharacter                      text34       0108BA
 _oledC_DrawCircle                         text31       010272
-_oledC_DrawCircle$300                     cstackCOMRAM 00051D
+_oledC_DrawCircle$422                     cstackCOMRAM 00051D
 _oledC_DrawLine                           text29       0106B6
-_oledC_DrawLine$322                       cstackCOMRAM 000531
+_oledC_DrawLine$444                       cstackCOMRAM 000531
 _oledC_DrawPoint                          text32       0115CA
 _oledC_DrawRectangle                      text36       010EEE
 _oledC_DrawRing                           text28       010430
 _oledC_DrawString                         text27       011250
 _oledC_addShape                           text14       010DA8
-_oledC_addShape$1896                      cstackCOMRAM 00050D
+_oledC_addShape$1887                      cstackCOMRAM 00050D
 _oledC_clearScreen                        text11       011496
 _oledC_createShape                        text15       010000
 _oledC_eraseShape                         text16       010F8A
 _oledC_example                            text7        0112BA
 _oledC_example_setup                      text9        010C2C
 _oledC_getShape                           text17       0116CA
-_oledC_getShape$1889                      cstackCOMRAM 000503
+_oledC_getShape$1880                      cstackCOMRAM 000503
 _oledC_open                               text45       0118FA
 _oledC_redrawAll                          text12       0118EE
 _oledC_redrawIndex                        text8        011612
 _oledC_redrawSome                         text13       010E4E
-_oledC_redrawSome$1908                    cstackCOMRAM 00053F
+_oledC_redrawSome$1899                    cstackCOMRAM 00053F
 _oledC_sendColorInt                       text39       01173A
 _oledC_sendCommand                        text41       0107C2
 _oledC_setBackground                      text10       0118D4

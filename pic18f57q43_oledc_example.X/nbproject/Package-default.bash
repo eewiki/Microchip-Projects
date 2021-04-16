@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/pic18f57q73_oledc_example.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=pic18f57q73_oledc_example.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=pic18f57q73oledcexample.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/pic18f57q43_oledc_example.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=pic18f57q43_oledc_example.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=pic18f57q43oledcexample.x/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/pic18f57q73oledcexample.x/bin
+makeDirectory ${TMPDIR}/pic18f57q43oledcexample.x/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/pic18f57q73oledcexample.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/pic18f57q43oledcexample.x.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/pic18f57q73oledcexample.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/pic18f57q43oledcexample.x.tar *
 checkReturnCode
 
 # Cleanup

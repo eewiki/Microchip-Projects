@@ -1,0 +1,1198 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"42 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/drivers/spi_master.c
+[e E355 . `uc
+oledC_CONFIG 0
+SPI1_DEFAULT 1
+]
+"56
+[e E377 . `uc
+oledC 0
+]
+"44 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[e E36 OLEDC_SHAPE `uc
+OLED_SHAPE_CIRCLE 0
+OLED_SHAPE_RING 1
+OLED_SHAPE_RECTANGLE 2
+OLED_SHAPE_LINE 3
+OLED_SHAPE_POINT 4
+OLED_SHAPE_CHARACTER 5
+OLED_SHAPE_STRING 6
+OLED_SHAPE_BITMAP 7
+]
+"93 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_example.c
+[e E242 OLEDC_SHAPE `uc
+OLED_SHAPE_CIRCLE 0
+OLED_SHAPE_RING 1
+OLED_SHAPE_RECTANGLE 2
+OLED_SHAPE_LINE 3
+OLED_SHAPE_POINT 4
+OLED_SHAPE_CHARACTER 5
+OLED_SHAPE_STRING 6
+OLED_SHAPE_BITMAP 7
+]
+"34 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC.c
+[e E17059 STREAMING_MODES `uc
+NOSTREAM 0
+WRITESTREAM 1
+READSTREAM 2
+]
+"63
+[e E41 OLEDC_CMDS `uc
+OLEDC_CMD_SET_COLUMN_ADDRESS 21
+OLEDC_CMD_SET_ROW_ADDRESS 117
+OLEDC_CMD_WRITE_RAM 92
+OLEDC_CMD_READ_RAM 93
+OLEDC_CMD_SET_REMAP_DUAL_COM_LINE_MODE 160
+OLEDC_CMD_SET_DISPLAY_START_LINE 161
+OLEDC_CMD_SET_DISPLAY_OFFSET 162
+OLEDC_CMD_SET_DISPLAY_MODE_OFF_BLACK 164
+OLEDC_CMD_SET_DISPLAY_MODE_OFF_GS60 165
+OLEDC_CMD_SET_DISPLAY_MODE_ON 166
+OLEDC_CMD_SET_DISPLAY_MODE_INVERSE 167
+OLEDC_CMD_SET_FUNCTION_SELECTION 171
+OLEDC_CMD_SET_SLEEP_MODE_ON 174
+OLEDC_CMD_SET_SLEEP_MODE_OFF 175
+OLEDC_CMD_SET_PHASE_LENGTH 177
+OLEDC_CMD_DISPLAY_ENHANCEMENT 178
+OLEDC_CMD_SET_FRONT_CLOCK_DIVIDER_OSC_FREQ 179
+OLEDC_CMD_SET_GPIO 181
+OLEDC_CMD_SET_SECOND_PRECHARGE_PERIOD 182
+OLEDC_CMD_GRAY_SCALE_PULSE_WIDTH_LUT 184
+OLEDC_CMD_USE_LINEAR_LUT 185
+OLEDC_CMD_SET_PRECHARGE_VOLTAGE 187
+OLEDC_CMD_SET_VCOMH_VOLTAGE 190
+OLEDC_CMD_SET_CONTRAST_CURRENT 193
+OLEDC_CMD_MASTER_CONTRAST_CURRENT_CONTROL 199
+OLEDC_CMD_SET_MUX_RATIO 202
+OLEDC_CMD_SET_COMMAND_LOCK 253
+]
+"82
+[e E17017 . `uc
+oledC 0
+]
+"62 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[e E36 OLEDC_SHAPE `uc
+OLED_SHAPE_CIRCLE 0
+OLED_SHAPE_RING 1
+OLED_SHAPE_RECTANGLE 2
+OLED_SHAPE_LINE 3
+OLED_SHAPE_POINT 4
+OLED_SHAPE_CHARACTER 5
+OLED_SHAPE_STRING 6
+OLED_SHAPE_BITMAP 7
+]
+"80 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/spi1.c
+[e E355 . `uc
+oledC_CONFIG 0
+SPI1_DEFAULT 1
+]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"49 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"38 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+"49
+[v _DELAY_microseconds DELAY_microseconds `(v  1 e 1 0 ]
+"41 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/drivers/spi_master.c
+[v _oledC_open oledC_open `(a  1 e 1 0 ]
+"50 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"76
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"51 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC.c
+[v _oledC_parseRGBToInt oledC_parseRGBToInt `(us  1 e 2 0 ]
+"63
+[v _startStreamingIfNeeded startStreamingIfNeeded `(v  1 s 1 startStreamingIfNeeded ]
+"75
+[v _stopStreaming stopStreaming `(v  1 s 1 stopStreaming ]
+"80
+[v _exchangeTwoBytes exchangeTwoBytes `(us  1 s 2 exchangeTwoBytes ]
+"92
+[v _oledC_sendCommand oledC_sendCommand `(v  1 e 1 0 ]
+"112
+[v _oledC_setRowAddressBounds oledC_setRowAddressBounds `(v  1 e 1 0 ]
+"121
+[v _oledC_setColumnAddressBounds oledC_setColumnAddressBounds `(v  1 e 1 0 ]
+"131
+[v _oledC_setSleepMode oledC_setSleepMode `(v  1 e 1 0 ]
+"136
+[v _oledC_setDisplayOrientation oledC_setDisplayOrientation `(v  1 e 1 0 ]
+"145
+[v _oledC_startReadingDisplay oledC_startReadingDisplay `(v  1 e 1 0 ]
+"170
+[v _oledC_startWritingDisplay oledC_startWritingDisplay `(v  1 e 1 0 ]
+"177
+[v _oledC_stopWritingDisplay oledC_stopWritingDisplay `(v  1 e 1 0 ]
+"189
+[v _oledC_sendColorInt oledC_sendColorInt `(v  1 e 1 0 ]
+"202
+[v _oledC_setup oledC_setup `(v  1 e 1 0 ]
+"60 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_example.c
+[v _oledC_clearScreen oledC_clearScreen `(v  1 s 1 oledC_clearScreen ]
+"75
+[v _oledC_setBackground oledC_setBackground `(v  1 s 1 oledC_setBackground ]
+"81
+[v _oledC_example_setup oledC_example_setup `(v  1 s 1 oledC_example_setup ]
+"117
+[v _oledC_example oledC_example `(v  1 e 1 0 ]
+"30 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[v _dummyshape dummyshape `(v  1 s 1 dummyshape ]
+"42 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+"44
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"50 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"57 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"65 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"73 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"82 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"91 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"100 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v _oledC_getShape oledC_getShape `(*.39S215  1 e 2 0 ]
+"62
+[v _oledC_addShape oledC_addShape `(v  1 e 1 0 ]
+"76
+[v _oledC_redrawIndex oledC_redrawIndex `(v  1 e 1 0 ]
+"91
+[v _oledC_redrawSome oledC_redrawSome `(v  1 e 1 0 ]
+"104
+[v _oledC_eraseShape oledC_eraseShape `(v  1 e 1 0 ]
+"125
+[v _oledC_redrawAll oledC_redrawAll `(v  1 e 1 0 ]
+"44 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[v _oledC_createShape oledC_createShape `(v  1 e 1 0 ]
+"125
+[v _coerceAddressAdditionWithinRange coerceAddressAdditionWithinRange `(uc  1 s 1 coerceAddressAdditionWithinRange ]
+"139
+[v _oledC_DrawPoint oledC_DrawPoint `(v  1 e 1 0 ]
+"178
+[v _oledC_DrawCircle oledC_DrawCircle `(v  1 e 1 0 ]
+"215
+[v _oledC_DrawRing oledC_DrawRing `(v  1 e 1 0 ]
+"249
+[v _oledC_DrawLine oledC_DrawLine `(v  1 e 1 0 ]
+"282
+[v _oledC_DrawRectangle oledC_DrawRectangle `(v  1 e 1 0 ]
+"297
+[v _oledC_DrawCharacter oledC_DrawCharacter `(v  1 e 1 0 ]
+"317
+[v _oledC_DrawString oledC_DrawString `(v  1 e 1 0 ]
+"326
+[v _oledC_DrawBitmap oledC_DrawBitmap `(v  1 e 1 0 ]
+"350
+[v _drawPoint drawPoint `(v  1 s 1 drawPoint ]
+"359
+[v _drawCircle drawCircle `(v  1 s 1 drawCircle ]
+"369
+[v _drawRing drawRing `(v  1 s 1 drawRing ]
+"380
+[v _drawRectangle drawRectangle `(v  1 s 1 drawRectangle ]
+"391
+[v _drawLine drawLine `(v  1 s 1 drawLine ]
+"403
+[v _drawCharacter drawCharacter `(v  1 s 1 drawCharacter ]
+"415
+[v _drawString drawString `(v  1 s 1 drawString ]
+"427
+[v _drawBitmap drawBitmap `(v  1 s 1 drawBitmap ]
+"55 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"65 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"80
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"96
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
+"101
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+"109
+[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
+"122
+[v _SPI1_WriteBlock SPI1_WriteBlock `(v  1 e 1 0 ]
+"131
+[v _SPI1_ReadBlock SPI1_ReadBlock `(v  1 e 1 0 ]
+"140
+[v _SPI1_WriteByte SPI1_WriteByte `(v  1 e 1 0 ]
+"145
+[v _SPI1_ReadByte SPI1_ReadByte `(uc  1 e 1 0 ]
+"1281 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f57q43.h
+[v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
+"1338
+[v _PMD1 PMD1 `VEuc  1 e 1 @97 ]
+"1400
+[v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
+"1451
+[v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
+"1507
+[v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
+"1558
+[v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
+"1620
+[v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
+"1682
+[v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
+"3339
+[v _SPI1RXB SPI1RXB `VEuc  1 e 1 @128 ]
+"3409
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @129 ]
+"3486
+[v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @130 ]
+"3526
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @132 ]
+[s S2078 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"3547
+[s S2084 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S2090 . 1 `S2078 1 . 1 0 `S2084 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES2090  1 e 1 @132 ]
+"3592
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @133 ]
+"3694
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @134 ]
+"3894
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @137 ]
+"4148
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @140 ]
+"5141
+[v _ACTCON ACTCON `VEuc  1 e 1 @172 ]
+"5211
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5351
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5391
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5449
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5651
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"9765
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @533 ]
+"9877
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @535 ]
+"14251
+[v _SPI1SCKPPS SPI1SCKPPS `VEuc  1 e 1 @618 ]
+"14317
+[v _SPI1SDIPPS SPI1SDIPPS `VEuc  1 e 1 @619 ]
+"15475
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @646 ]
+"15607
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @647 ]
+"15739
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @648 ]
+"15871
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @649 ]
+"38982
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"39044
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"39106
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"39168
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"39230
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"39478
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"39540
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"39602
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"39664
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"39726
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"39974
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"40036
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"40098
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"40160
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"40222
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"40470
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"40532
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"40594
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"40656
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"40718
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"40780
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"40812
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"40850
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"40882
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"40914
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"41015
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"41077
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"41139
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"41201
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"41263
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+[s S2108 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"46680
+[u S2117 . 1 `S2108 1 . 1 0 ]
+"46680
+"46680
+[v _PIR3bits PIR3bits `VES2117  1 e 1 @1201 ]
+"47378
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+[s S1565 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"47395
+[u S1574 . 1 `S1565 1 . 1 0 ]
+"47395
+"47395
+[v _LATAbits LATAbits `VES1574  1 e 1 @1214 ]
+"47440
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+[s S1539 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"47457
+[u S1548 . 1 `S1539 1 . 1 0 ]
+"47457
+"47457
+[v _LATBbits LATBbits `VES1548  1 e 1 @1215 ]
+"47502
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+"47564
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+[s S1518 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"47581
+[u S1527 . 1 `S1518 1 . 1 0 ]
+"47581
+"47581
+[v _LATDbits LATDbits `VES1527  1 e 1 @1217 ]
+"47626
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+"47658
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+"47720
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"47782
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"47844
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+[s S2054 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"47861
+[u S2063 . 1 `S2054 1 . 1 0 ]
+"47861
+"47861
+[v _TRISCbits TRISCbits `VES2063  1 e 1 @1224 ]
+"47906
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"47968
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+"48000
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+[s S35 . 30 `*.38(v 1 spiClose 3 0 `*.38(a 1 spiOpen 3 3 `*.38(uc 1 exchangeByte 3 6 `*.38(v 1 exchangeBlock 3 9 `*.38(v 1 writeBlock 3 12 `*.38(v 1 readBlock 3 15 `*.38(v 1 writeByte 3 18 `*.38(uc 1 readByte 3 21 `*.38(v 1 setSpiISR 3 24 `*.38(v 1 spiISR 3 27 ]
+"37 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/drivers/spi_master.c
+[v _spiMaster spiMaster `C[1]S35  1 e 30 0 ]
+"34 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC.c
+[v _streamingMode streamingMode `uc  1 s 1 streamingMode ]
+"30 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_example.c
+[v _exampleInitialized exampleInitialized `a  1 s 1 exampleInitialized ]
+"31
+[v _background_color background_color `us  1 s 2 background_color ]
+"33
+[v _logo logo `C[23]ul  1 s 92 logo ]
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+"34 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v _allParsedShapes allParsedShapes `[32]S215  1 s 448 allParsedShapes ]
+"28 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[v _OLED_DIM_WIDTH OLED_DIM_WIDTH `Cuc  1 s 1 OLED_DIM_WIDTH ]
+"86
+[v _font font `C[475]uc  1 s 475 font ]
+[s S2043 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+"60 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/spi1.c
+[v _spi1_configuration spi1_configuration `C[2]S2043  1 s 10 spi1_configuration ]
+"49 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"68
+} 0
+"50 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"202 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC.c
+[v _oledC_setup oledC_setup `(v  1 e 1 0 ]
+{
+"218
+} 0
+"131
+[v _oledC_setSleepMode oledC_setSleepMode `(v  1 e 1 0 ]
+{
+[v oledC_setSleepMode@on on `a  1 a 1 wreg ]
+[v oledC_setSleepMode@on on `a  1 a 1 wreg ]
+"133
+[v oledC_setSleepMode@on on `a  1 a 1 11 ]
+"134
+} 0
+"136
+[v _oledC_setDisplayOrientation oledC_setDisplayOrientation `(v  1 e 1 0 ]
+{
+"138
+[v oledC_setDisplayOrientation@payload payload `[1]uc  1 a 1 11 ]
+"143
+} 0
+"38 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+{
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
+"42
+} 0
+"49
+[v _DELAY_microseconds DELAY_microseconds `(v  1 e 1 0 ]
+{
+[v DELAY_microseconds@microseconds microseconds `us  1 p 2 0 ]
+"60
+} 0
+"117 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_example.c
+[v _oledC_example oledC_example `(v  1 e 1 0 ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+"125
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v oledC_example@moveIt moveIt `*.39S215  1 a 2 74 ]
+"119
+[v oledC_example@shift shift `c  1 s 1 shift ]
+"135
+} 0
+"76 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[v _oledC_redrawIndex oledC_redrawIndex `(v  1 e 1 0 ]
+{
+[v oledC_redrawIndex@indShape indShape `uc  1 a 1 wreg ]
+[v oledC_redrawIndex@indShape indShape `uc  1 a 1 wreg ]
+"78
+[v oledC_redrawIndex@indShape indShape `uc  1 a 1 60 ]
+"79
+} 0
+"81 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_example.c
+[v _oledC_example_setup oledC_example_setup `(v  1 s 1 oledC_example_setup ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+"84
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[v oledC_example_setup@params params `S205  1 a 9 65 ]
+"115
+} 0
+"75
+[v _oledC_setBackground oledC_setBackground `(v  1 s 1 oledC_setBackground ]
+{
+[v oledC_setBackground@color color `us  1 p 2 21 ]
+"79
+} 0
+"60
+[v _oledC_clearScreen oledC_clearScreen `(v  1 s 1 oledC_clearScreen ]
+{
+"63
+[v oledC_clearScreen@y y `uc  1 a 1 20 ]
+"62
+[v oledC_clearScreen@x x `uc  1 a 1 19 ]
+"73
+} 0
+"125 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[v _oledC_redrawAll oledC_redrawAll `(v  1 e 1 0 ]
+{
+"128
+} 0
+"91
+[v _oledC_redrawSome oledC_redrawSome `(v  1 e 1 0 ]
+{
+[v oledC_redrawSome@startInd startInd `uc  1 a 1 wreg ]
+"93
+[v oledC_redrawSome@i i `uc  1 a 1 64 ]
+"91
+[v oledC_redrawSome@startInd startInd `uc  1 a 1 wreg ]
+[v oledC_redrawSome@endInd endInd `uc  1 p 1 60 ]
+"94
+[v oledC_redrawSome@startInd startInd `uc  1 a 1 61 ]
+"102
+} 0
+"62
+[v _oledC_addShape oledC_addShape `(v  1 e 1 0 ]
+{
+[v oledC_addShape@drawIndex drawIndex `uc  1 a 1 wreg ]
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+"65
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v oledC_addShape@newShape newShape `*.39S215  1 a 2 10 ]
+"64
+[v oledC_addShape@i i `uc  1 a 1 15 ]
+"62
+[v oledC_addShape@drawIndex drawIndex `uc  1 a 1 wreg ]
+[v oledC_addShape@shape_type shape_type `E36  1 p 1 7 ]
+[v oledC_addShape@params params `*.39S205  1 p 2 8 ]
+"66
+[v oledC_addShape@drawIndex drawIndex `uc  1 a 1 14 ]
+"74
+} 0
+"44 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[v _oledC_createShape oledC_createShape `(v  1 e 1 0 ]
+{
+[v oledC_createShape@shape_type shape_type `E36  1 a 1 wreg ]
+[v oledC_createShape@shape_type shape_type `E36  1 a 1 wreg ]
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[v oledC_createShape@params params `*.39S205  1 p 2 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v oledC_createShape@newShape newShape `*.39S215  1 p 2 2 ]
+"46
+[v oledC_createShape@shape_type shape_type `E36  1 a 1 6 ]
+"84
+} 0
+"104 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[v _oledC_eraseShape oledC_eraseShape `(v  1 e 1 0 ]
+{
+[v oledC_eraseShape@indShape indShape `uc  1 a 1 wreg ]
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+"106
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v oledC_eraseShape@ourShape ourShape `*.39S215  1 a 2 65 ]
+"107
+[v oledC_eraseShape@saveColor saveColor `us  1 a 2 62 ]
+"104
+[v oledC_eraseShape@indShape indShape `uc  1 a 1 wreg ]
+[v oledC_eraseShape@eraseColor eraseColor `us  1 p 2 60 ]
+"106
+[v oledC_eraseShape@indShape indShape `uc  1 a 1 64 ]
+"111
+} 0
+"42 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+"44
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"50 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"57 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"65 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"73 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"82 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"91 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+"100 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.h
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+"56 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v _oledC_getShape oledC_getShape `(*.39S215  1 e 2 0 ]
+{
+[v oledC_getShape@index index `uc  1 a 1 wreg ]
+[v oledC_getShape@index index `uc  1 a 1 wreg ]
+"58
+[v oledC_getShape@index index `uc  1 a 1 4 ]
+"60
+} 0
+"350 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[v _drawPoint drawPoint `(v  1 s 1 drawPoint ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawPoint@shape shape `*.39S215  1 p 2 58 ]
+"357
+} 0
+"427
+[v _drawBitmap drawBitmap `(v  1 s 1 drawBitmap ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawBitmap@shape shape `*.39S215  1 p 2 58 ]
+"438
+} 0
+"415
+[v _drawString drawString `(v  1 s 1 drawString ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawString@shape shape `*.39S215  1 p 2 58 ]
+"425
+} 0
+"403
+[v _drawCharacter drawCharacter `(v  1 s 1 drawCharacter ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawCharacter@shape shape `*.39S215  1 p 2 58 ]
+"413
+} 0
+"391
+[v _drawLine drawLine `(v  1 s 1 drawLine ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawLine@shape shape `*.39S215  1 p 2 58 ]
+"401
+} 0
+"380
+[v _drawRectangle drawRectangle `(v  1 s 1 drawRectangle ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawRectangle@shape shape `*.39S215  1 p 2 58 ]
+"389
+} 0
+"369
+[v _drawRing drawRing `(v  1 s 1 drawRing ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawRing@shape shape `*.39S215  1 p 2 58 ]
+"378
+} 0
+"359
+[v _drawCircle drawCircle `(v  1 s 1 drawCircle ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v drawCircle@shape shape `*.39S215  1 p 2 58 ]
+"367
+} 0
+"30 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapeHandler.c
+[v _dummyshape dummyshape `(v  1 s 1 dummyshape ]
+{
+[s S155 . 4 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 ]
+[s S159 . 5 `us 1 color 2 0 `uc 1 xc 1 2 `uc 1 yc 1 3 `uc 1 radius 1 4 ]
+[s S164 . 6 `us 1 color 2 0 `uc 1 x0 1 2 `uc 1 y0 1 3 `uc 1 radius 1 4 `uc 1 width 1 5 ]
+[s S170 . 6 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 xe 1 4 `uc 1 ye 1 5 ]
+[s S176 . 7 `us 1 color 2 0 `uc 1 xs 1 2 `uc 1 ys 1 3 `uc 1 width 1 4 `uc 1 xe 1 5 `uc 1 ye 1 6 ]
+[s S183 . 7 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `uc 1 character 1 6 ]
+[s S190 . 8 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 scale_x 1 4 `uc 1 scale_y 1 5 `*.32uc 1 string 2 6 ]
+[s S197 . 9 `us 1 color 2 0 `uc 1 x 1 2 `uc 1 y 1 3 `uc 1 sx 1 4 `uc 1 sy 1 5 `*.32ul 1 bit_array 2 6 `uc 1 array_length 1 8 ]
+[u S205 shape_params_t 9 `S155 1 point 4 0 `S159 1 circle 5 0 `S164 1 ring 6 0 `S170 1 rectangle 6 0 `S176 1 line 7 0 `S183 1 character 7 0 `S190 1 string 8 0 `S197 1 bitmap 9 0 ]
+[s S215 shape 14 `uc 1 _type 1 0 `*.38(v 1 draw 3 1 `S205 1 params 9 4 `a 1 active 1 13 ]
+[v dummyshape@shape shape `*.39S215  1 p 2 58 ]
+"32
+} 0
+"317 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[v _oledC_DrawString oledC_DrawString `(v  1 e 1 0 ]
+{
+[v oledC_DrawString@x x `uc  1 a 1 wreg ]
+[v oledC_DrawString@x x `uc  1 a 1 wreg ]
+[v oledC_DrawString@y y `uc  1 p 1 50 ]
+[v oledC_DrawString@sx sx `uc  1 p 1 51 ]
+[v oledC_DrawString@sy sy `uc  1 p 1 52 ]
+[v oledC_DrawString@string string `*.32uc  1 p 2 53 ]
+[v oledC_DrawString@color color `us  1 p 2 55 ]
+[v oledC_DrawString@x x `uc  1 a 1 57 ]
+"324
+} 0
+"215
+[v _oledC_DrawRing oledC_DrawRing `(v  1 e 1 0 ]
+{
+[v oledC_DrawRing@x0 x0 `uc  1 a 1 wreg ]
+"218
+[v oledC_DrawRing@d d `s  1 a 2 29 ]
+"217
+[v oledC_DrawRing@y y `c  1 a 1 33 ]
+[v oledC_DrawRing@x x `c  1 a 1 32 ]
+"215
+[v oledC_DrawRing@x0 x0 `uc  1 a 1 wreg ]
+[v oledC_DrawRing@y0 y0 `uc  1 p 1 23 ]
+[v oledC_DrawRing@radius radius `uc  1 p 1 24 ]
+[v oledC_DrawRing@width width `uc  1 p 1 25 ]
+[v oledC_DrawRing@color color `us  1 p 2 26 ]
+"219
+[v oledC_DrawRing@x0 x0 `uc  1 a 1 31 ]
+"247
+} 0
+"249
+[v _oledC_DrawLine oledC_DrawLine `(v  1 e 1 0 ]
+{
+[v oledC_DrawLine@x0 x0 `uc  1 a 1 wreg ]
+"251
+[v oledC_DrawLine@y y `c  1 a 1 55 ]
+[v oledC_DrawLine@x x `c  1 a 1 54 ]
+"252
+[v oledC_DrawLine@D D `c  1 a 1 53 ]
+[v oledC_DrawLine@dy dy `c  1 a 1 52 ]
+[v oledC_DrawLine@dx dx `c  1 a 1 51 ]
+"249
+[v oledC_DrawLine@x0 x0 `uc  1 a 1 wreg ]
+[v oledC_DrawLine@y0 y0 `uc  1 p 1 37 ]
+[v oledC_DrawLine@x1 x1 `uc  1 p 1 38 ]
+[v oledC_DrawLine@y1 y1 `uc  1 p 1 39 ]
+[v oledC_DrawLine@width width `uc  1 p 1 40 ]
+[v oledC_DrawLine@color color `us  1 p 2 41 ]
+"253
+[v oledC_DrawLine@x0 x0 `uc  1 a 1 50 ]
+"280
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"178 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[v _oledC_DrawCircle oledC_DrawCircle `(v  1 e 1 0 ]
+{
+[v oledC_DrawCircle@x0 x0 `uc  1 a 1 wreg ]
+"181
+[v oledC_DrawCircle@d d `s  1 a 2 30 ]
+"180
+[v oledC_DrawCircle@y y `c  1 a 1 36 ]
+[v oledC_DrawCircle@x x `c  1 a 1 35 ]
+[v oledC_DrawCircle@yMax yMax `c  1 a 1 33 ]
+[v oledC_DrawCircle@xCurr xCurr `c  1 a 1 32 ]
+"178
+[v oledC_DrawCircle@x0 x0 `uc  1 a 1 wreg ]
+[v oledC_DrawCircle@y0 y0 `uc  1 p 1 23 ]
+[v oledC_DrawCircle@radius radius `uc  1 p 1 24 ]
+[v oledC_DrawCircle@color color `us  1 p 2 25 ]
+"180
+[v oledC_DrawCircle@x0 x0 `uc  1 a 1 34 ]
+"213
+} 0
+"139
+[v _oledC_DrawPoint oledC_DrawPoint `(v  1 e 1 0 ]
+{
+[v oledC_DrawPoint@x x `uc  1 a 1 wreg ]
+[v oledC_DrawPoint@x x `uc  1 a 1 wreg ]
+[v oledC_DrawPoint@y y `uc  1 p 1 19 ]
+[v oledC_DrawPoint@color color `us  1 p 2 20 ]
+"141
+[v oledC_DrawPoint@x x `uc  1 a 1 22 ]
+"148
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"297 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC_shapes.c
+[v _oledC_DrawCharacter oledC_DrawCharacter `(v  1 e 1 0 ]
+{
+[v oledC_DrawCharacter@x x `uc  1 a 1 wreg ]
+"305
+[v oledC_DrawCharacter@curr_char_byte curr_char_byte `uc  1 a 1 44 ]
+"301
+[v oledC_DrawCharacter@i_y i_y `us  1 a 2 48 ]
+"300
+[v oledC_DrawCharacter@i_x i_x `us  1 a 2 46 ]
+"299
+[v oledC_DrawCharacter@f f `*.32Cuc  1 a 2 42 ]
+"297
+[v oledC_DrawCharacter@x x `uc  1 a 1 wreg ]
+[v oledC_DrawCharacter@y y `uc  1 p 1 32 ]
+[v oledC_DrawCharacter@sx sx `uc  1 p 1 33 ]
+[v oledC_DrawCharacter@sy sy `uc  1 p 1 34 ]
+[v oledC_DrawCharacter@ch ch `uc  1 p 1 35 ]
+[v oledC_DrawCharacter@color color `us  1 p 2 36 ]
+"30
+[v oledC_DrawCharacter@x x `uc  1 a 1 45 ]
+"315
+} 0
+"326
+[v _oledC_DrawBitmap oledC_DrawBitmap `(v  1 e 1 0 ]
+{
+[v oledC_DrawBitmap@x x `uc  1 a 1 wreg ]
+"341
+[v oledC_DrawBitmap@curr_x curr_x `uc  1 a 1 52 ]
+"335
+[v oledC_DrawBitmap@rowBits rowBits `ul  1 a 4 43 ]
+"336
+[v oledC_DrawBitmap@curr_y curr_y `uc  1 a 1 51 ]
+"330
+[v oledC_DrawBitmap@bitNum bitNum `uc  1 a 1 55 ]
+"328
+[v oledC_DrawBitmap@bitmap_width bitmap_width `Cuc  1 a 1 54 ]
+"329
+[v oledC_DrawBitmap@rowNum rowNum `uc  1 a 1 53 ]
+"326
+[v oledC_DrawBitmap@x x `uc  1 a 1 wreg ]
+[v oledC_DrawBitmap@y y `uc  1 p 1 32 ]
+[v oledC_DrawBitmap@color color `us  1 p 2 33 ]
+[v oledC_DrawBitmap@sx sx `uc  1 p 1 35 ]
+[v oledC_DrawBitmap@sy sy `uc  1 p 1 36 ]
+[v oledC_DrawBitmap@bitmap bitmap `*.32ul  1 p 2 37 ]
+[v oledC_DrawBitmap@bitmap_length bitmap_length `uc  1 p 1 39 ]
+"328
+[v oledC_DrawBitmap@x x `uc  1 a 1 42 ]
+"347
+} 0
+"282
+[v _oledC_DrawRectangle oledC_DrawRectangle `(v  1 e 1 0 ]
+{
+[v oledC_DrawRectangle@start_x start_x `uc  1 a 1 wreg ]
+"285
+[v oledC_DrawRectangle@y y `uc  1 a 1 30 ]
+"284
+[v oledC_DrawRectangle@x x `uc  1 a 1 29 ]
+"282
+[v oledC_DrawRectangle@start_x start_x `uc  1 a 1 wreg ]
+[v oledC_DrawRectangle@start_y start_y `uc  1 p 1 19 ]
+[v oledC_DrawRectangle@end_x end_x `uc  1 p 1 20 ]
+[v oledC_DrawRectangle@end_y end_y `uc  1 p 1 21 ]
+[v oledC_DrawRectangle@color color `us  1 p 2 22 ]
+"286
+[v oledC_DrawRectangle@start_x start_x `uc  1 a 1 31 ]
+"295
+} 0
+"112 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC.c
+[v _oledC_setRowAddressBounds oledC_setRowAddressBounds `(v  1 e 1 0 ]
+{
+[v oledC_setRowAddressBounds@min min `uc  1 a 1 wreg ]
+"114
+[v oledC_setRowAddressBounds@payload payload `[2]uc  1 a 2 12 ]
+"112
+[v oledC_setRowAddressBounds@min min `uc  1 a 1 wreg ]
+[v oledC_setRowAddressBounds@max max `uc  1 p 1 11 ]
+"115
+[v oledC_setRowAddressBounds@min min `uc  1 a 1 18 ]
+"119
+} 0
+"121
+[v _oledC_setColumnAddressBounds oledC_setColumnAddressBounds `(v  1 e 1 0 ]
+{
+[v oledC_setColumnAddressBounds@min min `uc  1 a 1 wreg ]
+"125
+[v oledC_setColumnAddressBounds@payload payload `[2]uc  1 a 2 16 ]
+"121
+[v oledC_setColumnAddressBounds@min min `uc  1 a 1 wreg ]
+[v oledC_setColumnAddressBounds@max max `uc  1 p 1 11 ]
+"123
+[v oledC_setColumnAddressBounds@min min `uc  1 a 1 18 ]
+"129
+} 0
+"189
+[v _oledC_sendColorInt oledC_sendColorInt `(v  1 e 1 0 ]
+{
+[v oledC_sendColorInt@raw raw `us  1 p 2 11 ]
+"200
+} 0
+"170
+[v _oledC_startWritingDisplay oledC_startWritingDisplay `(v  1 e 1 0 ]
+{
+"175
+} 0
+"92
+[v _oledC_sendCommand oledC_sendCommand `(v  1 e 1 0 ]
+{
+[v oledC_sendCommand@cmd cmd `E41  1 a 1 wreg ]
+[v oledC_sendCommand@cmd cmd `E41  1 a 1 wreg ]
+[v oledC_sendCommand@payload payload `*.39uc  1 p 2 7 ]
+[v oledC_sendCommand@payload_size payload_size `uc  1 p 1 9 ]
+"94
+[v oledC_sendCommand@cmd cmd `E41  1 a 1 10 ]
+"110
+} 0
+"63
+[v _startStreamingIfNeeded startStreamingIfNeeded `(v  1 s 1 startStreamingIfNeeded ]
+{
+[v startStreamingIfNeeded@cmd cmd `E41  1 a 1 wreg ]
+[v startStreamingIfNeeded@cmd cmd `E41  1 a 1 wreg ]
+"65
+[v startStreamingIfNeeded@cmd cmd `E41  1 a 1 0 ]
+"73
+} 0
+"122 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/spi1.c
+[v _SPI1_WriteBlock SPI1_WriteBlock `(v  1 e 1 0 ]
+{
+"124
+[v SPI1_WriteBlock@data data `*.39uc  1 a 2 5 ]
+"122
+[v SPI1_WriteBlock@block block `*.39v  1 p 2 1 ]
+[v SPI1_WriteBlock@blockSize blockSize `ui  1 p 2 3 ]
+"129
+} 0
+"80 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/oledC.c
+[v _exchangeTwoBytes exchangeTwoBytes `(us  1 s 2 exchangeTwoBytes ]
+{
+[v exchangeTwoBytes@byte1 byte1 `uc  1 a 1 wreg ]
+[v exchangeTwoBytes@byte1 byte1 `uc  1 a 1 wreg ]
+[v exchangeTwoBytes@byte2 byte2 `uc  1 p 1 2 ]
+"82
+[v exchangeTwoBytes@byte1 byte1 `uc  1 a 1 6 ]
+"90
+} 0
+"41 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/drivers/spi_master.c
+[v _oledC_open oledC_open `(a  1 e 1 0 ]
+{
+"43
+} 0
+"80 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+"82
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 1 ]
+"94
+} 0
+"101
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"103
+[v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
+"107
+} 0
+"96
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
+{
+"99
+} 0
+"65
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"76 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"55 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"146
+} 0
+"60 C:\GitHub\Microchip-Projects\pic18f57q43_oledc_example.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
