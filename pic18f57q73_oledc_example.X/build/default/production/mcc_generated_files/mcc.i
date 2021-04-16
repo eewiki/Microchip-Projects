@@ -28920,13 +28920,13 @@ void SYSTEM_Initialize(void)
 void OSCILLATOR_Initialize(void)
 {
 
-    OSCCON1 = 0x70;
+    OSCCON1 = 0x60;
 
     OSCCON3 = 0x00;
 
     OSCEN = 0x00;
 
-    OSCFRQ = 0x02;
+    OSCFRQ = 0x03;
 
     OSCTUNE = 0x00;
 

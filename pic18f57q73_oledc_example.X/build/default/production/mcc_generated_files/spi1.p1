@@ -2634,7 +2634,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ..
 :U ..
--> -> 2 `i `uc
+-> -> 0 `i `uc
 -> -> 64 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
@@ -2651,8 +2651,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _SPI1_Initialize ]
 [f ]
 "68
-[; ;mcc_generated_files/spi1.c: 68:     SPI1CON0 = 0x02;
-[e = _SPI1CON0 -> -> 2 `i `uc ]
+[; ;mcc_generated_files/spi1.c: 68:     SPI1CON0 = 0x00;
+[e = _SPI1CON0 -> -> 0 `i `uc ]
 "70
 [; ;mcc_generated_files/spi1.c: 70:     SPI1CON1 = 0x40;
 [e = _SPI1CON1 -> -> 64 `i `uc ]
