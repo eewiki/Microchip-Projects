@@ -2,3 +2,14 @@
 *.flag
 *.chm
 *.bak
+*.map
+*.hxl
+*.hex
+*.elf
+*.mum
+*.o
+*.sym
+*.sdb
+*.lst
+*.rlf
+*.cmf
