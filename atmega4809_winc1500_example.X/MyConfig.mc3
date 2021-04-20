@@ -1,4 +1,4 @@
-<config configVersion="1.1" device="ATmega4809" coreVersion="5.0.1">
+<config configVersion="1.1" device="ATmega4809" coreVersion="5.0.2">
    <usedClasses class="java.util.HashMap">
       <entry>
          <string>SPI0</string>
@@ -45,12 +45,12 @@
          <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.slpctrl.SLPCTRL</string>
       </entry>
       <entry>
-         <string>Interrupt Manager</string>
-         <string>class com.microchip.mcc.mcu8.interruptManager.InterruptManager</string>
-      </entry>
-      <entry>
          <string>CLKCTRL</string>
          <string>class com.microchip.mcc.mcu8.systemManager.tiny_mega_init.clkctrl.CLKCTRL</string>
+      </entry>
+      <entry>
+         <string>Interrupt Manager</string>
+         <string>class com.microchip.mcc.mcu8.interruptManager.InterruptManager</string>
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
@@ -509,7 +509,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="SPIMASTER" name="pubSubSPIMASTERConfigurations"/>
-         <value>4729.980814549161</value>
+         <value>4185.161637128962</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTE.PIN3CTRL" settingAlias="ISC" alias="LEVEL"/>
@@ -2005,7 +2005,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="SPIMASTER" name="validate"/>
-         <value>0.22917911529410384</value>
+         <value>0.16672735100180192</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SPI0" registerAlias="RXC" settingAlias="enable"/>
@@ -2353,7 +2353,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="SPIMASTER" name="pubSubspiSubscriber"/>
-         <value>2170.623715498876</value>
+         <value>5022.291486829964</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SPI0" registerAlias="INTFLAGS" settingAlias="IF"/>
@@ -5593,7 +5593,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="WINC15XX" name="pubSubWINC15XX_SPIMASTER/interfaceV2"/>
-         <value>644.6265773562865</value>
+         <value>1054.6592611473493</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CPUINT" registerAlias="STATUS" settingAlias="LVL0EX"/>
@@ -6810,10 +6810,6 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\src\protected_io.S</file>
-         <hash>69d7d2c54bccf38027e4950b66dadc2d9c0be7a2523ffbe4648ec79e87f33522</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\include\pin_manager.h</file>
          <hash>f5f11d224b73f40c00c1f14abad72faa91335775b06669a790df5393baf0760a</hash>
       </entry>
@@ -6826,12 +6822,16 @@
          <hash>50ec8a91074744056c71efcfffb3a25f44495b2ccd927f2bbdc1069385a251f2</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\utils\compiler.h</file>
-         <hash>3f2d7b47b12f2ecbd4c3971644ea7ecd10d2562fc8605a4495bd597eb0f59750</hash>
+         <file>mcc_generated_files\src\protected_io.S</file>
+         <hash>69d7d2c54bccf38027e4950b66dadc2d9c0be7a2523ffbe4648ec79e87f33522</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\examples\winc_example.c</file>
          <hash>65b4b17a94da4da6adc077475b92a70d31d29399841062ce8672994e752ce4f6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\utils\compiler.h</file>
+         <hash>3f2d7b47b12f2ecbd4c3971644ea7ecd10d2562fc8605a4495bd597eb0f59750</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\include\spi0.h</file>
@@ -6906,10 +6906,6 @@
          <hash>13d4874d789b563dd4499efacd71882cbc38f8459da91ac17f13fa76079be93b</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>dd747bc6bf95fb23d65b1a5acfe19252a7c934a4989a4d9c278ec470b2d898b4</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\winc\driver\winc_drv.c</file>
          <hash>7911d708c715336c98ccc43e62b973743d8d5f68b9cb05113acdddf3d0f52f85</hash>
       </entry>
@@ -6920,6 +6916,10 @@
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_periph.c</file>
          <hash>a848c66ebb46d75583469b112d22bd224a3d05d186ecb91595e3e4ceb27c8683</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>162cde6b812d12f06c3f76b76e91f5f5f8ffbd8c261dad3e39f797e9a21529d5</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_periph.h</file>
@@ -6966,10 +6966,6 @@
          <hash>71cd14676f4f54fd13c6a51f9512eda2e0cafca12e357a11e4aa6f85b6e0cce6</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\utils\utils_assert.h</file>
-         <hash>002db199835943a5e634d5e9904119d0f50eb94af5300454791a93c81c5353b7</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\winc\driver\winc_adapter.c</file>
          <hash>346b0260336c3038b9fa531ae883d229d8d40158da23cd6e1da84200cf9cbc54</hash>
       </entry>
@@ -6978,12 +6974,16 @@
          <hash>ac569447dd015f000ea495f5c5202165f141b5ec3a6c7419930bf2904cc94f73</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\include\rstctrl.h</file>
-         <hash>3aaf94dcc7f4f51ce811c4b290f1dbcd29748fb231cb4d3e7f27f49586651c83</hash>
+         <file>mcc_generated_files\utils\utils_assert.h</file>
+         <hash>002db199835943a5e634d5e9904119d0f50eb94af5300454791a93c81c5353b7</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\include\cpuint.h</file>
          <hash>802591ef9a8f76d82a9ebdd96dac4c62c9a3c56d991188efaebd5ec3ca4228e2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\include\rstctrl.h</file>
+         <hash>3aaf94dcc7f4f51ce811c4b290f1dbcd29748fb231cb4d3e7f27f49586651c83</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_socket_host_if.h</file>
@@ -7018,12 +7018,12 @@
          <hash>e5d9c84757ad23e1e405c35ac71973c8608867184dbaf124abe08982ec53ff99</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\utils\interrupt_avr8.h</file>
-         <hash>98adc596175f2e76d4d918685cf050032a3efb605901edb6be0a35dda05a57e9</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\src\cpuint.c</file>
          <hash>caeb52768999d91897f0ac3b19f4b61e8089d3306ffface466d36a3b680d875d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\utils\interrupt_avr8.h</file>
+         <hash>98adc596175f2e76d4d918685cf050032a3efb605901edb6be0a35dda05a57e9</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\spi_flash\spi_flash.c</file>
@@ -7043,7 +7043,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.h</file>
-         <hash>7e8d8831e9f28be4a364633b7b13fe677c3bbc7edef92f91ce642187bb3e68a7</hash>
+         <hash>511e6b6488d1540cd2eb42e717509e029ce0c139b186e7120c57c3550de25a23</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_fwinfo.h</file>
